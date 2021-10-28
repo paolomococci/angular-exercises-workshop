@@ -8,7 +8,9 @@
   <span>Welcome</span>
     <div class="spacer"></div>
     <!-- todo -->
-    <span class="material-icons">home</span>
+    <button mat-icon-button color="accent" aria-label="button with a notifications icon">
+      <mat-icon>notifications</mat-icon>
+    </button>
 </header>
 
 <main class="content" role="main">
@@ -38,9 +40,134 @@
 
   <!-- Resources -->
   <h2>Resources</h2>
-  <p>Here are some resources:</p>
+  <p>Here are some examples of Angular Material:</p>
 
-  <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+  <article>
+    <h4 class="sample-label">button toggle</h4>
+    <section class="sample-row">
+      <mat-button-toggle-group name="exampleFontStyle" aria-label="example of font style">
+        <mat-button-toggle value="bold">bold</mat-button-toggle>
+        <mat-button-toggle value="italic">italic</mat-button-toggle>
+        <mat-button-toggle value="underline">underline</mat-button-toggle>
+      </mat-button-toggle-group>
+    </section>
+  </article>
+
+  <mat-divider></mat-divider>
+
+  <h3>buttons</h3>
+  <article>
+    <h4 class="sample-label">basic</h4>
+    <section class="sample-row">
+      <button mat-button>basic</button>
+      <button mat-button color="primary">primary</button>
+      <button mat-button color="accent">accent</button>
+      <button mat-button color="warn">warn</button>
+      <button mat-button disabled>disabled</button>
+      <a mat-button href="#" target="_blank">Link</a>
+    </section>
+  </article>
+
+  <mat-divider></mat-divider>
+
+  <article>
+    <h4 class="sample-label">raised</h4>
+    <section class="sample-row">
+      <button mat-raised-button>basic</button>
+      <button mat-raised-button color="primary">primary</button>
+      <button mat-raised-button color="accent">accent</button>
+      <button mat-raised-button color="warn">warn</button>
+      <button mat-raised-button disabled>disabled</button>
+      <a mat-raised-button href="#" target="_blank">Link</a>
+    </section>
+  </article>
+
+  <mat-divider></mat-divider>
+
+  <article>
+    <h4 class="sample-label">stroked</h4>
+    <section class="sample-row">
+      <button mat-stroked-button>basic</button>
+      <button mat-stroked-button color="primary">primary</button>
+      <button mat-stroked-button color="accent">accent</button>
+      <button mat-stroked-button color="warn">warn</button>
+      <button mat-stroked-button disabled>disabled</button>
+      <a mat-stroked-button href="#" target="_blank">Link</a>
+    </section>
+  </article>
+
+  <mat-divider></mat-divider>
+
+  <article>
+    <h4 class="sample-label">flat</h4>
+    <section class="sample-row">
+      <button mat-flat-button>basic</button>
+      <button mat-flat-button color="primary">primary</button>
+      <button mat-flat-button color="accent">accent</button>
+      <button mat-flat-button color="warn">warn</button>
+      <button mat-flat-button disabled>disabled</button>
+      <a mat-flat-button href="#" target="_blank">Link</a>
+    </section>
+  </article>
+
+  <mat-divider></mat-divider>
+
+  <article>
+    <h4 class="sample-label">FAB</h4>
+    <section class="sample-row">
+      <button mat-fab color="primary" aria-label="button with a notifications icon">
+        <mat-icon>notifications</mat-icon>
+      </button>
+    </section>
+  </article>
+
+  <mat-divider></mat-divider>
+
+  <h3>slider</h3>
+  <article>
+    <h4 class="sample-label">slider</h4>
+    <section class="sample-row">
+      <mat-slider min="1" max="5" step="0.1" value="0.0"></mat-slider>
+    </section>
+  </article>
+
+  <mat-divider></mat-divider>
+
+  <h3>card</h3>
+  <article>
+    <h4 class="sample-label">card</h4>
+    <section class="sample-row">
+      <mat-card>
+        <mat-card-title>card title</mat-card-title>
+        <mat-card-subtitle>card subtile</mat-card-subtitle>
+        <mat-card-content>some content of card</mat-card-content>
+        <mat-card-actions>
+          <button mat-fab color="warn" aria-label="button with a support_agent icon">
+            <mat-icon>support_agent</mat-icon>
+          </button>
+          <button mat-fab disabled aria-label="button with a notifications_paused icon">
+            <mat-icon>notifications_paused</mat-icon>
+          </button>
+        </mat-card-actions>
+        <mat-card-footer>card footer</mat-card-footer>
+      </mat-card>
+    </section>
+  </article>
+
+  <mat-divider></mat-divider>
+
+  <h3>tabs</h3>
+  <article>
+    <h4 class="sample-label">tabs</h4>
+    <section class="sample-row">
+      <mat-tab-group>
+        <mat-tab label="I"> First </mat-tab>
+        <mat-tab label="II"> Second </mat-tab>
+        <mat-tab label="III"> Third </mat-tab>
+        <mat-tab label="IV"> Fourth </mat-tab>
+      </mat-tab-group>
+    </section>
+  </article>
 
   <section class="card-container">
     <!-- todo -->
@@ -49,7 +176,7 @@
 
   <!-- Next Steps -->
   <h2>Next Steps</h2>
-  <p>develop this app!</p>
+  <p>I will have to develop this demo web application!</p>
 
   <section class="card-container">
     <!-- todo -->

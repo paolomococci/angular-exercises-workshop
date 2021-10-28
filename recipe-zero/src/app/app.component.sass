@@ -25,6 +25,7 @@ p
   top: 0
   left: 0
   right: 0
+  padding: 10px
   height: 60px
   display: flex
   align-items: center
@@ -35,23 +36,11 @@ p
   & img
     margin: 0 16px
 
-  & #twitter-logo
-    height: 40px
-    margin: 0 8px
-
-  & #youtube-logo
-    height: 40px
-    margin: 0 16px
-
-  & #twitter-logo:hover,
-
-  & #youtube-logo:hover
-    opacity: 0.8
-
 .content
   display: flex
   margin: 82px auto 32px
   padding: 0 16px
+  padding-top: 20px
   max-width: 960px
   flex-direction: column
   align-items: center
@@ -247,3 +236,18 @@ svg#clouds
   svg#rocket-smoke
     display: none
     visibility: hidden
+
+.sample-label
+  display: table-cell
+  font-size: 14px
+  margin-left: 8px
+  min-width: 120px
+  padding: 5px
+
+.sample-row
+  display: table-cell
+  width: 490px
+  padding: 5px
+
+button
+  margin: 5px
