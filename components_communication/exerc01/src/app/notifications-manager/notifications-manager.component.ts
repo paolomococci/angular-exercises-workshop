@@ -26,4 +26,12 @@ export class NotificationsManagerComponent implements OnInit {
     this.countChanged.emit(this.count)
   }
 
+  removeNotification() {
+    if (this.count == 0) {
+      return
+    }
+    this.count--
+    this.countChanged.emit(this.count)
+  }
+
 }
