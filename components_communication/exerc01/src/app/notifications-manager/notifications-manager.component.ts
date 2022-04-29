@@ -34,4 +34,9 @@ export class NotificationsManagerComponent implements OnInit {
     this.countChanged.emit(this.count)
   }
 
+  resetCount() {
+    this.count = 0
+    this.countChanged.emit(this.count)
+  }
+
 }
