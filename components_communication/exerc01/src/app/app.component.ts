@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exerc01'
-  notificationsCount = 0
+  notificationsCount = 5
   updateNotificationsCount(count: number) {
     this.notificationsCount = count
   }
