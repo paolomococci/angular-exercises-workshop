@@ -329,7 +329,13 @@
     </svg>
 
     <div>
-      <app-notifications-manager [count]="notificationsCount"></app-notifications-manager>
+      <app-notifications-manager
+        (countChanged)="updateNotificationsCount ($event)"
+        [count]="notificationsCount"></app-notifications-manager>
+      <div></div>
+      <div>
+        <app-notifications-button [count]="notificationsCount"></app-notifications-button>
+      </div>
     </div>
 
   </div>
