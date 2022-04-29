@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'exerc01';
+  title = 'exerc01'
+  notificationsCount = 0
+  updateNotificationsCount(count: number) {
+    this.notificationsCount = count
+  }
 }
