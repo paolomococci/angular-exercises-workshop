@@ -8,10 +8,11 @@
 ng new exerc01 --skip-tests --routing --style=sass
 ```
 
-### generate a new component
+### generate a new components
 
 ```shell
 ng generate component notifications-manager
+ng generate component notifications-button
 ```
 
 ## Development server
