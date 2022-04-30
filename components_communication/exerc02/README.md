@@ -24,3 +24,9 @@ ng add @angular/material
 ```shell
 ng generate service services/Notifications
 ```
+
+### finally, I boot into development mode
+
+```shell
+ng serve -o
+```
