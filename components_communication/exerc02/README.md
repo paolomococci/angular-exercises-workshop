@@ -18,3 +18,9 @@ ng generate component notifications-button
 ```shell
 ng add @angular/material
 ```
+
+### I generate a service named Notifications
+
+```shell
+ng generate service services/Notifications
+```
