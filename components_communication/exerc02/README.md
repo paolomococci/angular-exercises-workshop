@@ -12,3 +12,9 @@ ng new exerc02 --skip-tests --routing --style=sass
 ng generate component notifications-manager
 ng generate component notifications-button
 ```
+
+### I install Angular Material to the exercise
+
+```shell
+ng add @angular/material
+```
