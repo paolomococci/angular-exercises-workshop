@@ -16,6 +16,12 @@ export class VcLogsComponent implements OnInit {
   }
 
   public set vName(name : string) {
+    if (!name) {
+      return
+    }
+    if (!this._vName) {
+      this.logs.push('first version is ${name.trim()}')
+    }
     this._vName = name;
   }
 
