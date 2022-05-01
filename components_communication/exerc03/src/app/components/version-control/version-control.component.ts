@@ -15,6 +15,15 @@ import {
 })
 export class VersionControlComponent implements OnInit {
 
+  versionForm = new FormGroup(
+    {
+      version: new FormControl(
+        '',
+        [Validators.pattern('([0-9]+)\.([0-9]+)\.([0-9]+)')]
+      )
+    }
+  )
+
   constructor() { }
 
   ngOnInit(): void {
