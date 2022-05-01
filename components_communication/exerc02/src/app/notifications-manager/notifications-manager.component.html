@@ -1,6 +1,6 @@
 <section class="notifications-manager">
   <div class="notifications-manager__count">
-    notifications count {{count}}
+    notifications count {{notificationsCount$ | async}}
   </div>
   <div class="notifications-manager__actions">
     <button (click)="addNotification()" class="notifications-manager__actions__button">
