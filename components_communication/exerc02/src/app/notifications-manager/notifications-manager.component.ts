@@ -38,4 +38,15 @@ export class NotificationsManagerComponent implements OnInit {
     )
   }
 
+  removeNotification() {
+    this.getCountValue(
+      (value: number) => {
+        if (value === 0) {
+          return
+        }
+        this.notificationsService.setCount(--value)
+      }
+    )
+  }
+
 }
