@@ -15,12 +15,12 @@ import { NotificationsService } from './../services/notifications.service'
 })
 export class NotificationsManagerComponent implements OnInit {
 
-  @Input() count = 0
+  notificationsCount$!: Observable<number>
 
-  @Output() countChanged = new EventEmitter<number>()
+  constructor(private notificationsService: NotificationsService) {}
 
-  constructor() { }
-
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.notificationsCount$ = this.notificationsService.count$
+  }
 
 }
