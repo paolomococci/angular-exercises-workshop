@@ -18,3 +18,10 @@ npm install
 ```shell
 ng add @angular/material
 ```
+
+### after creating directory components inside directory app, I typed the following shell commands
+
+```shell
+ng generate component components/vc-logs
+ng generate component components/version-control
+```
