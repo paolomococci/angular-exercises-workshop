@@ -11,4 +11,8 @@ export class NotificationsService {
   count$: Observable<number> = this.count.asObservable()
 
   constructor() { }
+
+  setCount(value: number) {
+    this.count.next(value)
+  }
 }
