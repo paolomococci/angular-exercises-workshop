@@ -24,6 +24,8 @@ export class VersionControlComponent implements OnInit {
     }
   )
 
+  versionName = '0.0.0'
+
   constructor() { }
 
   ngOnInit(): void {
