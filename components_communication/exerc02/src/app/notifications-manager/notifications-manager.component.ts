@@ -49,4 +49,12 @@ export class NotificationsManagerComponent implements OnInit {
     )
   }
 
+  resetCount() {
+    this.getCountValue(
+      (value: number) => {
+        this.notificationsService.setCount(0)
+      }
+    )
+  }
+
 }
