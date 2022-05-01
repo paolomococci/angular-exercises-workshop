@@ -5,7 +5,7 @@ import {
   Output,
   EventEmitter
 } from '@angular/core'
-import { Observable } from 'rxjs'
+import { Observable, Observer } from 'rxjs'
 import { NotificationsService } from './../services/notifications.service'
 import { first } from 'rxjs/operators'
 
@@ -22,6 +22,16 @@ export class NotificationsManagerComponent implements OnInit {
 
   ngOnInit(): void {
     this.notificationsCount$ = this.notificationsService.count$
+  }
+
+  getCountValue(callback: Partial<Observer<number>> | undefined) {
+    this.notificationsCount$.pipe(
+      first()
+    ).subscribe(callback)
+  }
+
+  addNotification() {
+
   }
 
 }
