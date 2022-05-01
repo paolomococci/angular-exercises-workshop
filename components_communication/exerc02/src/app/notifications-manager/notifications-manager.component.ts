@@ -4,8 +4,9 @@ import {
   Input,
   Output,
   EventEmitter
-} from '@angular/core';
+} from '@angular/core'
 import { Observable } from 'rxjs'
+import { NotificationsService } from './../services/notifications.service'
 
 @Component({
   selector: 'app-notifications-manager',
