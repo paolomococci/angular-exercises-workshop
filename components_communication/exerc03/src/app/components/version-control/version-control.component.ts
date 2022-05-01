@@ -36,4 +36,14 @@ export class VersionControlComponent implements OnInit {
     )
   }
 
+  formSubmit() {
+    if (!this.versionForm.valid) {
+      alert('version has an invalid format')
+      return
+    }
+    this.versionName = this.versionForm.get(
+      'version'
+    )?.value
+  }
+
 }
