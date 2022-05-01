@@ -12,3 +12,9 @@ ng new exerc03 -v -S -g --skip-install --routing --style=sass --strict
 cd exerc03
 npm install
 ```
+
+### I install Angular Material to this exercise
+
+```shell
+ng add @angular/material
+```
