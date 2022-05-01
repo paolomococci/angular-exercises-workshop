@@ -13,7 +13,7 @@ ng generate component notifications-manager
 ng generate component notifications-button
 ```
 
-### I install Angular Material to the exercise
+### I install Angular Material to this exercise
 
 ```shell
 ng add @angular/material
