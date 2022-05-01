@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +7,8 @@ import { BehaviorSubject } from 'rxjs';
 export class NotificationsService {
 
   private count: BehaviorSubject<number> = new BehaviorSubject<number>(0)
+
+  count$: Observable<number> = this.count.asObservable()
 
   constructor() { }
 }
