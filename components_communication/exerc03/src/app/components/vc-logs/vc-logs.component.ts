@@ -21,6 +21,8 @@ export class VcLogsComponent implements OnInit {
     }
     if (!this._vName) {
       this.logs.push('first version is ${name.trim()}')
+    } else {
+      this.logs.push('version changed to ${name.trim()}')
     }
     this._vName = name;
   }
