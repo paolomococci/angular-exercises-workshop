@@ -230,7 +230,7 @@
   <span>welcome</span>
     <div class="spacer"></div>
     <div>
-      <app-notifications-button [count]="notificationsCount"></app-notifications-button>
+      <app-notifications-button></app-notifications-button>
     </div>
 </div>
 
@@ -259,9 +259,7 @@
   </div>
 
   <div class="content" role="main">
-    <app-notifications-manager
-      (countChanged)="updateNotificationsCount ($event)"
-      [count]="notificationsCount"></app-notifications-manager>
+    <app-notifications-manager></app-notifications-manager>
   </div>
 
 </div>
