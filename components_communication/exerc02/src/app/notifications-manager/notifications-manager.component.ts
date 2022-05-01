@@ -7,6 +7,7 @@ import {
 } from '@angular/core'
 import { Observable } from 'rxjs'
 import { NotificationsService } from './../services/notifications.service'
+import { first } from 'rxjs/operators'
 
 @Component({
   selector: 'app-notifications-manager',
