@@ -24,14 +24,10 @@ export class NotificationsManagerComponent implements OnInit {
     this.notificationsCount$ = this.notificationsService.count$
   }
 
-  getCountValue(callback: Partial<Observer<number>> | undefined) {
+  getCountValue(callback: any) {
     this.notificationsCount$.pipe(
       first()
     ).subscribe(callback)
-  }
-
-  addNotification() {
-
   }
 
 }
