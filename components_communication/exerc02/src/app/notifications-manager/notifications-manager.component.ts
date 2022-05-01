@@ -30,4 +30,12 @@ export class NotificationsManagerComponent implements OnInit {
     ).subscribe(callback)
   }
 
+  addNotification() {
+    this.getCountValue(
+      (value: number) => {
+        this.notificationsService.setCount(++value)
+      }
+    )
+  }
+
 }
