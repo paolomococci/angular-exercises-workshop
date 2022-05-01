@@ -25,3 +25,9 @@ ng add @angular/material
 ng generate component components/vc-logs
 ng generate component components/version-control
 ```
+
+### finally, I boot into development mode
+
+```shell
+ng serve -o
+```
