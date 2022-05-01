@@ -2,7 +2,7 @@ import {
   Component,
   OnInit,
   Input
-} from '@angular/core';
+} from '@angular/core'
 
 @Component({
   selector: 'app-notifications-button',
