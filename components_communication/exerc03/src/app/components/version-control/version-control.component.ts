@@ -29,6 +29,11 @@ export class VersionControlComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.versionForm.get(
+      'version'
+    )?.setValue(
+      this.versionName
+    )
   }
 
 }
