@@ -1,7 +1,5 @@
 # exerc03, how to use setters to intercept changes to input properties
 
-<mark style="background-color: #ef8">I'm sorry, this code is not working as expected</mark>
-
 ## scaffolding
 
 ```shell
@@ -21,7 +19,7 @@ npm install
 ng add ngx-bootstrap
 ```
 
-and I changed the angular.json in two places
+and I changed the angular.json in two places:
 
 ```text
 ...
@@ -30,6 +28,19 @@ and I changed the angular.json in two places
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.sass"
             ],
+...
+```
+
+at this point, it is necessary to edit file app.module.ts in the following way in order not to run into a problem that occurs in version 13 of Angular, by importing the module ReactiveFormsModule:
+
+```text
+...
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
+  ],
 ...
 ```
 
