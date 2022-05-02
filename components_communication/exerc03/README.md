@@ -15,10 +15,22 @@ cd exerc03
 npm install
 ```
 
-### I install Angular Material to this exercise
+### I integrate Bootstrap to this exercise
 
 ```shell
-ng add @angular/material
+ng add ngx-bootstrap
+```
+
+and I changed the angular.json in two places
+
+```text
+...
+
+            "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.sass"
+            ],
+...
 ```
 
 ### after creating directory components inside directory app, I typed the following shell commands
@@ -26,12 +38,6 @@ ng add @angular/material
 ```shell
 ng generate component components/vc-logs
 ng generate component components/version-control
-```
-
-### I uninstall Angular Material to this exercise
-
-```shell
-npm uninstall @angular/material
 ```
 
 ### finally, I boot into development mode
