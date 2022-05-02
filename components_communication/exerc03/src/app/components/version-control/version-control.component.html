@@ -1,8 +1,8 @@
-<form (ngSubmit)="formSubmit()">
+<form [formGroup]="versionForm" (ngSubmit)="formSubmit()">
   <div class="form-group">
     <label for="versionNumber">version number</label>
     <input formControlName="version" type="text" class="form-control" id="versionNumber" aria-describedby="versionHelp" placeholder="type a version number">
-    <small id="versionHelp" class="form-text text-muted">Use semantic versioning (x.x.x)</small>
+    <small id="versionHelp" class="form-text text-muted">use semantic versioning (x.x.x)</small>
   </div>
   <button type="submit" class="btn btn-primary">submit</button>
 </form>
