@@ -28,6 +28,12 @@ ng generate component components/vc-logs
 ng generate component components/version-control
 ```
 
+### I uninstall Angular Material to this exercise
+
+```shell
+npm uninstall @angular/material
+```
+
 ### finally, I boot into development mode
 
 ```shell
