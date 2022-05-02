@@ -12,7 +12,7 @@ ng new exerc04 -v -S -g --routing --style=sass
 ng add ngx-bootstrap
 ```
 
-at this point, it is necessary to add references to styles x by editing file y by adding the following line of code twice:
+at this point, it is necessary to add references to styles by editing file angular.json by adding the following line of code twice:
 
 ```text
 "./node_modules/bootstrap/dist/css/bootstrap.min.css",
