@@ -1,8 +1,10 @@
 import {
   Component,
   Input,
+  OnChanges,
   OnInit,
-  SimpleChange
+  SimpleChange,
+  SimpleChanges
 } from '@angular/core';
 
 @Component({
@@ -10,20 +12,22 @@ import {
   templateUrl: './vc-logs.component.html',
   styleUrls: ['./vc-logs.component.sass']
 })
-export class VcLogsComponent implements OnInit {
+export class VcLogsComponent implements OnInit, OnChanges {
 
-  @Input()
-  vName!: string
+  @Input() vName: any
 
   logs: string[] = []
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnChanges(changes: SimpleChanges): void {
+    const cValue = changes[this.vName].currentValue
+    if (changes[this.vName].isFirstChange()) {
+      this.logs.push(`first version is: ${cValue.trim()}`)
+    }
   }
 
-  ngOnChanges(changes: SimpleChange) {
-
+  ngOnInit(): void {
   }
 
 }
