@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-vc-logs',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vc-logs.component.sass']
 })
 export class VcLogsComponent implements OnInit {
+
+  @Input()
+  vName!: string
+
+  logs: string[] = []
 
   constructor() { }
 
