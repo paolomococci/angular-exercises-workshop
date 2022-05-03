@@ -22,11 +22,11 @@ export class VcLogsComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    const cValue = changes[this.vName].currentValue
+    const presentValue = changes[this.vName].currentValue
     if (changes[this.vName].isFirstChange()) {
-      this.logs.push(`first version is: ${cValue.trim()}`)
+      this.logs.push(`first version is: ${presentValue.trim()}`)
     } else {
-      this.logs.push(`version is changed to: ${cValue.trim()}`)
+      this.logs.push(`version is changed to: ${presentValue.trim()}`)
     }
   }
 
