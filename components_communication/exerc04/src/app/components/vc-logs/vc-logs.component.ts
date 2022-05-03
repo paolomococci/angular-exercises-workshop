@@ -24,6 +24,8 @@ export class VcLogsComponent implements OnInit, OnChanges {
     const cValue = changes[this.vName].currentValue
     if (changes[this.vName].isFirstChange()) {
       this.logs.push(`first version is: ${cValue.trim()}`)
+    } else {
+      this.logs.push(`version is changed to: ${cValue.trim()}`)
     }
   }
 
