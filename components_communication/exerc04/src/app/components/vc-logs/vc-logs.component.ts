@@ -1,4 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnInit,
+  SimpleChange
+} from '@angular/core';
 
 @Component({
   selector: 'app-vc-logs',
@@ -15,6 +20,10 @@ export class VcLogsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges(changes: SimpleChange) {
+
   }
 
 }
