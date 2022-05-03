@@ -14,7 +14,8 @@ import {
 })
 export class VcLogsComponent implements OnInit, OnChanges {
 
-  @Input() vName: any
+  @Input()
+  vName!: string;
 
   logs: string[] = []
 
