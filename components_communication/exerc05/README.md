@@ -1,4 +1,4 @@
-# exerc05
+# exerc05, how to use reference variables to access a child component from the parent component
 
 ## scaffolding
 
