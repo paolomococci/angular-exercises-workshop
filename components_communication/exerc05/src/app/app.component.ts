@@ -13,4 +13,8 @@ export class AppComponent {
     console.log('added new image')
   }
 
+  removeImage(gallery: GalleryComponent): void {
+    console.log('removed an image')
+  }
+
 }
