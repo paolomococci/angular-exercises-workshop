@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'exerc05'
 
   addImage(gallery: GalleryComponent): void {
+    gallery.images.unshift(gallery.retrieveImage())
     console.log('added new image')
   }
 
