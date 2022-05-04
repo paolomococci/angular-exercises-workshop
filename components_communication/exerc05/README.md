@@ -23,3 +23,15 @@ before the lines where the default styles for that application are indicated:
 ```text
 "src/styles.sass"
 ```
+
+### after creating directory components inside directory app, I typed the following shell commands
+
+```shell
+ng generate component
+```
+
+## Now I develop the application code and finally, I boot into development mode
+
+```shell
+ng serve -o
+```
