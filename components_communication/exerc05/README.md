@@ -27,7 +27,7 @@ before the lines where the default styles for that application are indicated:
 ### after creating directory components inside directory app, I typed the following shell commands
 
 ```shell
-ng generate component
+ng generate component gallery
 ```
 
 ## Now I develop the application code and finally, I boot into development mode
