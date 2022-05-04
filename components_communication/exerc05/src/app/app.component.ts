@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { GalleryComponent } from './gallery/gallery.component'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'exerc05';
+  title = 'exerc05'
+
+  addImage(gallery: GalleryComponent): void {
+    console.log('added new image')
+  }
+
 }
