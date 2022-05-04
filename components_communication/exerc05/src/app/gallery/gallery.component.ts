@@ -14,6 +14,7 @@ export class GalleryComponent implements OnInit {
   ngOnInit(): void {
     this.images = new Array(5).fill(0).map(this.retrieveImage)
   }
+
   retrieveImage(): string {
     throw new Error('Method not implemented.')
   }
