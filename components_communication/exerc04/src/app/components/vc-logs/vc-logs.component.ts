@@ -15,15 +15,15 @@ import {
 export class VcLogsComponent implements OnInit, OnChanges {
 
   @Input()
-  vName!: string;
+  vName!: string
 
   logs: string[] = []
 
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    const presentValue = changes[this.vName].currentValue
-    if (changes[this.vName].isFirstChange()) {
+    const presentValue = changes['vName'].currentValue
+    if (changes['vName'].isFirstChange()) {
       this.logs.push(`first version is: ${presentValue.trim()}`)
     } else {
       this.logs.push(`version is changed to: ${presentValue.trim()}`)
