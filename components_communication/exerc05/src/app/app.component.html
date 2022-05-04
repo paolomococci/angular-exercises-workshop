@@ -259,7 +259,15 @@
   </div>
 
   <div class="content" role="main">
-    <app-gallery></app-gallery>
+    <div class="gallery-tools">
+      <button class="btn btn-success" (click)="addImage(gallery)">
+        add
+      </button>
+      <button class="btn btn-danger" (click)="removeImage(gallery)">
+        remove
+      </button>
+    </div>
+    <app-gallery #gallery></app-gallery>
   </div>
 
 </div>
