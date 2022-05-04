@@ -15,6 +15,7 @@ export class AppComponent {
   }
 
   removeImage(gallery: GalleryComponent): void {
+    gallery.images.shift()
     console.log('removed an image')
   }
 
