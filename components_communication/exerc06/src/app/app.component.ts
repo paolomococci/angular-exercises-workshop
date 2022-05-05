@@ -1,4 +1,7 @@
-import { Component } from '@angular/core'
+import {
+  Component,
+  ViewChild
+} from '@angular/core'
 import { GalleryComponent } from './components/gallery/gallery.component'
 
 @Component({
@@ -7,16 +10,20 @@ import { GalleryComponent } from './components/gallery/gallery.component'
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'exerc06';
+  title = 'exerc06'
+  
+  @ViewChild(GalleryComponent) gallery: any
 
-  addImage(gallery: GalleryComponent): void {
+  addImage(): void {
     console.log('retrieved a new image')
-    gallery.images.unshift(gallery.retrieveImage())
+    this.gallery.images.unshift(
+      this.gallery.retrieveImage()
+    )
   }
 
-  removeImage(gallery: GalleryComponent): void {
-    gallery.images.shift()
+  removeImage(): void {
     console.log('removed an image')
+    this.gallery.images.shift()
   }
 
 }
