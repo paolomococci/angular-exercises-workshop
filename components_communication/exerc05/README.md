@@ -25,7 +25,7 @@ before the lines where the default styles for that application are indicated:
 "src/styles.sass"
 ```
 
-### after creating directory components inside directory app, I typed the following shell commands
+## after creating directory components inside directory app, I typed the following shell commands
 
 ```shell
 ng generate component gallery
