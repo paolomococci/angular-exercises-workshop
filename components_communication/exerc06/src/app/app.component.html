@@ -259,7 +259,15 @@
   </div>
 
   <div class="content" role="main">
-    <!-- todo -->
+    <div class="gallery-tools">
+      <button class="btn btn-outline-success" (click)="addImage(gallery)">
+        add image
+      </button>
+      <button class="btn btn-outline-danger" (click)="removeImage(gallery)">
+        remove image
+      </button>
+    </div>
+    <app-gallery #gallery></app-gallery>
   </div>
 
 </div>
