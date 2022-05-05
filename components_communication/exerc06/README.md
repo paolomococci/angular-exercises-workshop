@@ -30,3 +30,9 @@ before the lines where the default styles for that application are indicated:
 ```shell
 ng generate component gallery
 ```
+
+## now I develop the application code and finally, I boot into development mode
+
+```shell
+ng serve -o
+```
