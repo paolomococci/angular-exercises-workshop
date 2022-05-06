@@ -38,3 +38,9 @@ ng generate component components/chirping-card
 ```shell
 ng g enum enums/social-card-type
 ```
+
+## now I boot into development mode this exercise
+
+```shell
+ng serve -o
+```
