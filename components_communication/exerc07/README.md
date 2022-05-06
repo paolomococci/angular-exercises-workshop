@@ -29,4 +29,5 @@ before the lines where the default styles for that application are indicated:
 
 ```shell
 ng generate component components/profile-card
+ng generate component components/social-card
 ```
