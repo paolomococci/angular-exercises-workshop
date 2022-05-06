@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
-import { SocialCardComponent } from './components/social-card/social-card.component'
+import { SocialCardComponent } from './components/social-card/social-card.component';
+import { ChirpingCardComponent } from './components/chirping-card/chirping-card.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileCardComponent,
-    SocialCardComponent
+    SocialCardComponent,
+    ChirpingCardComponent
   ],
   imports: [
     BrowserModule,
