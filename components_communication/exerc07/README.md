@@ -32,3 +32,9 @@ ng generate component components/profile-card
 ng generate component components/social-card
 ng generate component components/chirping-card
 ```
+
+## after creating directory enums inside directory app, I typed the following shell commands
+
+```shell
+ng g enum enums/social-card-type
+```
