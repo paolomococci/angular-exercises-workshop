@@ -39,7 +39,13 @@ export class SocialCardComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges) {
+    if (changes['socialCardType'].currentValue !== undefined) {
+      this.loadDynamicComponent(changes['socialCardType'].currentValue)
+    }
+  }
 
+  loadDynamicComponent(currentValue: any) {
+    throw new Error('Method not implemented.')
   }
 
 }
