@@ -9,6 +9,8 @@ import {
   SimpleChange
 } from '@angular/core'
 
+import { SocialCardType } from "../../enums/social-card-type"
+
 @Component({
   selector: 'app-social-card',
   templateUrl: './social-card.component.html',
