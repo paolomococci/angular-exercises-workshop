@@ -1,4 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnChanges,
+  Input,
+  ComponentFactoryResolver,
+  ViewChild,
+  ViewContainerRef,
+  SimpleChange
+} from '@angular/core';
 
 @Component({
   selector: 'app-social-card',
