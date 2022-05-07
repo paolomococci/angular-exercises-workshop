@@ -45,6 +45,7 @@ export class SocialCardComponent implements OnInit {
   }
 
   loadDynamicComponent(currentValue: any) {
+    // todo
     throw new Error('Method not implemented.')
   }
 
