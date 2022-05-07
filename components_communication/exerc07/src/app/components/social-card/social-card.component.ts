@@ -44,7 +44,8 @@ export class SocialCardComponent implements OnInit {
     }
   }
 
-  loadDynamicComponent(currentValue: any) {
+  loadDynamicComponent(sct: SocialCardType) {
+    let component
     // todo
     throw new Error('Method not implemented.')
   }
