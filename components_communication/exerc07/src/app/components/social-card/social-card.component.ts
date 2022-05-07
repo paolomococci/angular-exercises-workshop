@@ -31,6 +31,8 @@ export class SocialCardComponent implements OnInit {
   )
   containerViewReference!: ViewContainerRef
 
+  cardType!: SocialCardType
+
   constructor() { }
 
   ngOnInit(): void {
