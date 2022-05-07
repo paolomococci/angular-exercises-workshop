@@ -29,7 +29,7 @@ export class SocialCardComponent implements OnInit {
       read: ViewContainerRef
     }
   )
-  containerViewReference: ViewContainerRef
+  containerViewReference!: ViewContainerRef
 
   constructor() { }
 
