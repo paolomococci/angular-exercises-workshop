@@ -10,6 +10,7 @@ import {
 } from '@angular/core'
 
 import { SocialCardType } from "../../enums/social-card-type"
+import { ProfileCardComponent } from "../profile-card/profile-card.component"
 
 @Component({
   selector: 'app-social-card',
