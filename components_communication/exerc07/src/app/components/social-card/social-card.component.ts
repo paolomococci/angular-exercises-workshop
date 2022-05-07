@@ -6,7 +6,7 @@ import {
   ComponentFactoryResolver,
   ViewChild,
   ViewContainerRef,
-  SimpleChange
+  SimpleChanges
 } from '@angular/core'
 
 import { SocialCardType } from "../../enums/social-card-type"
@@ -36,6 +36,10 @@ export class SocialCardComponent implements OnInit {
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+
   }
 
 }
