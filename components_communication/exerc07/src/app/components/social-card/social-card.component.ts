@@ -20,6 +20,9 @@ import { ChirpingCardComponent } from "../chirping-card/chirping-card.component"
 })
 export class SocialCardComponent implements OnInit {
 
+  @Input()
+  socialCardType!: SocialCardType
+
   constructor() { }
 
   ngOnInit(): void {
