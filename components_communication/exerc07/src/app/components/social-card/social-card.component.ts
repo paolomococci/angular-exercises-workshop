@@ -23,6 +23,14 @@ export class SocialCardComponent implements OnInit {
   @Input()
   socialCardType!: SocialCardType
 
+  @ViewChild(
+    'containerViewReference',
+    {
+      read: ViewContainerRef
+    }
+  )
+  containerViewReference: ViewContainerRef
+
   constructor() { }
 
   ngOnInit(): void {
