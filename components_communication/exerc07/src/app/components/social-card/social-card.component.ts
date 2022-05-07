@@ -33,7 +33,7 @@ export class SocialCardComponent implements OnInit {
 
   cardType!: SocialCardType
 
-  constructor() { }
+  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
   ngOnInit(): void {
   }
