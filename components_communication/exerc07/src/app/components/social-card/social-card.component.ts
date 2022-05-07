@@ -46,6 +46,14 @@ export class SocialCardComponent implements OnInit {
 
   loadDynamicComponent(sct: SocialCardType) {
     let component
+    switch (sct) {
+      case SocialCardType.Profile:
+
+        break;
+
+      default:
+        break;
+    }
     // todo
     throw new Error('Method not implemented.')
   }
