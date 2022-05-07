@@ -7,7 +7,7 @@ import {
   ViewChild,
   ViewContainerRef,
   SimpleChange
-} from '@angular/core';
+} from '@angular/core'
 
 @Component({
   selector: 'app-social-card',
