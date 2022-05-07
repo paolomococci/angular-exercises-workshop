@@ -1,3 +1,4 @@
 export enum SocialCardType {
-  Profile
+  Profile,
+  Chirping
 }
