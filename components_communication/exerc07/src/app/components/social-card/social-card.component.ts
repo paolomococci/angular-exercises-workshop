@@ -11,6 +11,7 @@ import {
 
 import { SocialCardType } from "../../enums/social-card-type"
 import { ProfileCardComponent } from "../profile-card/profile-card.component"
+import { ChirpingCardComponent } from "../chirping-card/chirping-card.component"
 
 @Component({
   selector: 'app-social-card',
