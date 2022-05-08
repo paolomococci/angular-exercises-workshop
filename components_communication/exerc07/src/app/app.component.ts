@@ -10,4 +10,8 @@ export class AppComponent {
   title = 'exerc07'
 
   selectedCardType!: SocialCardType
+
+  cardTypes = SocialCardType
+
+
 }
