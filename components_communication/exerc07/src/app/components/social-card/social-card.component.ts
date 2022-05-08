@@ -48,7 +48,10 @@ export class SocialCardComponent implements OnInit {
     let component
     switch (sct) {
       case SocialCardType.Profile:
-
+        component = ProfileCardComponent
+        break;
+      case SocialCardType.Chirping:
+        component = ChirpingCardComponent
         break;
 
       default:
