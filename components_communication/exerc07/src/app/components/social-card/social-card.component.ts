@@ -50,15 +50,13 @@ export class SocialCardComponent implements OnInit {
       case SocialCardType.Profile:
         component = ProfileCardComponent
         break;
-      case SocialCardType.Chirping:
+      default:
         component = ChirpingCardComponent
         break;
-
-      default:
-        break;
     }
-    // todo
-    throw new Error('Method not implemented.')
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(component)
+    this.containerViewReference.clear()
+    this.containerViewReference.createComponent(componentFactory)
   }
 
 }
