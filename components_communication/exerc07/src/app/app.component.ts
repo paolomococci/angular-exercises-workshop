@@ -13,5 +13,5 @@ export class AppComponent {
 
   cardTypes = SocialCardType
 
-
+  setCardType(socialCardType: SocialCardType) {}
 }
