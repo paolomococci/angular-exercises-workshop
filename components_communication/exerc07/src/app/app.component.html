@@ -262,22 +262,20 @@
     <div class="type-choose">
       <h5>choose a social card</h5>
       <div class="type-choose__options">
-        <div class="type-choose__options__option">
-          <button>
-            <div></div>
+        <div class="type-choose__options__option" (click)="setCardType(cardTypes.Profile)">
+          <button class="btn" [ngClass]="selectedCardType === cardTypes.Profile ? 'btn-primary' : 'btn-light'">
             Profile
           </button>
         </div>
-        <div class="type-choose__options__option">
-          <button>
-            <div></div>
+        <div class="type-choose__options__option" (click)="setCardType(cardTypes.Chirping)">
+          <button class="btn" [ngClass]="selectedCardType === cardTypes.Chirping ? 'btn-primary' : 'btn-light'">
             Chirping
           </button>
         </div>
       </div>
-    </div>>
+    </div>
   </div>
-
+  <app-social-card [socialCardType]="selectedCardType"></app-social-card>
 </div>
 
 <router-outlet></router-outlet>
