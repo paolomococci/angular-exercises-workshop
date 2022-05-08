@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { SocialCardType } from './enums/social-card-type'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'exerc07'
+
+  selectedCardType!: SocialCardType
 }
