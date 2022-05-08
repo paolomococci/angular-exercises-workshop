@@ -1,4 +1,6 @@
-# exerc07
+# exerc07, create a dynamic component
+
+Please note: ComponentFactoryResolver is deprecated!
 
 ## scaffolding
 
