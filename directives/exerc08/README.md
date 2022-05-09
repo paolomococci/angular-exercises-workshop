@@ -9,7 +9,7 @@ ng new exerc08 -v -S -g --routing --style=sass
 ## I'm adding Bootstrap support in this exercise
 
 ```shell
-cd exerc07
+cd exerc08
 ng add ngx-bootstrap
 ```
 
