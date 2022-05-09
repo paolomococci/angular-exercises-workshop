@@ -1,4 +1,4 @@
-# exerc08
+# exerc08, handle the appearance of an element using attribute directive
 
 ## scaffolding
 
