@@ -25,6 +25,13 @@ before the lines where the default styles for that application are indicated:
 "src/styles.sass"
 ```
 
+## or I can copy this template into a working directory, and then issue the following commands
+
+```shell
+cd template01
+npm install
+```
+
 ## now I boot into development mode this exercise
 
 ```shell
