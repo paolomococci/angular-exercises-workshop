@@ -6,7 +6,7 @@
 ng new login -v -S -g --routing --style=sass
 ```
 
-## I'm adding Bootstrap support in this exercise
+## I'm adding Bootstrap support in this template
 
 ```shell
 cd login
@@ -32,7 +32,7 @@ cd template01
 npm install
 ```
 
-## now I boot into development mode this exercise
+## now I boot into development mode this template
 
 ```shell
 ng serve -o
