@@ -1,15 +1,15 @@
-# template01
+# welcome
 
 ## scaffolding
 
 ```shell
-ng new template01 -v -S -g --routing --style=sass
+ng new welcome -v -S -g --routing --style=sass
 ```
 
-## I'm adding Bootstrap support in this exercise
+## I'm adding Bootstrap support in this template
 
 ```shell
-cd template01
+cd welcome
 ng add ngx-bootstrap
 ```
 
@@ -28,11 +28,11 @@ before the lines where the default styles for that application are indicated:
 ## or I can copy this template into a working directory, and then issue the following commands
 
 ```shell
-cd template01
+cd welcome
 npm install
 ```
 
-## now I boot into development mode this exercise
+## now I boot into development mode this template
 
 ```shell
 ng serve -o
