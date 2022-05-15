@@ -67,7 +67,97 @@
     </nav>
   </header>
   <main>
-
+    <div id="carousel01" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>left headline</title>
+            <rect width="100%" height="100%" fill="#777"/>
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>left headline</h1>
+              <p>Some text of left carousel item.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">view now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>center headline</title>
+          <rect width="100%" height="100%" fill="#777"/>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>center headline</h1>
+            <p>Some text of center carousel item.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">view now</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>right headline</title>
+          <rect width="100%" height="100%" fill="#777"/>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>right headline</h1>
+            <p>Some text of right carousel item.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">view now</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel01" data-bs-slide="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+          <title>previous</title>
+          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel01" data-bs-slide="next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <title>next</title>
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+            <title>first column</title>
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+          </svg>
+          <h2 class="fw-normal">first</h2>
+          <p>Sample content of the first column.</p>
+          <p><a class="btn btn-secondary" href="#">view details</a></p>
+        </div>
+        <div class="col-lg-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" fill="currentColor" class="bi bi-chat-square-dots-fill" viewBox="0 0 16 16">
+            <title>second column</title>
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+          </svg>
+          <h2 class="fw-normal">second</h2>
+          <p>Sample content of the second column.</p>
+          <p><a class="btn btn-secondary" href="#">view details</a></p>
+        </div>
+        <div class="col-lg-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+            <title>third column</title>
+            <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+          <h2 class="fw-normal">first</h2>
+          <p>Sample content of the third column.</p>
+          <p><a class="btn btn-secondary" href="#">view details</a></p>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
 
