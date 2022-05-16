@@ -135,22 +135,87 @@
         </ul>
       </div>
     </nav>
-    <main>
-      <div>
-        <h1></h1>
-        <div>
-          <div>
-            <button></button>
-            <button></button>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h2 class="h2">dashboard</h2>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">export</button>
           </div>
-          <button></button>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+              <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+              <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+            week plan
+          </button>
         </div>
       </div>
-      <canvas></canvas>
-      <h2></h2>
-      <div>
-        <table>
-
+      <canvas class="my-4 w-100" id="planChart" width="900" height="380"></canvas>
+      <h3>planning</h3>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>monday</th>
+              <th>tuesday</th>
+              <th>wednesday</th>
+              <th>thursday</th>
+              <th>friday</th>
+              <th>saturday</th>
+              <th>sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+            </tr>
+            <tr>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+            </tr>
+            <tr>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+            </tr>
+            <tr>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+              <td>todo</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>monday</th>
+              <th>tuesday</th>
+              <th>wednesday</th>
+              <th>thursday</th>
+              <th>friday</th>
+              <th>saturday</th>
+              <th>sunday</th>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </main>
