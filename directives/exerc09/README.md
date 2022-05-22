@@ -32,7 +32,7 @@ cd exerc09
 npm install
 ```
 
-### now I boot into development mode this template
+### now I boot into development mode this exercise
 
 ```shell
 ng serve -o
