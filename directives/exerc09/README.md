@@ -6,7 +6,7 @@
 ng new exerc09 -v -S -g --routing --style=sass
 ```
 
-## I'm adding Bootstrap support in this template
+## I'm adding Bootstrap support in this exercise
 
 ```shell
 cd exerc09
@@ -25,7 +25,7 @@ before the lines where the default styles for that application are indicated:
 "src/styles.sass"
 ```
 
-### or I can copy this template into a working directory, and then issue the following commands
+### or I can copy this exercise into a working directory, and then issue the following commands
 
 ```shell
 cd exerc09
