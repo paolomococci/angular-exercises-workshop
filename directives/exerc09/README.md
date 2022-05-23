@@ -32,6 +32,12 @@ cd exerc09
 npm install
 ```
 
+### at this point I add the directives directory inside the app directory and type the following command
+
+```shell
+ng g d directives/highlight
+```
+
 ### now I boot into development mode this exercise
 
 ```shell
