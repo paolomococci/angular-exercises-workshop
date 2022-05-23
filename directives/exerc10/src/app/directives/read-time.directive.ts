@@ -1,4 +1,11 @@
-import { Directive } from '@angular/core'
+import {
+  Directive,
+  Input
+} from '@angular/core'
+
+export interface ReadTimeConfig {
+  wordsPerMinute: number
+}
 
 @Directive({
   selector: '[appReadTime]'
