@@ -4,7 +4,7 @@ import {
   Input,
   OnChanges,
   SimpleChanges
-} from '@angular/core';
+} from '@angular/core'
 
 @Directive({
   selector: '[appHighlight]'
