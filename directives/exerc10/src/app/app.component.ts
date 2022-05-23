@@ -7,4 +7,9 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'exerc10'
+  readTime!: string
+
+  onReadTimeComputed(readTimeString: string) {
+    this.readTime = readTimeString
+  }
 }
