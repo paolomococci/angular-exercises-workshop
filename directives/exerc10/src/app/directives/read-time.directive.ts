@@ -12,7 +12,7 @@ export interface ReadTimeConfig {
 @Directive({
   selector: '[appReadTime]'
 })
-export class ReadTimeDirective {
+export class ReadTimeDirective implements OnInit {
 
   @Input() configuration: ReadTimeConfig = {
     wordsPerMinute: 80
