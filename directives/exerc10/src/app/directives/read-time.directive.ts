@@ -31,8 +31,14 @@ export class ReadTimeDirective implements OnInit {
     return Math.ceil(wordsCount/this.configuration.wordsPerMinute)
   }
 
-  createTimeString(timeInMinutes: number) {
-    throw new Error('Method not implemented.')
+  createTimeString(timeInMinutes: number): string {
+    if (timeInMinutes === 1) {
+      return 'a minute'
+    } else if (timeInMinutes < 1) {
+      return 'less than a minute'
+    } else {
+      return `${timeInMinutes} minutes`
+    }
   }
 
 }
