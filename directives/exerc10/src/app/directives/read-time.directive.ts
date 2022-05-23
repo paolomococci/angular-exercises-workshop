@@ -22,6 +22,7 @@ export class ReadTimeDirective implements OnInit {
 
   ngOnInit() {
     const text = this.elementRef.nativeElement.textContent
+    const time = this.computeReadTime(text)
   }
 
   computeReadTime(text: string) {
