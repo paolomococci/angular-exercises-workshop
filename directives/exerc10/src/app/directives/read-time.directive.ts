@@ -12,6 +12,10 @@ export interface ReadTimeConfig {
 })
 export class ReadTimeDirective {
 
+  @Input() configuration: ReadTimeConfig = {
+    wordsPerMinute: 80
+  }
+
   constructor() { }
 
 }
