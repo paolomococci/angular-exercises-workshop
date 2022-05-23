@@ -9,7 +9,7 @@ import {
 export class HighlightDirective {
 
   @Input() highlightText = ''
-  @Input() highlightColor = ''
+  @Input() highlightColor = '#ff6'
 
   constructor() { }
 
