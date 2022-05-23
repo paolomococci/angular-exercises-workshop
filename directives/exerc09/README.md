@@ -1,4 +1,6 @@
-# exerc09
+# exerc09, using directives this exercise should manipulate element attributes to manage their appearance
+
+exercise to be reviewed
 
 ## scaffolding
 
