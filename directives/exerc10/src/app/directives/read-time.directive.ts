@@ -23,11 +23,16 @@ export class ReadTimeDirective implements OnInit {
   ngOnInit() {
     const text = this.elementRef.nativeElement.textContent
     const time = this.computeReadTime(text)
+    const timeString = this.createTimeString(time)
   }
 
   computeReadTime(text: string) {
     const wordsCount = text.split(/\s+/g).length
     return Math.ceil(wordsCount/this.configuration.wordsPerMinute)
+  }
+
+  createTimeString(timeInMinutes: number) {
+    throw new Error('Method not implemented.')
   }
 
 }
