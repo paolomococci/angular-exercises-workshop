@@ -49,10 +49,10 @@
   <main class="container">
     <div class="bg-light p-5 rounded">
       <h2>two paragraphs written with random text in which to search</h2>
-      <p class="lead">
+      <p class="lead" appHighlight[highlightText]="searchText">
         {{randomText}}
       </p>
-      <p class="lead">
+      <p class="lead" appHighlight[highlightText]="searchText">
         {{makeRandomText(800, "abcdefghijklmnopqrstuvwxyz_-ABCDEFGHIJKLMNOPQRSTUVWXYZ,.;:?!'\n\s")}}
       </p>
       <a class="btn btn-lg btn-primary" href="#" role="button">view docs</a>
