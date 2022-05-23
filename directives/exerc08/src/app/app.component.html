@@ -48,9 +48,13 @@
   </nav>
   <main class="container">
     <div class="bg-light p-5 rounded">
-      <h2>text to search on</h2>
-      <p class="lead">Some text.</p>
-      <p class="lead">More plain text.</p>
+      <h2>two paragraphs written with random text in which to search</h2>
+      <p class="lead">
+        {{randomText}}
+      </p>
+      <p class="lead">
+        {{makeRandomText(800, "abcdefghijklmnopqrstuvwxyz_-ABCDEFGHIJKLMNOPQRSTUVWXYZ,.;:?!'\n\s")}}
+      </p>
       <a class="btn btn-lg btn-primary" href="#" role="button">view docs</a>
     </div>
   </main>
