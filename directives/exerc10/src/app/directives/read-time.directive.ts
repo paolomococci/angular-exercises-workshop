@@ -2,7 +2,9 @@ import {
   Directive,
   Input,
   ElementRef,
-  OnInit
+  OnInit,
+  Output,
+  EventEmitter
 } from '@angular/core'
 
 export interface ReadTimeConfig {
@@ -17,6 +19,8 @@ export class ReadTimeDirective implements OnInit {
   @Input() configuration: ReadTimeConfig = {
     wordsPerMinute: 80
   }
+
+  @Output() readTimeComputed = new EventEmitter<string>()
 
   constructor(private elementRef: ElementRef) { }
 
