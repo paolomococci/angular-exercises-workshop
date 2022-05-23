@@ -1,6 +1,8 @@
 import {
   Directive,
-  Input
+  Input,
+  ElementRef,
+  OnInit
 } from '@angular/core'
 
 export interface ReadTimeConfig {
@@ -16,6 +18,10 @@ export class ReadTimeDirective {
     wordsPerMinute: 80
   }
 
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
+
+  ngOnInit() {
+    const text = this.elementRef.nativeElement.textContent
+  }
 
 }
