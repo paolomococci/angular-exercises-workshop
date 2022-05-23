@@ -1,5 +1,6 @@
 import {
   Directive,
+  ElementRef,
   Input,
   OnChanges,
   SimpleChanges
@@ -13,10 +14,26 @@ export class HighlightDirective implements OnChanges {
   @Input() highlightText = ''
   @Input() highlightColor = '#ff6'
 
-  constructor() { }
+  originalHTML = ''
+
+  constructor(private elementRef: ElementRef) { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    throw new Error('Method not implemented.');
+    if (changes['highlightText'].firstChange) {
+      this.originalHTML = this.elementRef.nativeElement.innerHTML
+      return
+    }
+    const { currentValue } = changes['highlightText']
+    if (currentValue) {
+      const regExp = new RegExp(`(${currentValue})`, 'gi')
+      this.elementRef.nativeElement.innerHTML = this.originalHTML.replace(
+        regExp,
+        `<span style="background-color: ${this.highlightColor}">\$1</span>`
+      )
+    } else {
+      this.elementRef.nativeElement.innerHTML = this.originalHTML
+    }
+    console.log(currentValue)
   }
 
 }
