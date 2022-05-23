@@ -24,4 +24,9 @@ export class ReadTimeDirective implements OnInit {
     const text = this.elementRef.nativeElement.textContent
   }
 
+  computeReadTime(text: string) {
+    const wordsCount = text.split(/\s+/g).length
+    return Math.ceil(wordsCount/this.configuration.wordsPerMinute)
+  }
+
 }
