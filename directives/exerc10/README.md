@@ -25,6 +25,12 @@ before the lines where the default styles for that application are indicated:
 "src/styles.sass"
 ```
 
+### at this point I add the directives directory inside the app directory and type the following command
+
+```shell
+ng g d directives/read-time
+```
+
 ### now I boot into development mode this exercise
 
 ```shell
