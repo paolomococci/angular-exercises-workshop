@@ -1,5 +1,7 @@
 # exerc10
 
+An example of how to implement a directive that is used to calculate the reading time of an article.
+
 ## scaffolding
 
 ```shell
