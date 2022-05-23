@@ -43,7 +43,7 @@
   </nav>
   <main class="container">
     <div class="bg-light p-5 rounded">
-      <div class="content" role="main" id="mainContent">
+      <div class="content" role="main" id="mainContent" appReadTime (readTimeComputed)="onReadTimeComputed($event)">
         <h3>an example paragraph, written to test the search and highlight function of the text</h3>
         <h5>Marcus Tullius Cicero (January 106 BC, December 43 BC)</h5>
         <p class="lead">
