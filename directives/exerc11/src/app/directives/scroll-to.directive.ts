@@ -1,6 +1,7 @@
 import {
   Directive,
-  Input
+  Input,
+  HostListener
 } from '@angular/core'
 
 @Directive({
@@ -9,6 +10,10 @@ import {
 export class ScrollToDirective {
 
   @Input() target = ''
+
+  @HostListener('click') onClick() {
+    console.log(this.target)
+  }
 
   constructor() { }
 
