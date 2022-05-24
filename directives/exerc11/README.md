@@ -24,3 +24,11 @@ before the lines where the default styles for that application are indicated:
 ```text
 "src/styles.sass"
 ```
+
+## now I boot into development mode this exercise
+
+```shell
+ng serve -o
+```
+
+By modifying the source code step by step, I can see the results obtained.
