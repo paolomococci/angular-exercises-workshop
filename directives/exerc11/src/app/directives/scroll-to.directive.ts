@@ -11,9 +11,10 @@ export class ScrollToDirective {
 
   @Input() target = ''
 
-  @HostListener('click') onClick() {
+  @HostListener('click')
+  onClick() {
     const targetElement = document.querySelector(this.target)
-    targetElement?.scrollIntoView({behavior: 'smooth'})
+    targetElement?.scrollIntoView({ behavior: 'smooth' })
   }
 
   constructor() { }
