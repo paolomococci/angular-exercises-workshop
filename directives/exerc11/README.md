@@ -1,4 +1,4 @@
-# exerc11
+# exerc11, basic directive for vertically scroll
 
 ## scaffolding
 
