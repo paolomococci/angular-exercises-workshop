@@ -1,4 +1,4 @@
-# exerc12
+# exerc12, example of structural directive
 
 ## scaffolding
 
