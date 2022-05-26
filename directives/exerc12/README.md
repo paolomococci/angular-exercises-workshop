@@ -38,5 +38,5 @@ By modifying the source code step by step, I can see the results obtained.
 ### at this point I add the directives directory inside the app directory and type the following command
 
 ```shell
-ng g d directives/scroll-to
+ng g d directives/if-not
 ```
