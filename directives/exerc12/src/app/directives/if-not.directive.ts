@@ -11,7 +11,7 @@ import {
 export class IfNotDirective {
 
   @Input() set appIfNot(value: boolean) {
-    if (value === false) {
+    if (value === true) {
       this.viewContainerRef.createEmbeddedView(this.templateRef)
     } else {
       this.viewContainerRef.clear()
