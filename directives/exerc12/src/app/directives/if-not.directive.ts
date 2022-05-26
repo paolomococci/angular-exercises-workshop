@@ -1,6 +1,8 @@
 import {
   Directive,
-  Input
+  Input,
+  TemplateRef,
+  ViewContainerRef
 } from '@angular/core'
 
 @Directive({
@@ -12,6 +14,9 @@ export class IfNotDirective {
     console.log(`appIfNot value is: ${value}`)
   }
 
-  constructor() { }
+  constructor(
+    private templateRef: TemplateRef<any>,
+    private viewContainerRef: ViewContainerRef
+  ) { }
 
 }
