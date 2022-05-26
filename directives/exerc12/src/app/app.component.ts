@@ -16,6 +16,8 @@ enum Visibility {
 export class AppComponent implements OnInit {
   title = 'exerc12'
 
+  visibility!: Visibility
+
   ngOnInit(): void {
     throw new Error('Method not implemented.')
   }
