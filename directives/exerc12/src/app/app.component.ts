@@ -20,6 +20,10 @@ export class AppComponent implements OnInit {
   VISIBILITY = Visibility
 
   ngOnInit(): void {
+    this.setVisibility(this.VISIBILITY.Off)
+  }
+
+  setVisibility(Off: Visibility) {
     throw new Error('Method not implemented.')
   }
 
