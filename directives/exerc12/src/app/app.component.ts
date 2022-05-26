@@ -1,5 +1,10 @@
 import { Component } from '@angular/core'
 
+enum Visibility {
+  On = 'on',
+  Off = 'off'
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
