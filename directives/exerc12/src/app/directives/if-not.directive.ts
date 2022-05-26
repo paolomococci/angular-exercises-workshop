@@ -8,7 +8,9 @@ import {
 })
 export class IfNotDirective {
 
-  @Input() set appIfNot(value: boolean) {}
+  @Input() set appIfNot(value: boolean) {
+    console.log(`appIfNot value is: ${value}`)
+  }
 
   constructor() { }
 
