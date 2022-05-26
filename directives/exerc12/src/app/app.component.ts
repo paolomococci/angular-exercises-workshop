@@ -23,8 +23,8 @@ export class AppComponent implements OnInit {
     this.setVisibility(this.VISIBILITY.Off)
   }
 
-  setVisibility(Off: Visibility) {
-    throw new Error('Method not implemented.')
+  setVisibility(visibility: Visibility) {
+    this.visibility = visibility
   }
 
   makeRandomText(
