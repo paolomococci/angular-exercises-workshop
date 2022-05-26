@@ -42,11 +42,25 @@
     </div>
   </nav>
   <main class="container">
-    <div class="bg-light p-5 rounded" id="resources" *appIfNot="visibility === VISIBILITY.On">
-      <h2>a paragraph generated using pseudo-random text</h2>
-      <p class="lead">
-        {{randomText}}
-      </p>
+    <div class="bg-light p-5 rounded">
+      <div class="content__toggle-actions">
+        <h2 class="content__toggle-actions__heading">
+          a paragraph generated using pseudo-random text, of which the visibility is {{visibility}}
+        </h2>
+        <button
+          class="btn content__toggle-actions__action"
+          [ngClass]="visibility === VISIBILITY.On ? 'btn btn-outline-info' : 'btn-light'"
+          (click)="setVisibility(VISIBILITY.On)">on</button>
+        <button
+          class="btn content__toggle-actions__action"
+          [ngClass]="visibility === VISIBILITY.Off ? 'btn btn-outline-warning' : 'btn-light'"
+          (click)="setVisibility(VISIBILITY.Off)">off</button>
+        <div class="page-section" id="resources" *appIfNot="visibility === VISIBILITY.On">
+          <p class="lead">
+            {{randomText}}
+          </p>
+        </div>
+      </div>
       <a class="btn btn-lg btn-primary" href="#" role="button">view docs</a>
     </div>
     <div class="to-top-button">
