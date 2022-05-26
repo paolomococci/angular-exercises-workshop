@@ -32,3 +32,5 @@ before the lines where the default styles for that application are indicated:
 ```shell
 ng serve -o
 ```
+
+By modifying the source code step by step, I can see the results obtained.
