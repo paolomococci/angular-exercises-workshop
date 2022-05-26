@@ -1,4 +1,7 @@
-import { Component } from '@angular/core'
+import {
+  Component,
+  OnInit
+} from '@angular/core'
 
 enum Visibility {
   On = 'on',
@@ -10,8 +13,12 @@ enum Visibility {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'exerc12'
+
+  ngOnInit(): void {
+    throw new Error('Method not implemented.')
+  }
 
   makeRandomText(
     lengthOfText: number,
