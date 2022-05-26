@@ -42,7 +42,7 @@
     </div>
   </nav>
   <main class="container">
-    <div class="bg-light p-5 rounded">
+    <div class="bg-light p-5 rounded" id="resources" *appIfNot="visibility === VISIBILITY.On">
       <h2>a paragraph generated using pseudo-random text</h2>
       <p class="lead">
         {{randomText}}
