@@ -9,14 +9,12 @@
     {{title}}
   </span>
     <div class="spacer"></div>
-
 </header>
 
 <main class="content" role="main">
 
-  <!-- Highlight Card -->
+  <!-- Card -->
   <div class="card highlight-card card-small">
-
     <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
       <title>Rocket Ship</title>
       <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
@@ -34,13 +32,19 @@
       <title>Rocket Ship Smoke</title>
       <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
     </svg>
-
   </div>
+
+  <section>
+    <ng-template #bucketEmptyMessage>
+      <div class="fruit__no-items-msg">
+        add some item
+      </div>
+    </ng-template>
+  </section>
 
 </main>
 
 <footer>
-
 </footer>
 
 <router-outlet></router-outlet>
