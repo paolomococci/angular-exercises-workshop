@@ -1,7 +1,5 @@
 # exerc12, example of structural directive
 
-TODO
-
 ## scaffolding
 
 ```shell
