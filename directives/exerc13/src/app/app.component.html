@@ -34,12 +34,41 @@
     </svg>
   </div>
 
-  <section>
-    <ng-template #bucketEmptyMessage>
-      <div class="fruit__no-items-msg">
-        add some item
+  <section class="add-section">
+    <div class="input-group">
+      <select class="custom-select" [(ngModel)]="selectedFruit" id="inputGroupSelect04" aria-label="Example select with button addon">
+        <option selected value="">choose...</option>
+        <option *ngFor="let fruit of fruits" value="{{ fruit }}">
+          {{fruit}}
+        </option>
+      </select>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" [disabled]="!selectedFruit" (click)="addSelectedFruitToBasket()">
+          put in the basket
+        </button>
       </div>
-    </ng-template>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <h3>basket</h3>
+    <div class="fruits">
+      <ng-container *ngIf="basket.length > 0; else basketEmptyMessage">
+        <div class="fruits__item" *ngFor="let item of basket">
+          <div class="fruits__item__title">
+            {{ item.name }}
+          </div>
+          <div class="fruites__item__delete-icon" (click)="deleteFromBasket(item)">
+            <div class="material-icons">delete</div>
+          </div>
+        </div>
+      </ng-container>
+      <ng-template #basketEmptyMessage>
+        <div class="fruit__no-items-msg">
+          add some item
+        </div>
+      </ng-template>
+    </div>
   </section>
 
 </main>
