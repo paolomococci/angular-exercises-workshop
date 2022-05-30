@@ -10,6 +10,12 @@ ng new template -v -S -g --routing --style=sass
 ng add @angular/material
 ```
 
+### Or, if you already have this project template, remember to type the following command inside the root directory of the same:
+
+```shell
+npm install
+```
+
 ## now I boot into development mode this example
 
 ```shell
