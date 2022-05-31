@@ -27,7 +27,17 @@
     </svg>
 
     <!-- component in question -->
-    TODO
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>number</mat-label>
+        <input type="text" placeholder="pick a number" aria-label="number" matInput>
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option>
+            todo
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>
