@@ -2,6 +2,7 @@ import {
   Component,
   OnInit
 } from '@angular/core'
+
 import { FormControl } from '@angular/forms'
 import {Observable} from 'rxjs'
 import {
@@ -14,27 +15,38 @@ import {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'autocomplete'
 
-  formControl = new FormControl()
+  control = new FormControl()
 
   options: string[] = [
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine'
   ]
 
   filteredOptions!: Observable<string[]>
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.filteredOptions = this.control.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value))
+    )
+  }
 
   private _filter(value: string): string[] {
-    return []
+    const filterValue = value.toLowerCase()
+    return this.options.filter(
+      option => option.toLowerCase().includes(
+        filterValue
+      )
+    )
   }
 }
