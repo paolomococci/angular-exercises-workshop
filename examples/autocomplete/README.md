@@ -1,5 +1,7 @@
 # autocomplete
 
+This example does not work as expected, please review.
+
 ```shell
 ng new autocomplete -v -S -g --routing --style=sass
 ```
