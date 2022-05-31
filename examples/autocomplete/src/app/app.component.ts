@@ -1,4 +1,13 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core'
+import { FormControl } from '@angular/forms'
+import {Observable} from 'rxjs'
+import {
+  map,
+  startWith
+} from 'rxjs/operators'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +16,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'autocomplete'
+
+  formControl = new FormControl()
+
+  options: string[] = [
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    ''
+  ]
+
+  filteredOptions!: Observable<string[]>
+
+  ngOnInit() {}
+
+  private _filter(value: string): string[] {
+    return []
+  }
 }
