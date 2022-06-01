@@ -1,10 +1,12 @@
 # navigation
 
+How to use Angular Schematics.
+
 ```shell
 ng new navigation -v -S -g --routing --style=sass
 ```
 
-### I install Angular Material to this example
+### I install Angular Material to this scheme
 
 ```shell
 ng add @angular/material
@@ -16,7 +18,13 @@ ng add @angular/material
 npm install
 ```
 
-## now I boot into development mode this example
+## now I add the component of interest
+
+```shell
+ng generate @angular/material:navigation components/navigation
+```
+
+## and I boot into development mode this scheme
 
 ```shell
 ng serve -o
