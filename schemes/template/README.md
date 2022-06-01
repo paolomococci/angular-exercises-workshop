@@ -16,6 +16,12 @@ ng add @angular/material
 npm install
 ```
 
+## now I add the component of interest
+
+```shell
+ng generate @angular/material:<name-of-schematics-components> components/<name-of-the-component-to-add>
+```
+
 ## now I boot into development mode this example
 
 ```shell
