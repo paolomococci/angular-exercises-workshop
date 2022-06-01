@@ -1,10 +1,12 @@
 # sample
 
+How to use Angular Schematics.
+
 ```shell
 ng new sample -v -S -g --routing --style=sass
 ```
 
-### I install Angular Material to this example
+### I install Angular Material to this scheme
 
 ```shell
 ng add @angular/material
@@ -22,7 +24,7 @@ npm install
 ng generate @angular/material:<name-of-schematics-components> components/<name-of-the-component-to-add>
 ```
 
-## now I boot into development mode this example
+## now I boot into development mode this scheme
 
 ```shell
 ng serve -o
