@@ -21,7 +21,7 @@ npm install
 ## now I add the component of interest
 
 ```shell
-ng generate @angular/material:<name-of-schematics-components> components/<name-of-the-component-to-add>
+ng generate @angular/material:tree components/tree
 ```
 
 ## now I boot into development mode this scheme
