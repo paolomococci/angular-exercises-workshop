@@ -9,6 +9,10 @@ export class SampleComponent implements OnInit {
 
   hidden: boolean = false
 
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden
+  }
+
   constructor() { }
 
   ngOnInit(): void {
