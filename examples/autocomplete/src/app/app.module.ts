@@ -14,7 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { SampleComponent } from './components/sample/sample.component'
-import { MatOption } from '@angular/material/core'
+import {MatCommonModule} from '@angular/material/core'
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { MatOption } from '@angular/material/core'
     FormsModule,
     ReactiveFormsModule,
     MatAutocompleteModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
