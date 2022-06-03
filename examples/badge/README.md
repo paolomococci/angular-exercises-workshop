@@ -16,6 +16,12 @@ ng add @angular/material
 npm install
 ```
 
+## create the component for the element in question
+
+```shell
+ng g c components/sample
+```
+
 ## now I boot into development mode this example
 
 ```shell
