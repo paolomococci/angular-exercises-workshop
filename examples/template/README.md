@@ -1,7 +1,7 @@
-# template
+# sample
 
 ```shell
-ng new template -v -S -g --routing --style=sass
+ng new sample -v -S -g --routing --style=sass
 ```
 
 ### I install Angular Material to this example
@@ -10,7 +10,7 @@ ng new template -v -S -g --routing --style=sass
 ng add @angular/material
 ```
 
-### Or, if you already have this project template, remember to type the following command inside the root directory of the same:
+### Or, if you already have this project sample, remember to type the following command inside the root directory of the same:
 
 ```shell
 npm install
