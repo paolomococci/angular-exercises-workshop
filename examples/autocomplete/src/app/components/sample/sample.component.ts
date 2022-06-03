@@ -19,7 +19,7 @@ export class SampleComponent implements OnInit {
 
   constructor() { }
 
-  control = new FormControl()
+  sampleControl: FormControl = new FormControl()
 
   options: string[] = [
     'one',
@@ -36,7 +36,7 @@ export class SampleComponent implements OnInit {
   filteredOptions!: Observable<string[]>
 
   ngOnInit() {
-    this.filteredOptions = this.control.valueChanges.pipe(
+    this.filteredOptions = this.sampleControl.valueChanges.pipe(
       startWith(''),
       map(value => this._filter(value))
     )
