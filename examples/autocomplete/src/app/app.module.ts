@@ -12,11 +12,13 @@ import {
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
-import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { SampleComponent } from './components/sample/sample.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
