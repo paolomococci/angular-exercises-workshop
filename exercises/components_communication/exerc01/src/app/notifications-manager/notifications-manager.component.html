@@ -1,0 +1,16 @@
+<section class="notifications-manager">
+  <div class="notifications-manager__count">
+    notifications count {{count}}
+  </div>
+  <div class="notifications-manager__actions">
+    <button (click)="addNotification()" class="notifications-manager__actions__button">
+      add
+    </button>
+    <button (click)="removeNotification()" class="notifications-manager__actions__button">
+      remove
+    </button>
+    <button (click)="resetCount()" class="notifications-manager__actions__button">
+      reset
+    </button>
+  </div>
+</section>
