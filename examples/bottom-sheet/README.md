@@ -22,6 +22,12 @@ npm install
 ng g c components/bottom-sheet
 ```
 
+and a bottom-sheet component
+
+```shell
+ng g c components/bottom-sheet
+```
+
 ## now I boot into development mode this example
 
 ```shell
