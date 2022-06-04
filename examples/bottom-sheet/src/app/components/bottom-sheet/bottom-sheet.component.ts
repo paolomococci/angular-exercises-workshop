@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core'
 
 @Component({
   selector: 'app-bottom-sheet',
@@ -11,5 +14,7 @@ export class BottomSheetComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  openSheet(): void {}
 
 }
