@@ -4,7 +4,6 @@ import {
 } from '@angular/core'
 
 import {
-  MatBottomSheet,
   MatBottomSheetRef
 } from '@angular/material/bottom-sheet'
 
@@ -15,11 +14,16 @@ import {
 })
 export class BottomSheetComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _bottomSheetRef: MatBottomSheetRef<BottomSheetComponent>
+  ) { }
 
   ngOnInit(): void {
   }
 
-  openSheet(): void {}
+  openSheet(event: MouseEvent): void {
+    this._bottomSheetRef.dismiss()
+    event.preventDefault()
+  }
 
 }
