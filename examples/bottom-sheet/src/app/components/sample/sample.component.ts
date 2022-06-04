@@ -12,4 +12,6 @@ export class SampleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openBottomSheet(): void {}
+
 }
