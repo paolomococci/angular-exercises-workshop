@@ -1,4 +1,8 @@
-# sample
+# sample, app used as a template
+
+Angular version 13.3.0
+
+## scaffolding
 
 ```shell
 ng new sample -v -S -g --routing --style=sass
