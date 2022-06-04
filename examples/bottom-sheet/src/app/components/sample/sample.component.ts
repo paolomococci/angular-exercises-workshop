@@ -4,9 +4,10 @@ import {
 } from '@angular/core'
 
 import {
-  MatBottomSheet,
-  MatBottomSheetRef
+  MatBottomSheet
 } from '@angular/material/bottom-sheet'
+
+import { BottomSheetComponent } from './../bottom-sheet/bottom-sheet.component'
 
 @Component({
   selector: 'app-sample',
@@ -15,11 +16,17 @@ import {
 })
 export class SampleComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _bottomSheet: MatBottomSheet
+  ) { }
 
   ngOnInit(): void {
   }
 
-  openBottomSheet(): void {}
+  openBottomSheet(): void {
+    this._bottomSheet.open(
+      BottomSheetComponent
+    )
+  }
 
 }
