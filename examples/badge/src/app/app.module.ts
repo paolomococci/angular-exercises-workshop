@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { SampleComponent } from './components/sample/sample.component'
-import {MatBadgeModule} from '@angular/material/badge'
+import { MatBadgeModule } from '@angular/material/badge'
+import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {MatBadgeModule} from '@angular/material/badge'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
