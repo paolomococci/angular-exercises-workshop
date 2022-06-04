@@ -6,6 +6,7 @@ import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { SampleComponent } from './components/sample/sample.component'
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet'
+import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
