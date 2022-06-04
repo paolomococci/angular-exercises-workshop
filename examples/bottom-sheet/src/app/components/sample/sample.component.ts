@@ -3,6 +3,11 @@ import {
   OnInit
 } from '@angular/core'
 
+import {
+  MatBottomSheet,
+  MatBottomSheetRef
+} from '@angular/material/bottom-sheet'
+
 @Component({
   selector: 'app-sample',
   templateUrl: './sample.component.html',
