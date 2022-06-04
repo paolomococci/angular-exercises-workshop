@@ -8,6 +8,7 @@ import { SampleComponent } from './components/sample/sample.component'
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet'
 import { MatButtonModule } from '@angular/material/button'
 import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component'
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.com
     AppRoutingModule,
     BrowserAnimationsModule,
     MatBottomSheetModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
