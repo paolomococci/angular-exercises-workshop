@@ -11,4 +11,12 @@
       some action
     </button>
   </p>
+  <p>
+    button toggles badge visibility
+    <button matBadge="4"
+      mat-raised-button color="warn" matBadgePosition="below after" matBadgeColor="primary" matBadgeSize="large"
+      [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+      {{buttonText}}
+    </button>
+  </p>
 </div>
