@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core'
 export class SampleComponent implements OnInit {
 
   hidden: boolean = false
+  buttonText: string = "hide badge"
 
   toggleBadgeVisibility() {
     this.hidden = !this.hidden
+    if (this.buttonText === 'hide badge') {
+      this.buttonText = 'show badge'
+    } else {
+      this.buttonText = 'hide badge'
+    }
   }
 
   constructor() { }
