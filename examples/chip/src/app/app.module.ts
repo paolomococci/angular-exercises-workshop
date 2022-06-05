@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { KindComponent } from './components/kind/kind.component'
 import { MatChipsModule } from '@angular/material/chips'
 import { KindAutocompleteComponent } from './components/kind-autocomplete/kind-autocomplete.component'
+import { KindAvatarComponent } from './components/kind-avatar/kind-avatar.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     KindComponent,
-    KindAutocompleteComponent
+    KindAutocompleteComponent,
+    KindAvatarComponent
   ],
   imports: [
     BrowserModule,
