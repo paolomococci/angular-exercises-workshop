@@ -58,6 +58,12 @@ ng g c components/kind-dnd
 ng g c components/kind-form-control
 ```
 
+## I create app-kind-input component
+
+```shell
+ng g c components/kind-input
+```
+
 ## now I boot into development mode this example
 
 ```shell
