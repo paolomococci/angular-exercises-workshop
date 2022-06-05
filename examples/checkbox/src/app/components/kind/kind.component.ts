@@ -36,6 +36,9 @@ export class KindComponent implements OnInit {
   }
 
   allTaskComplete: boolean = false
+  kindCheckboxDisabled: boolean = false
+  actionText: string = 'tick here to disable the checkbox on the right'
+  kindText: string = "TODO"
 
   constructor() { }
 
@@ -67,6 +70,17 @@ export class KindComponent implements OnInit {
     this.allTaskComplete = this.task.subtasks != null && this.task.subtasks.every(
       task => task.completed
     )
+  }
+
+  setSelected(selected: boolean): void {
+    this.kindCheckboxDisabled = selected
+    if (selected) {
+      this.kindText = 'DONE'
+      this.actionText = 'tick here to enable the checkbox on the right'
+    } else {
+      this.kindText = 'TODO'
+      this.actionText = 'tick here to disable the checkbox on the right'
+    }
   }
 
 }
