@@ -1,4 +1,4 @@
-# checkbox, app used as a template
+# checkbox
 
 Angular version 14.0.0
 
