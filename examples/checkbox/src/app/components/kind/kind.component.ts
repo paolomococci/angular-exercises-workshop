@@ -48,6 +48,16 @@ export class KindComponent implements OnInit {
 
   updateAllTaskComplete(): void {}
 
-  setAll(completed: boolean): void {}
+  setAll(completed: boolean): void {
+    this.allTaskComplete = completed
+    if (this.task.subtasks == null) {
+      return
+    }
+    this.task.subtasks.forEach(
+      task => (
+        task.completed = completed
+      )
+    )
+  }
 
 }
