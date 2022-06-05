@@ -13,7 +13,7 @@ import { Task } from 'src/app/models/task.model'
 export class KindComponent implements OnInit {
 
   task: Task = {
-    name: 'UNASSIGNED',
+    name: 'UNDEFINED',
     completed: false,
     color: undefined,
     subtasks: [
