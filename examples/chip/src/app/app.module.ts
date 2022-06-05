@@ -10,6 +10,7 @@ import { KindAutocompleteComponent } from './components/kind-autocomplete/kind-a
 import { KindAvatarComponent } from './components/kind-avatar/kind-avatar.component'
 import { KindDndComponent } from './components/kind-dnd/kind-dnd.component'
 import { KindFormControlComponent } from './components/kind-form-control/kind-form-control.component'
+import { KindInputComponent } from './components/kind-input/kind-input.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { KindFormControlComponent } from './components/kind-form-control/kind-fo
     KindAutocompleteComponent,
     KindAvatarComponent,
     KindDndComponent,
-    KindFormControlComponent
+    KindFormControlComponent,
+    KindInputComponent
   ],
   imports: [
     BrowserModule,
