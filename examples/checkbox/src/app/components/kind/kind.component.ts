@@ -43,10 +43,13 @@ export class KindComponent implements OnInit {
   }
 
   someComplete(): boolean {
-    return true
+    if (this.task.subtasks == null) {
+      return false
+    }
+    return this.task.subtasks.filter(
+      task => task.completed
+    ).length > 0 && !this.allTaskComplete
   }
-
-  updateAllTaskComplete(): void {}
 
   setAll(completed: boolean): void {
     this.allTaskComplete = completed
@@ -59,5 +62,7 @@ export class KindComponent implements OnInit {
       )
     )
   }
+
+  updateAllTaskComplete(): void {}
 
 }
