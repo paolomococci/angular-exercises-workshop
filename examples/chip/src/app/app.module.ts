@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { KindComponent } from './components/kind/kind.component'
+import { MatChipsModule } from '@angular/material/chips'
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { KindComponent } from './components/kind/kind.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
