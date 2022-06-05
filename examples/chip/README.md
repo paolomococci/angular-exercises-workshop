@@ -40,6 +40,12 @@ ng g interface models/ChipColor --type=model
 ng g c components/kind-autocomplete
 ```
 
+## I create app-kind-avatar component
+
+```shell
+ng g c components/kind-avatar
+```
+
 ## now I boot into development mode this example
 
 ```shell
