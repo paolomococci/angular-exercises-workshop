@@ -6,11 +6,13 @@ import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { KindComponent } from './components/kind/kind.component'
 import { MatChipsModule } from '@angular/material/chips'
+import { KindAutocompleteComponent } from './components/kind-autocomplete/kind-autocomplete.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    KindComponent
+    KindComponent,
+    KindAutocompleteComponent
   ],
   imports: [
     BrowserModule,
