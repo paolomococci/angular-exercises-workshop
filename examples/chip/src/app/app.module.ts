@@ -8,13 +8,15 @@ import { KindComponent } from './components/kind/kind.component'
 import { MatChipsModule } from '@angular/material/chips'
 import { KindAutocompleteComponent } from './components/kind-autocomplete/kind-autocomplete.component'
 import { KindAvatarComponent } from './components/kind-avatar/kind-avatar.component'
+import { KindDndComponent } from './components/kind-dnd/kind-dnd.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     KindComponent,
     KindAutocompleteComponent,
-    KindAvatarComponent
+    KindAvatarComponent,
+    KindDndComponent
   ],
   imports: [
     BrowserModule,
