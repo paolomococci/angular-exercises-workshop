@@ -20,7 +20,7 @@ ng add @angular/material
 npm install
 ```
 
-## create the component for the element in question
+## I create the component for the element in question
 
 ```shell
 ng g c components/sample
