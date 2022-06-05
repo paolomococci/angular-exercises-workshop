@@ -46,6 +46,12 @@ ng g c components/kind-autocomplete
 ng g c components/kind-avatar
 ```
 
+## I create app-kind-dnd component
+
+```shell
+ng g c components/kind-dnd
+```
+
 ## now I boot into development mode this example
 
 ```shell
