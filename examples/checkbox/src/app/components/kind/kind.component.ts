@@ -13,9 +13,26 @@ import { Task } from 'src/app/models/task.model'
 export class KindComponent implements OnInit {
 
   task: Task = {
-    name: 'unassigned',
+    name: 'UNASSIGNED',
     completed: false,
-    color: undefined
+    color: undefined,
+    subtasks: [
+      {
+        name: 'PRIMARY',
+        completed: false,
+        color: 'primary'
+      },
+      {
+        name: 'ACCENT',
+        completed: false,
+        color: 'accent'
+      },
+      {
+        name: 'WARN',
+        completed: false,
+        color: 'warn'
+      },
+    ]
   }
 
   constructor() { }
