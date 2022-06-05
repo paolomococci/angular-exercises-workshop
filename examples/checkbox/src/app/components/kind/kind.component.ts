@@ -42,7 +42,7 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  someComplete(): boolean {
+  someTasksAreComplete(): boolean {
     if (this.task.subtasks == null) {
       return false
     }
@@ -51,7 +51,7 @@ export class KindComponent implements OnInit {
     ).length > 0 && !this.allTaskComplete
   }
 
-  setAll(completed: boolean): void {
+  setAllTask(completed: boolean): void {
     this.allTaskComplete = completed
     if (this.task.subtasks == null) {
       return
@@ -63,6 +63,10 @@ export class KindComponent implements OnInit {
     )
   }
 
-  updateAllTaskComplete(): void {}
+  updateAllTaskComplete(): void {
+    this.allTaskComplete = this.task.subtasks != null && this.task.subtasks.every(
+      task => task.completed
+    )
+  }
 
 }
