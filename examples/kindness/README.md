@@ -20,7 +20,7 @@ npm install
 ng add @angular/material
 ```
 
-## create the component for the element in question
+## I create the component for the element in question
 
 ```shell
 ng g c components/kind
