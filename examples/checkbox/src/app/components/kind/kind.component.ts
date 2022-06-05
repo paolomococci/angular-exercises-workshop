@@ -35,6 +35,8 @@ export class KindComponent implements OnInit {
     ]
   }
 
+  allTaskComplete: boolean = false
+
   constructor() { }
 
   ngOnInit(): void {
