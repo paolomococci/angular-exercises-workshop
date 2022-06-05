@@ -20,10 +20,16 @@ npm install
 ng add @angular/material
 ```
 
-## create the component for the element in question
+## I create the component for the element in question
 
 ```shell
 ng g c components/kind
+```
+
+## I create the interface Task
+
+```shell
+ng g interface models/Task --type=model
 ```
 
 ## now I boot into development mode this example
