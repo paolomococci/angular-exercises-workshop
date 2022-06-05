@@ -4,7 +4,6 @@ import {
 } from '@angular/core'
 
 import { ChipColor } from 'src/app/models/chip-color.model'
-import { ThemePalette } from '@angular/material/core'
 
 @Component({
   selector: 'app-kind',
