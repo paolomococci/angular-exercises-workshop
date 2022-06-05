@@ -12,7 +12,24 @@ import { ChipColor } from 'src/app/models/chip-color.model'
 })
 export class KindComponent implements OnInit {
 
-  availableColors: ChipColor[] = []
+  availableColors: ChipColor[] = [
+    {
+      name: 'undefined',
+      color: undefined
+    },
+    {
+      name: 'Primary',
+      color: 'primary'
+    },
+    {
+      name: 'Accent',
+      color: 'accent'
+    },
+    {
+      name: 'Warn',
+      color: 'warn'
+    },
+  ]
 
   constructor() { }
 
