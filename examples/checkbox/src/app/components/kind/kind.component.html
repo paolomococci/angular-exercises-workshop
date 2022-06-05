@@ -1,17 +1,31 @@
 <section class="kind-section">
-  <mat-checkbox class="kind-margin">tick here to disable the checkbox on the right</mat-checkbox>
-  <mat-checkbox class="kind-margin" [disabled]="true">DONE</mat-checkbox>
+  <mat-checkbox class="kind-margin"
+    [checked]="kindCheckboxDisabled"  (change)="setSelected($event.checked)">
+    {{actionText}}
+  </mat-checkbox>
+  <mat-checkbox class="kind-margin" [disabled]="kindCheckboxDisabled">
+    {{kindText}}
+  </mat-checkbox>
 </section>
 
 <section class="kind-section">
   <span>
-    <mat-checkbox class="kind-margin">TODO</mat-checkbox>
+    <mat-checkbox class="kind-margin"
+    [checked]="allTaskComplete" [color]="task.color"
+    [indeterminate]="someTasksAreComplete()" (change)="setAllTask($event.checked)">
+    {{task.name}}
+  </mat-checkbox>
   </span>
 
   <span>
     <mat-list role="list">
-      <mat-list-item role="listitem">
-        <mat-checkbox>TODO</mat-checkbox>
+      <mat-list-item role="listitem" *ngFor="let subtask of task.subtasks">
+        <mat-checkbox
+          [(ngModel)]="subtask.completed"
+          [color]="subtask.color"
+          (ngModelChange)="updateAllTaskComplete()">
+          {{subtask.name}}
+        </mat-checkbox>
       </mat-list-item>
     </mat-list>
   </span>
