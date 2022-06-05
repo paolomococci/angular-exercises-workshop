@@ -28,6 +28,12 @@ ng add @angular/material
 ng g c components/kind
 ```
 
+## I create the interface ChipColor
+
+```shell
+ng g interface models/ChipColor --type=model
+```
+
 ## now I boot into development mode this example
 
 ```shell
