@@ -52,6 +52,12 @@ ng g c components/kind-avatar
 ng g c components/kind-dnd
 ```
 
+## I create app-kind-form-control component
+
+```shell
+ng g c components/kind-form-control
+```
+
 ## now I boot into development mode this example
 
 ```shell
