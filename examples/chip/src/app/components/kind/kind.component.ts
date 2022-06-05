@@ -3,8 +3,8 @@ import {
   OnInit
 } from '@angular/core'
 
-import { FormControl } from '@angular/forms'
-import { MatChipInputEvent } from '@angular/material/chips'
+import { ChipColor } from 'src/app/models/chip-color.model'
+import { ThemePalette } from '@angular/material/core'
 
 @Component({
   selector: 'app-kind',
@@ -12,6 +12,8 @@ import { MatChipInputEvent } from '@angular/material/chips'
   styleUrls: ['./kind.component.sass']
 })
 export class KindComponent implements OnInit {
+
+  availableColors: ChipColor[] = []
 
   constructor() { }
 
