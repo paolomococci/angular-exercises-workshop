@@ -1,10 +1,10 @@
-import { MatChipInputEvent } from '@angular/material/chips';
 import {
   Component,
   OnInit
  } from '@angular/core'
 
 import { FormControl } from '@angular/forms'
+import { MatChipInputEvent } from '@angular/material/chips'
 
 @Component({
   selector: 'app-kind-form-control',
