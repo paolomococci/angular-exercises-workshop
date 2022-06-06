@@ -46,4 +46,8 @@ export class KindInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  add(): void {}
+
+  delete(): void {}
+
 }
