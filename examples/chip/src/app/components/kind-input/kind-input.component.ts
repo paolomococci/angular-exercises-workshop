@@ -28,16 +28,22 @@ export class KindInputComponent implements OnInit {
 
   fruits: Fruit[] = [
     {
-      name: 'Melon'
+      name: 'melon'
     },
     {
-      name: 'Watermelon'
+      name: 'watermelon'
     },
     {
-      name: 'Grape'
+      name: 'grape'
     },
     {
-      name: 'Apricot'
+      name: 'apricot'
+    },
+    {
+      name: 'cherry'
+    },
+    {
+      name: 'blueberry'
     },
   ]
 
@@ -46,7 +52,7 @@ export class KindInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  add(matChipInputEvent: MatChipInputEvent): void {
+  create(matChipInputEvent: MatChipInputEvent): void {
     const value = (matChipInputEvent.value || '').trim()
     if (matChipInputEvent) {
       this.fruits.push(
