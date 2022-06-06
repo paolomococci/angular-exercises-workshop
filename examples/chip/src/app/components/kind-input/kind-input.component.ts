@@ -38,7 +38,7 @@ export class KindInputComponent implements OnInit {
     },
     {
       name: 'Apricot'
-    }
+    },
   ]
 
   constructor() { }
@@ -46,7 +46,15 @@ export class KindInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  add(): void {}
+  add(matChipInputEvent: MatChipInputEvent): void {
+    const value = (matChipInputEvent.value || '').trim()
+    if (matChipInputEvent) {
+      this.fruits.push(
+        {name: value}
+      )
+    }
+    matChipInputEvent.chipInput!.clear()
+  }
 
   delete(): void {}
 
