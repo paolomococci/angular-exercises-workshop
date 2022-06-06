@@ -30,13 +30,14 @@ export class KindFormControlComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createKeyWord(matChipInputEvent: MatChipInputEvent): void {
+  addKeyWord(matChipInputEvent: MatChipInputEvent): void {
     if (matChipInputEvent.value) {
       this.keyWords.add(matChipInputEvent.value)
+      matChipInputEvent.chipInput!.clear()
     }
   }
 
-  deleteKeyWord(keyWord: string): void {
+  removeKeyWord(keyWord: string): void {
     this.keyWords.delete(keyWord)
   }
 
