@@ -12,6 +12,7 @@ import { KindDndComponent } from './components/kind-dnd/kind-dnd.component'
 import { KindFormControlComponent } from './components/kind-form-control/kind-form-control.component'
 import { KindInputComponent } from './components/kind-input/kind-input.component'
 import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatFormFieldModule } from '@angular/material/form-field'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatChipsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
