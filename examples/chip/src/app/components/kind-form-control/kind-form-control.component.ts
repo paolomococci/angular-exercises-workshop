@@ -1,3 +1,4 @@
+import { MatChipInputEvent } from '@angular/material/chips';
 import {
   Component,
   OnInit
@@ -12,7 +13,7 @@ import { FormControl } from '@angular/forms'
 })
 export class KindFormControlComponent implements OnInit {
 
-  keyWords = new Set(
+  keyWords = new Set<string>(
     [
       'backend',
       'frontend',
@@ -29,8 +30,8 @@ export class KindFormControlComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  create(): void {}
+  create(matChipInputEvent: MatChipInputEvent): void {}
 
-  delete(): void {}
+  delete(keyWords: string): void {}
 
 }
