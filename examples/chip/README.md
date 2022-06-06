@@ -64,6 +64,12 @@ ng g c components/kind-form-control
 ng g c components/kind-input
 ```
 
+## I create the interface Fruit
+
+```shell
+ng g interface models/Fruit --type=model
+```
+
 ## now I boot into development mode this example
 
 ```shell
