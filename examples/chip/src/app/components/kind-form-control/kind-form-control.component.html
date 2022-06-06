@@ -1,3 +1,24 @@
 <section>
-  <p>kind-form-control works!</p>
+  <div class="kind-button-container">
+    <button mat-raised-button (click)="formControl.disable()">disable</button>
+    <button mat-raised-button (click)="formControl.enable()">enable</button>
+  </div>
+  <div>
+    <p><em>select a focused chip by pressing <code>SPACE</code></em></p>
+    <mat-form-field class="kind-chip-list" appearance="fill">
+      <mat-label>keywords</mat-label>
+      <mat-chip-list #chipList aria-label="keywords" multiple [formControl]="formControl">
+        <mat-chip
+          *ngFor="let keyword of keyWords"
+          [selected]="keyword" [value]="keyword"
+          (removed)="removeKeyWord(keyword)">
+          {{keyword}}
+        </mat-chip>
+        <input placeholder="new" [matChipInputFor]="chipList" (matChipInputTokenEnd)="addKeyWord($event)">
+      </mat-chip-list>
+    </mat-form-field>
+  </div>
+  <div>
+    <p>selected keywords: {{formControl.value}}</p>
+  </div>
 </section>
