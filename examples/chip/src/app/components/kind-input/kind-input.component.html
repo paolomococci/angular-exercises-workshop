@@ -1,3 +1,11 @@
 <mat-form-field class="kind-chip-list" appearance="fill">
-
+  <mat-label>fruits</mat-label>
+  <mat-chip-list #chipList aria-label="fruit selection">
+    <mat-chip *ngFor="let fruit of fruits" (removed)="delete(fruit)">
+      {{fruit.name}}
+      <button matChipRemove>
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </mat-chip>
+  </mat-chip-list>
 </mat-form-field>
