@@ -56,6 +56,11 @@ export class KindInputComponent implements OnInit {
     matChipInputEvent.chipInput!.clear()
   }
 
-  delete(): void {}
+  delete(fruit: Fruit): void {
+    const index = this.fruits.indexOf(fruit)
+    if (index >= 0) {
+      this.fruits.splice(index, 1)
+    }
+  }
 
 }
