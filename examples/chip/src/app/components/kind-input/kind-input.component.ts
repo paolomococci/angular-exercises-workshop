@@ -26,6 +26,21 @@ export class KindInputComponent implements OnInit {
     ENTER
   ] as const
 
+  fruits: Fruit[] = [
+    {
+      name: 'Melon'
+    },
+    {
+      name: 'Watermelon'
+    },
+    {
+      name: 'Grape'
+    },
+    {
+      name: 'Apricot'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
