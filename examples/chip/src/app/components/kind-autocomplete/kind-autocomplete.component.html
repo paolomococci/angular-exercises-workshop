@@ -1,3 +1,19 @@
 <section>
-  <p>kind-autocomplete works!</p>
+  <mat-form-field class="kind-chip-list" appearance="fill">
+    <mat-label>favorite pets</mat-label>
+    <mat-chip-list #chipList aria-label="pet selection">
+      <mat-chip>
+        TODO
+        <button matChipRemove>
+          <mat-icon aria-hidden="false" aria-label="cancel icon">cancel</mat-icon>
+        </button>
+      </mat-chip>
+      <input>
+    </mat-chip-list>
+    <mat-autocomplete>
+      <mat-option>
+        TODO
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
 </section>
