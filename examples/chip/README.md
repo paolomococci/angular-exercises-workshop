@@ -70,6 +70,12 @@ ng g c components/kind-input
 ng g interface models/Fruit --type=model
 ```
 
+## I create the interface Vegetable
+
+```shell
+ng g interface models/Vegetable --type=model
+```
+
 ## now I boot into development mode this example
 
 ```shell
