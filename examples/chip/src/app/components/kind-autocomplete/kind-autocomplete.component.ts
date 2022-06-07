@@ -47,7 +47,14 @@ export class KindAutocompleteComponent implements OnInit {
   @ViewChild('petInput')
   petInput!: ElementRef<HTMLInputElement>
 
-  constructor() { }
+  constructor() {
+    this.filteredPets = this.petFormControl.valueChanges.pipe(
+      startWith(null),
+      map(
+        (pet: string | null) => (pet ? this._filter(pet) : this.allPets.slice())
+      ),
+    )
+  }
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase()
