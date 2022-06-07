@@ -34,7 +34,7 @@ export class KindAutocompleteComponent implements OnInit {
 
   filteredPets!: Observable<string[]>
 
-  pets: string[] = ['Dog']
+  pets: string[] = ['pet']
 
   allPets: string[] = [
     'Dog',
