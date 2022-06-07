@@ -17,6 +17,7 @@ import {
   FormsModule,
   ReactiveFormsModule
 } from '@angular/forms'
+import { CommonModule } from '@angular/common'
 import { DragDropModule } from '@angular/cdk/drag-drop'
 
 @NgModule({
@@ -38,6 +39,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop'
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
+    CommonModule,
     DragDropModule
   ],
   providers: [],
