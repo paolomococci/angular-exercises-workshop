@@ -1,8 +1,9 @@
 <section>
-  <!--todo: (cdkDropListDropped)="drop($any($event))" It does not work. -->
+  <!-- remember to import module DragDropModule into file app.module.ts -->
   <mat-chip-list class="kind-chip"
-    cdkDropList cdkDropListOrientation="horizontal"
-    (cdkDropListDropped)="drop($any($event))">
+    cdkDropList
+    cdkDropListOrientation="horizontal"
+    (cdkDropListDropped)="drop($event)">
     <mat-chip class="kind-box"
       cdkDrag
       *ngFor="let vegetable of vegetables">
