@@ -25,6 +25,25 @@ import {
 })
 export class KindAutocompleteComponent implements OnInit {
 
+  separatorKeysCodes: number[] = [
+    ENTER,
+    COMMA
+  ]
+
+  petCtrl = new FormControl('')
+
+  filteredPets!: Observable<string[]>
+
+  pets: string[] = ['Dog']
+
+  allPets: string[] = [
+    'Dog',
+    'Cat',
+    'Hamster',
+    'Rabbit',
+    'Canary'
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
