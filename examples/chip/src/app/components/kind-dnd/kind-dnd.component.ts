@@ -1,3 +1,4 @@
+import { Vegetable } from './../../models/vegetable.model';
 import {
   Component,
   OnInit
@@ -14,6 +15,48 @@ import {
   styleUrls: ['./kind-dnd.component.sass']
 })
 export class KindDndComponent implements OnInit {
+
+  vegetables: Vegetable[] = [
+    {
+      name: 'Artichoke'
+    },
+    {
+      name: 'Aubergine'
+    },
+    {
+      name: 'Beans'
+    },
+    {
+      name: 'Cabbage'
+    },
+    {
+      name: 'Chard'
+    },
+    {
+      name: 'Chicory'
+    },
+    {
+      name: 'Chili Pepper'
+    },
+    {
+      name: 'Gourd'
+    },
+    {
+      name: 'Lettuce'
+    },
+    {
+      name: 'Pepper'
+    },
+    {
+      name: 'Potato'
+    },
+    {
+      name: 'Tomato'
+    },
+    {
+      name: 'Zucchini'
+    }
+  ]
 
   constructor() { }
 
