@@ -19,6 +19,7 @@ import {
 } from '@angular/forms'
 import { CommonModule } from '@angular/common'
 import { DragDropModule } from '@angular/cdk/drag-drop'
+import { MatAutocompleteModule } from '@angular/material/autocomplete'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop'
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    DragDropModule
+    DragDropModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
