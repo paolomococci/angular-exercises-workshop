@@ -17,6 +17,7 @@ import {
   FormsModule,
   ReactiveFormsModule
 } from '@angular/forms'
+import { DragDropModule } from '@angular/cdk/drag-drop'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {
     MatFormFieldModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
