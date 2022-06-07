@@ -25,6 +25,8 @@ import {
 })
 export class KindAutocompleteComponent implements OnInit {
 
+  // TODO: replace the string type with Pet
+
   separatorKeysCodes: number[] = [
     ENTER,
     COMMA
