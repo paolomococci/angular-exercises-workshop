@@ -63,4 +63,12 @@ export class KindDndComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  drop(event: CdkDragDrop<Vegetable[]>) {
+    moveItemInArray(
+      this.vegetables,
+      event.previousIndex,
+      event.currentIndex
+    )
+  }
+
 }
