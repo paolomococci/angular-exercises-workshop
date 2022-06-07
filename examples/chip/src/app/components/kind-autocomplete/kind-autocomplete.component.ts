@@ -46,7 +46,16 @@ export class KindAutocompleteComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  private _filter(value: string): string[] {
+    return ['']
   }
+
+  ngOnInit(): void {}
+
+  selected(event: MatAutocompleteSelectedEvent): void {}
+
+  add(event: MatChipInputEvent): void {}
+
+  remove(pet: string): void {}
 
 }
