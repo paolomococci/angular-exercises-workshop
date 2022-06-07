@@ -44,6 +44,9 @@ export class KindAutocompleteComponent implements OnInit {
     'Canary'
   ]
 
+  @ViewChild('petInput')
+  petInput!: ElementRef<HTMLInputElement>
+
   constructor() { }
 
   private _filter(value: string): string[] {
@@ -52,7 +55,11 @@ export class KindAutocompleteComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  selected(event: MatAutocompleteSelectedEvent): void {}
+  selected(event: MatAutocompleteSelectedEvent): void {
+    this.pets.push(event.option.viewValue)
+    this.petInput.nativeElement.value = ''
+    this.petFormControl.setValue(null)
+  }
 
   add(event: MatChipInputEvent): void {
     const value = (event.value || '').trim()
