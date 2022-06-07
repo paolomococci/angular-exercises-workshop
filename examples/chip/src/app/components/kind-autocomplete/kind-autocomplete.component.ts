@@ -50,7 +50,12 @@ export class KindAutocompleteComponent implements OnInit {
   constructor() { }
 
   private _filter(value: string): string[] {
-    return ['']
+    const filterValue = value.toLowerCase()
+    return this.allPets.filter(
+      pet => pet
+        .toLowerCase()
+        .includes(filterValue)
+    )
   }
 
   ngOnInit(): void {}
