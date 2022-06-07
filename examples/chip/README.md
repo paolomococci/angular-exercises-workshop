@@ -76,6 +76,12 @@ ng g interface models/Fruit --type=model
 ng g interface models/Vegetable --type=model
 ```
 
+## I create the interface Pet
+
+```shell
+ng g interface models/Pet --type=model
+```
+
 ## now I boot into development mode this example
 
 ```shell
