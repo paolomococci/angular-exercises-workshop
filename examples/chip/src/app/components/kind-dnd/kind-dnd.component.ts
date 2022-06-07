@@ -1,8 +1,9 @@
-import { Vegetable } from './../../models/vegetable.model';
 import {
   Component,
   OnInit
  } from '@angular/core'
+
+ import { Vegetable } from './../../models/vegetable.model'
 
  import {
   CdkDragDrop,
