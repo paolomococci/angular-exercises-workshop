@@ -2,17 +2,24 @@
   <mat-form-field class="kind-chip-list" appearance="fill">
     <mat-label>favorite pets</mat-label>
     <mat-chip-list #chipList aria-label="pet selection">
-      <mat-chip>
-        TODO
+      <mat-chip *ngFor="let pet of pets" (removed)="remove(pet)">
+        {{pet}}
         <button matChipRemove>
           <mat-icon aria-hidden="false" aria-label="cancel icon">cancel</mat-icon>
         </button>
       </mat-chip>
-      <input>
+      <input
+        placeholder="new"
+        #petInput
+        [formControl]="petFormControl"
+        [matAutocomplete]="auto"
+        [matChipInputFor]="chipList"
+        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+        (matChipInputTokenEnd)="add($event)">
     </mat-chip-list>
-    <mat-autocomplete>
-      <mat-option>
-        TODO
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+      <mat-option *ngFor="let pet of filteredPets | async" [value]="pet">
+        {{pet}}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
