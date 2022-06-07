@@ -30,7 +30,7 @@ export class KindAutocompleteComponent implements OnInit {
     COMMA
   ]
 
-  petCtrl = new FormControl('')
+  petFormControl = new FormControl('')
 
   filteredPets!: Observable<string[]>
 
@@ -54,7 +54,14 @@ export class KindAutocompleteComponent implements OnInit {
 
   selected(event: MatAutocompleteSelectedEvent): void {}
 
-  add(event: MatChipInputEvent): void {}
+  add(event: MatChipInputEvent): void {
+    const value = (event.value || '').trim()
+    if (value) {
+      this.pets.push(value)
+    }
+    event.chipInput!.clear()
+    this.petFormControl.setValue(null)
+  }
 
   remove(pet: string): void {}
 
