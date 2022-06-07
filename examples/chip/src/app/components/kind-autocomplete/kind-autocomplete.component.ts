@@ -63,6 +63,10 @@ export class KindAutocompleteComponent implements OnInit {
     this.petFormControl.setValue(null)
   }
 
-  remove(pet: string): void {}
+  remove(pet: string): void {
+    const index = this.pets.indexOf(pet)
+    if (index >= 0)
+      this.pets.splice(index, 1)
+  }
 
 }
