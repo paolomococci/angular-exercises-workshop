@@ -28,6 +28,12 @@ ng add @angular/material
 ng g c components/kind
 ```
 
+## I create the component kind-date-range-picker
+
+```shell
+ng g c components/kind-date-range-picker
+```
+
 ## now I boot into development mode this example
 
 ```shell
