@@ -12,6 +12,7 @@ import { KindStartDateComponent } from './components/kind-start-date/kind-start-
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatNativeDateModule } from '@angular/material/core'
+import { MatInputModule } from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatNativeDateModule } from '@angular/material/core'
     BrowserAnimationsModule,
     MatDatepickerModule,
     MatFormFieldModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
