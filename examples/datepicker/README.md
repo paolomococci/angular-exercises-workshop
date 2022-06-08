@@ -46,6 +46,12 @@ ng g c components/kind-date-filter-validation
 ng g c components/kind-date-min-max-validation
 ```
 
+## I create the component kind-start-date
+
+```shell
+ng g c components/kind-start-date
+```
+
 ## now I boot into development mode this example
 
 ```shell
