@@ -11,6 +11,7 @@ import { KindDateMinMaxValidationComponent } from './components/kind-date-min-ma
 import { KindStartDateComponent } from './components/kind-start-date/kind-start-date.component'
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatNativeDateModule } from '@angular/material/core'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatFormFieldModule } from '@angular/material/form-field'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDatepickerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
