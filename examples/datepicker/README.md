@@ -34,6 +34,12 @@ ng g c components/kind
 ng g c components/kind-date-range-picker
 ```
 
+## I create the component kind-date-filter-validation
+
+```shell
+ng g c components/kind-date-filter-validation
+```
+
 ## now I boot into development mode this example
 
 ```shell
