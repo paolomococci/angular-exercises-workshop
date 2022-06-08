@@ -8,6 +8,7 @@ import { KindComponent } from './components/kind/kind.component'
 import { KindDateRangePickerComponent } from './components/kind-date-range-picker/kind-date-range-picker.component'
 import { KindDateFilterValidationComponent } from './components/kind-date-filter-validation/kind-date-filter-validation.component'
 import { KindDateMinMaxValidationComponent } from './components/kind-date-min-max-validation/kind-date-min-max-validation.component'
+import { KindStartDateComponent } from './components/kind-start-date/kind-start-date.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { KindDateMinMaxValidationComponent } from './components/kind-date-min-ma
     KindComponent,
     KindDateRangePickerComponent,
     KindDateFilterValidationComponent,
-    KindDateMinMaxValidationComponent
+    KindDateMinMaxValidationComponent,
+    KindStartDateComponent
   ],
   imports: [
     BrowserModule,
