@@ -9,6 +9,7 @@ import { KindDateRangePickerComponent } from './components/kind-date-range-picke
 import { KindDateFilterValidationComponent } from './components/kind-date-filter-validation/kind-date-filter-validation.component'
 import { KindDateMinMaxValidationComponent } from './components/kind-date-min-max-validation/kind-date-min-max-validation.component'
 import { KindStartDateComponent } from './components/kind-start-date/kind-start-date.component'
+import { MatDatepickerModule } from '@angular/material/datepicker'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { KindStartDateComponent } from './components/kind-start-date/kind-start-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
