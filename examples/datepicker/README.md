@@ -1,4 +1,4 @@
-# datepicker, app used as a template
+# datepicker
 
 Angular version 14.0.0
 
