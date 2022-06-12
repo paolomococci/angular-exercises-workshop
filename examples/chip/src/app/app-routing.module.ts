@@ -4,6 +4,7 @@ import { KindAutocompleteComponent } from './components/kind-autocomplete/kind-a
 import { KindAvatarComponent } from './components/kind-avatar/kind-avatar.component'
 import { KindDndComponent } from './components/kind-dnd/kind-dnd.component'
 import { KindFormControlComponent } from './components/kind-form-control/kind-form-control.component'
+import { KindInputComponent } from './components/kind-input/kind-input.component'
 import { KindComponent } from './components/kind/kind.component'
 
 const routes: Routes = [
@@ -32,10 +33,10 @@ const routes: Routes = [
     path: 'kind-form-control',
     component: KindFormControlComponent
   },
-  /*{
+  {
     path: 'kind-input',
-    component:
-  },*/
+    component: KindInputComponent
+  },
 ]
 
 @NgModule({
