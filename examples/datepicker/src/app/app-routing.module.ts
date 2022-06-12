@@ -33,6 +33,11 @@ const routes: Routes = [
     path: 'kind-start-date',
     component: KindStartDateComponent
   },
+  {
+    path: '**',
+    redirectTo: '/kind',
+    pathMatch: 'full'
+  },
 ]
 
 @NgModule({
