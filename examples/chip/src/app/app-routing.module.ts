@@ -37,6 +37,11 @@ const routes: Routes = [
     path: 'kind-input',
     component: KindInputComponent
   },
+  {
+    path: '**',
+    redirectTo: '/kind',
+    pathMatch: 'full'
+  },
 ]
 
 @NgModule({
