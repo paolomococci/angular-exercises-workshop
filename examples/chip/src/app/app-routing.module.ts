@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { KindAutocompleteComponent } from './components/kind-autocomplete/kind-autocomplete.component'
 import { KindComponent } from './components/kind/kind.component'
 
 const routes: Routes = [
@@ -12,11 +13,11 @@ const routes: Routes = [
     path: 'kind',
     component: KindComponent
   },
-  /*{
-    path: 'kind-autocomplete',
-    component:
-  },
   {
+    path: 'kind-autocomplete',
+    component: KindAutocompleteComponent
+  },
+  /*{
     path: 'kind-avatar',
     component:
   },
