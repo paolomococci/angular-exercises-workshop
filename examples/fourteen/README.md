@@ -28,6 +28,12 @@ ng add @angular/material
 ng g c components/kind
 ```
 
+## I create the component navigation-bar
+
+```shell
+ng g @angular/material:navigation components/navigation-bar
+```
+
 ## now I boot into development mode this example
 
 ```shell
