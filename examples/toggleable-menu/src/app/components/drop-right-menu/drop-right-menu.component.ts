@@ -1,6 +1,7 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  Input
 } from '@angular/core'
 import {
   BreakpointObserver,
@@ -18,6 +19,9 @@ import {
   styleUrls: ['./drop-right-menu.component.sass']
 })
 export class DropRightMenuComponent implements OnInit {
+
+  @Input()
+  title!: string
 
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(
