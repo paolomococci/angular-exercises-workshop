@@ -8,12 +8,14 @@ import { KindComponent } from './components/kind/kind.component'
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { DropRightMenuComponent } from './components/drop-right-menu/drop-right-menu.component'
+import { ContentComponent } from './components/content/content.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     KindComponent,
-    DropRightMenuComponent
+    DropRightMenuComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
