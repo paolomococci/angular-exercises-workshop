@@ -33,7 +33,3 @@ ng g c components/kind
 ```shell
 ng serve -o
 ```
-
-## screenshot
-
-![toggleable-menu screenshot](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/toggleable-menu_2022-06-13.png)
