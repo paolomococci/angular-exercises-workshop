@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { KindComponent } from './components/kind/kind.component'
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
+import { DropRightMenuComponent } from './components/drop-right-menu/drop-right-menu.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    KindComponent
+    KindComponent,
+    DropRightMenuComponent
   ],
   imports: [
     BrowserModule,
