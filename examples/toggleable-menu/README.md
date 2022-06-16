@@ -28,6 +28,12 @@ ng add @angular/material
 ng g c components/drop-right-menu
 ```
 
+## I create content component
+
+```shell
+ng g c components/content
+```
+
 ## I create the component for the element in question
 
 ```shell
