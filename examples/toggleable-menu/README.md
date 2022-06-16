@@ -22,6 +22,12 @@ npm install
 ng add @angular/material
 ```
 
+## I create drop-right-menu component
+
+```shell
+ng g c components/drop-right-menu
+```
+
 ## I create the component for the element in question
 
 ```shell
