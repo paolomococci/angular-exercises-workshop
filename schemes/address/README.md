@@ -37,3 +37,7 @@ ng g c components/main-content
 ```shell
 ng serve -o
 ```
+
+## screenshot
+
+![address form](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/address_2022-06-19.png)
