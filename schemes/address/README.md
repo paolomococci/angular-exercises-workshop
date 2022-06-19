@@ -26,6 +26,12 @@ npm install
 ng generate @angular/material:address-form components/address-form
 ```
 
+## and main-content component
+
+```
+ng g c components/main-content
+```
+
 ## and I boot into development mode this scheme
 
 ```shell
