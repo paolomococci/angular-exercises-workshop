@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { DashboardComponent } from './components/dashboard/dashboard.component'
+import { MainContentComponent } from './components/main-content/main-content.component'
+
 import { MatGridListModule } from '@angular/material/grid-list'
 import { MatCardModule } from '@angular/material/card'
 import { MatMenuModule } from '@angular/material/menu'
@@ -15,7 +17,8 @@ import { LayoutModule } from '@angular/cdk/layout'
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule,
