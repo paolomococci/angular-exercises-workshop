@@ -24,6 +24,12 @@ npm install
 ng generate @angular/material:navigation components/navigation
 ```
 
+## and main-content component
+
+```
+ng g c components/main-content
+```
+
 ## and I boot into development mode this scheme
 
 ```shell
