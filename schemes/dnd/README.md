@@ -40,4 +40,4 @@ ng serve -o
 
 ## screenshot
 
-![drag and drop screenshot]()
+![drag and drop screenshot](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/dnd_2022-06-20.png)
