@@ -24,6 +24,12 @@ npm install
 ng generate @angular/cdk:drag-drop components/dnd
 ```
 
+## and main-content component
+
+```
+ng g c components/main-content
+```
+
 ## now I boot into development mode this scheme
 
 ```shell
