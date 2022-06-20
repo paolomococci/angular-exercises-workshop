@@ -37,3 +37,7 @@ ng g c components/main-content
 ```shell
 ng serve -o
 ```
+
+## screenshot
+
+![navigation screenshot]()
