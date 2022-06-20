@@ -32,7 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     MatRadioModule,
     MatCardModule,
     ReactiveFormsModule,
-    MatIconModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
