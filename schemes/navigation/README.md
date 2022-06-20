@@ -40,4 +40,4 @@ ng serve -o
 
 ## screenshot
 
-![navigation screenshot]()
+![navigation screenshot](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/navigation_2022-06-20.png)
