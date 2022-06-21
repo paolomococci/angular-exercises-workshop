@@ -40,4 +40,4 @@ ng serve -o
 
 ## screenshot
 
-![table screenshot]()
+![table screenshot](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/table_2022-06-21.png)
