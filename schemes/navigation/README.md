@@ -5,7 +5,7 @@ Angular 14
 How to use Angular Schematics.
 
 ```shell
-ng new navigation -v -S -g --routing --style=sass
+ng new navigation -S -g --routing --style=sass
 ```
 
 ### I install Angular Material to this scheme
