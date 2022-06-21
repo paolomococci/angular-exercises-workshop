@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatTableModule } from '@angular/material/table'
 import { MatPaginatorModule } from '@angular/material/paginator'
 import { MatSortModule } from '@angular/material/sort'
+import { MatIconModule } from '@angular/material/icon'
 
 import { MainContentComponent } from './components/main-content/main-content.component'
 import { TableComponent } from './components/table/table.component'
@@ -23,7 +24,8 @@ import { TableComponent } from './components/table/table.component'
     BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
