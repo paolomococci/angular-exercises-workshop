@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 
+
+import { RollerBlindMenuComponent } from './components/roller-blind-menu/roller-blind-menu.component'
+
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RollerBlindMenuComponent
   ],
   imports: [
     BrowserModule,
