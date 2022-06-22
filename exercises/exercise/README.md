@@ -8,7 +8,7 @@ Angular 14
 ng new exercise -S -g --routing --style=sass
 ```
 
-### Or, if you already have this project toggleable-menu, remember to type the following command inside the root directory of the same:
+### Or, if you already have this project toggleable-menu, remember to type the following command inside the root directory of the same
 
 ```shell
 npm install
