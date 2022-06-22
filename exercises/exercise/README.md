@@ -25,3 +25,9 @@ ng add @angular/material
 ```shell
 ng g c components/roller-blind-menu
 ```
+
+## I create main-content component
+
+```shell
+ng g c components/main-content
+```
