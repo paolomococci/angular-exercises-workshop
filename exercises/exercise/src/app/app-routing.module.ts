@@ -1,7 +1,22 @@
 import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
+import {
+  RouterModule,
+  Routes
+} from '@angular/router'
 
-const routes: Routes = [];
+import { PracticeComponent } from './components/practice/practice.component'
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/practice',
+    pathMatch: 'full'
+  },
+  {
+    path: 'practice',
+    component: PracticeComponent
+  },
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
