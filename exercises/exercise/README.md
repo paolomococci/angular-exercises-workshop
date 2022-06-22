@@ -19,3 +19,9 @@ npm install
 ```shell
 ng add @angular/material
 ```
+
+## I create roller-blind-menu component
+
+```shell
+ng g c components/roller-blind-menu
+```
