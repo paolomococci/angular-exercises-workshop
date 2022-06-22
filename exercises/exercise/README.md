@@ -31,3 +31,9 @@ ng g c components/roller-blind-menu
 ```shell
 ng g c components/main-content
 ```
+
+## now I boot into development mode this web application
+
+```shell
+ng serve -o
+```
