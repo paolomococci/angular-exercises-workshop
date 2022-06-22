@@ -32,6 +32,12 @@ ng g c components/roller-blind-menu
 ng g c components/main-content
 ```
 
+## I create practice component
+
+```shell
+ng g c components/practice
+```
+
 ## now I boot into development mode this web application
 
 ```shell
