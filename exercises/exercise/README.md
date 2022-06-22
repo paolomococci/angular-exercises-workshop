@@ -13,3 +13,9 @@ ng new exercise -S -g --routing --style=sass
 ```shell
 npm install
 ```
+
+### I install Angular Material to this example
+
+```shell
+ng add @angular/material
+```
