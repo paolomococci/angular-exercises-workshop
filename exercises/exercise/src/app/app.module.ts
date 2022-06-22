@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser'
 
 import { MainContentComponent } from './components/main-content/main-content.component'
 import { RollerBlindMenuComponent } from './components/roller-blind-menu/roller-blind-menu.component'
+import { PracticeComponent } from './components/practice/practice.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -15,8 +16,7 @@ import { LayoutModule } from '@angular/cdk/layout'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
-import { MatListModule } from '@angular/material/list';
-import { PracticeComponent } from './components/practice/practice.component'
+import { MatListModule } from '@angular/material/list'
 
 @NgModule({
   declarations: [
