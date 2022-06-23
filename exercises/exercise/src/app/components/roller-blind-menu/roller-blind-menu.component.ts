@@ -1,7 +1,9 @@
 import {
   Component,
   OnInit,
-  Input
+  Input,
+  Output,
+  EventEmitter
 } from '@angular/core'
 import {
   BreakpointObserver,
@@ -23,6 +25,9 @@ export class RollerBlindMenuComponent implements OnInit {
   @Input()
   title!: string
 
+  @Output()
+  menuClose = new EventEmitter()
+
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(
       Breakpoints.Handset
@@ -37,6 +42,10 @@ export class RollerBlindMenuComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+  }
+
+  public onMenuClose = () => {
+    this.menuClose.emit()
   }
 
 }
