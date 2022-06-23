@@ -1,5 +1,7 @@
 # exercise, app used as a template
 
+TODO
+
 Angular 14
 
 ## scaffolding
