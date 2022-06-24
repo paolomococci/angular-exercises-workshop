@@ -1,7 +1,5 @@
 # exercise, app used as a template
 
-TODO
-
 Angular 14
 
 ## scaffolding
@@ -22,19 +20,19 @@ npm install
 ng add @angular/material
 ```
 
-## I create roller-blind-menu component
+## now I add roller-blind-menu component
 
 ```shell
-ng g c components/roller-blind-menu
+ng generate @angular/material:navigation components/roller-blind-menu
 ```
 
-## I create main-content component
+## and main-content component
 
-```shell
+```
 ng g c components/main-content
 ```
 
-## I create practice component
+## finally, I add practice component
 
 ```shell
 ng g c components/practice
