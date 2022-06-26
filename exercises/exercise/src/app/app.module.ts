@@ -13,12 +13,14 @@ import { MatListModule } from '@angular/material/list'
 
 import { RollerBlindMenuComponent } from './components/roller-blind-menu/roller-blind-menu.component'
 import { MainContentComponent } from './components/main-content/main-content.component'
+import { PracticeComponent } from './components/practice/practice.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     RollerBlindMenuComponent,
-    MainContentComponent
+    MainContentComponent,
+    PracticeComponent
   ],
   imports: [
     BrowserModule,
