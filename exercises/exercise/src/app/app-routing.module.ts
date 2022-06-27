@@ -9,8 +9,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'kind',
+    path: 'practice',
     component: PracticeComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/practice',
+    pathMatch: 'full'
   },
 ]
 
