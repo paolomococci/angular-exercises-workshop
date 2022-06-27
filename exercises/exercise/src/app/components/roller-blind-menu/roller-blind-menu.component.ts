@@ -1,4 +1,8 @@
-import { Component } from '@angular/core'
+import {
+  Component,
+  OnInit,
+  Input
+} from '@angular/core'
 import {
   BreakpointObserver,
   Breakpoints
@@ -14,7 +18,10 @@ import {
   templateUrl: './roller-blind-menu.component.html',
   styleUrls: ['./roller-blind-menu.component.sass']
 })
-export class RollerBlindMenuComponent {
+export class RollerBlindMenuComponent implements OnInit {
+
+  @Input()
+  title!: string
 
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
@@ -28,5 +35,9 @@ export class RollerBlindMenuComponent {
   constructor(
     private breakpointObserver: BreakpointObserver
   ) {}
+
+  ngOnInit(): void {
+    throw new Error('Method not implemented.')
+  }
 
 }
