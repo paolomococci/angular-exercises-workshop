@@ -13,6 +13,11 @@ const routes: Routes = [
     path: 'kind',
     component: KindComponent
   },
+  {
+    path: '**',
+    redirectTo: '/kind',
+    pathMatch: 'full'
+  },
 ]
 
 @NgModule({
