@@ -52,6 +52,12 @@ ng g c components/kind-date-min-max-validation
 ng g c components/kind-start-date
 ```
 
+## I create the component main
+
+```shell
+ng g c components/main
+```
+
 ## now I boot into development mode this example
 
 ```shell
