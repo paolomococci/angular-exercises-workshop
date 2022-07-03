@@ -1,6 +1,7 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  Input
 } from '@angular/core'
 
 @Component({
@@ -9,6 +10,9 @@ import {
   styleUrls: ['./navbar.component.sass']
 })
 export class NavbarComponent implements OnInit {
+
+  @Input()
+  title!: string
 
   constructor() { }
 
