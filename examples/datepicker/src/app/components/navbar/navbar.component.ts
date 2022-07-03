@@ -28,7 +28,18 @@ export class NavbarComponent implements OnInit {
   @Input()
   title!: string
 
-  constructor() { }
+  isHandset$: Observable<boolean> = this.breakpointObserver
+    .observe(
+      Breakpoints.Handset
+    )
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    )
+
+  constructor(
+    private breakpointObserver: BreakpointObserver
+  ) { }
 
   ngOnInit(): void {
   }
