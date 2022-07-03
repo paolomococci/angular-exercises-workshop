@@ -1,3 +1,23 @@
 <section>
-  <p>kind-date-range-picker works!</p>
+  <mat-form-field appearance="fill">
+    <mat-label>date range</mat-label>
+    <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
+      <input matStartDate formControlName="start" placeholder="start date">
+      <input matEndDate formControlName="end" placeholder="end date">
+    </mat-date-range-input>
+    <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+    <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">
+      error: invalid start date
+    </mat-error>
+    <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">
+      error: invalid end date
+    </mat-error>
+  </mat-form-field>
+</section>
+
+<section>
+  <h3>selected dates range in json format:</h3>
+  <p>{{range.value | json}}</p>
 </section>
