@@ -58,6 +58,12 @@ ng g c components/kind-start-date
 ng g c components/main
 ```
 
+## I create the component navbar
+
+```shell
+ng g c components/navbar
+```
+
 ## now I boot into development mode this example
 
 ```shell
