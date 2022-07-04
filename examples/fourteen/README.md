@@ -4,7 +4,7 @@ Angular version 14.0.0
 
 ## scaffolding
 
-This is an alternative method, if you do not intend to install the latest version globally, at least not for the moment.
+Alternative method if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
 npx -p @angular/cli@14.0.0 ng new fourteen -S -g --routing --style=sass
