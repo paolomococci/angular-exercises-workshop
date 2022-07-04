@@ -26,6 +26,18 @@ npm install
 ng add @angular/material
 ```
 
+## I create the main component
+
+```shell
+ng g c components/main
+```
+
+## I create the navbar component
+
+```shell
+ng g c components/navbar
+```
+
 ## I create the component for the element in question
 
 ```shell
