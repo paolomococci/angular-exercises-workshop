@@ -1,6 +1,6 @@
 # datepicker
 
-Angular version 14.0.0
+Angular version 14.0.4
 
 ## scaffolding
 
