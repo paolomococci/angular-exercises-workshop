@@ -10,6 +10,8 @@ import {
 })
 export class KindStartDateComponent implements OnInit {
 
+  selectedDate = new Date(2022, 0, 1)
+
   constructor() { }
 
   ngOnInit(): void {
