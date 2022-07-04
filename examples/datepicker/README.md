@@ -4,13 +4,17 @@ Angular version 14.0.4
 
 ## scaffolding
 
-This is an alternative method, if you do not intend to install the latest version globally, at least not for the moment.
-
 ```shell
-npx -p @angular/cli@14.0.0 ng new datepicker -S -g --routing --style=sass
+ng new datepicker -S -g --routing --style=sass --skip-install
 ```
 
-### Or, if you already have this project datepicker, remember to type the following command inside the root directory of the same:
+Alternative method, if you do not intend to install the latest version globally, at least not for the moment.
+
+```shell
+npx -p @angular/cli@14.0.0 ng new datepicker -S -g --routing --style=sass --skip-install
+```
+
+### remember to type the following command inside the root directory of the same:
 
 ```shell
 npm install
