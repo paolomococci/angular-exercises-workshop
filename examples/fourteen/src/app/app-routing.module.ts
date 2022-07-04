@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router'
 import { KindComponent } from './components/kind/kind.component'
 
 const routes: Routes = [
-  /*
   {
     path: '',
     redirectTo: '/kind',
@@ -14,7 +13,6 @@ const routes: Routes = [
     path: 'kind',
     component: KindComponent
   },
-  */
 ]
 
 @NgModule({
