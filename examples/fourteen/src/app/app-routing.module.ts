@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
+
+import {
+  RouterModule,
+  Routes
+} from '@angular/router'
 
 import { KindComponent } from './components/kind/kind.component'
 
@@ -12,6 +16,11 @@ const routes: Routes = [
   {
     path: 'kind',
     component: KindComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/kind',
+    pathMatch: 'full'
   },
 ]
 
