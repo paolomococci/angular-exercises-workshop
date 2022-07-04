@@ -6,6 +6,7 @@ import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { MainComponent } from './components/main/main.component'
+import { NavbarComponent } from './components/navbar/navbar.component'
 import { KindComponent } from './components/kind/kind.component'
 
 import { MatCardModule } from '@angular/material/card'
@@ -20,7 +21,8 @@ import { MatListModule } from '@angular/material/list'
   declarations: [
     AppComponent,
     MainComponent,
-    KindComponent
+    KindComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
