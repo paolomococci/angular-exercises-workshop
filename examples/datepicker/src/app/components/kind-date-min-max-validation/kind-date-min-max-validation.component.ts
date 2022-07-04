@@ -10,7 +10,15 @@ import {
 })
 export class KindDateMinMaxValidationComponent implements OnInit {
 
-  constructor() { }
+  minDate!: Date
+  maxDate!: Date
+
+  constructor() {
+  const currentYear = new Date().getFullYear()
+
+  this.minDate = new Date(currentYear - 0, 0, 1)
+  this.maxDate = new Date(currentYear + 0, 11, 31)
+  }
 
   ngOnInit(): void {
   }
