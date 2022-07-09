@@ -50,6 +50,12 @@ ng g c components/kind
 ng g c components/dialog-content
 ```
 
+## I create the kind-animation component
+
+```shell
+ng g c components/kind-animation
+```
+
 ## now I boot into development mode this example
 
 ```shell
