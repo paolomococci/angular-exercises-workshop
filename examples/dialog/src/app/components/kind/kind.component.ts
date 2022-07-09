@@ -3,6 +3,8 @@ import {
   OnInit
 } from '@angular/core'
 
+import { MatDialog } from '@angular/material/dialog'
+
 @Component({
   selector: 'app-kind',
   templateUrl: './kind.component.html',
@@ -10,9 +12,11 @@ import {
 })
 export class KindComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+
+  openDialog() {}
 
 }
