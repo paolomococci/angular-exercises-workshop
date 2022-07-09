@@ -11,6 +11,7 @@ import { KindComponent } from './components/kind/kind.component'
 import { DialogContentComponent } from './components/dialog-content/dialog-content.component'
 import { KindAnimationComponent } from './components/kind-animation/kind-animation.component'
 import { KindSlowlyComponent } from './components/kind-slowly/kind-slowly.component'
+import { DialogAnimationComponent } from './components/dialog-animation/dialog-animation.component'
 
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
@@ -29,7 +30,8 @@ import {MatDialogModule} from '@angular/material/dialog'
     NavbarComponent,
     DialogContentComponent,
     KindAnimationComponent,
-    KindSlowlyComponent
+    KindSlowlyComponent,
+    DialogAnimationComponent
   ],
   imports: [
     BrowserModule,
