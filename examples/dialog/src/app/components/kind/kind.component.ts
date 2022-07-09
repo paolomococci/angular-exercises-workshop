@@ -3,7 +3,13 @@ import {
   OnInit
 } from '@angular/core'
 
-import { MatDialog } from '@angular/material/dialog'
+import {
+  MatDialog
+} from '@angular/material/dialog'
+
+import {
+  DialogContentComponent
+} from './../dialog-content/dialog-content.component'
 
 @Component({
   selector: 'app-kind',
@@ -17,6 +23,13 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog() {}
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogContentComponent)
+    dialogRef.afterClosed().subscribe(
+      result => {
+        console.log(`dialog content result: ${result}`)
+      }
+    )
+  }
 
 }
