@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MainComponent } from './components/main/main.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { KindComponent } from './components/kind/kind.component'
+import { DialogContentComponent } from './components/dialog-content/dialog-content.component'
 
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
@@ -23,7 +24,8 @@ import {MatDialogModule} from '@angular/material/dialog'
     AppComponent,
     MainComponent,
     KindComponent,
-    NavbarComponent
+    NavbarComponent,
+    DialogContentComponent
   ],
   imports: [
     BrowserModule,
