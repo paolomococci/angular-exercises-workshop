@@ -7,6 +7,7 @@ import {
 
 import { KindComponent } from './components/kind/kind.component'
 import { KindAnimationComponent } from './components/kind-animation/kind-animation.component'
+import { KindSlowlyComponent } from './components/kind-slowly/kind-slowly.component'
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'kind-animation',
     component: KindAnimationComponent
+  },
+  {
+    path: 'kind-slowly',
+    component: KindSlowlyComponent
   },
   {
     path: '**',
