@@ -44,6 +44,12 @@ ng g c components/navbar
 ng g c components/kind
 ```
 
+## I create the dialog-content component
+
+```shell
+ng g c components/dialog-content
+```
+
 ## now I boot into development mode this example
 
 ```shell
