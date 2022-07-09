@@ -6,6 +6,7 @@ import {
 } from '@angular/router'
 
 import { KindComponent } from './components/kind/kind.component'
+import { KindAnimationComponent } from './components/kind-animation/kind-animation.component'
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'kind',
     component: KindComponent
+  },
+  {
+    path: 'kind-animation',
+    component: KindAnimationComponent
   },
   {
     path: '**',
