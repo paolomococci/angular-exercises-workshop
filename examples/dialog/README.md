@@ -56,6 +56,12 @@ ng g c components/dialog-content
 ng g c components/kind-animation
 ```
 
+## I create the kind-slowly component
+
+```shell
+ng g c components/kind-slowly
+```
+
 ## now I boot into development mode this example
 
 ```shell
