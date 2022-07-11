@@ -73,3 +73,5 @@ ng g c components/navbar
 ```shell
 ng serve -o
 ```
+
+![datepicker screenshot](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/datepicker_2022-07-03.png)
