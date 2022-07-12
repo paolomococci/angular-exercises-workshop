@@ -6,7 +6,7 @@
 ng new web-editor -S -g --style=sass --skip-install
 ```
 
-### remember to type the following command inside the root directory of this project:
+### remember to type the following command inside the root directory of this example:
 
 ```shell
 npm install
@@ -28,4 +28,10 @@ ng g c components/editor
 
 ```shell
 npm i --legacy-peer-deps ngx-wig
+```
+
+## now I boot into development mode this example
+
+```shell
+ng serve -o
 ```
