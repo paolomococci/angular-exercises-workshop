@@ -35,3 +35,5 @@ npm i --legacy-peer-deps ngx-wig
 ```shell
 ng serve -o
 ```
+
+![web-editor screenshot](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/WebEditor-2022-07-12.png)
