@@ -12,8 +12,14 @@ ng new web-editor -S -g --style=sass --skip-install
 npm install
 ```
 
-## I create the main component
+## I add the main component
 
 ```shell
 ng g c components/main
+```
+
+## I add the kind component
+
+```shell
+ng g c components/kind
 ```
