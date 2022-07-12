@@ -18,8 +18,8 @@ npm install
 ng g c components/main
 ```
 
-## I add the kind component
+## I add the editor component
 
 ```shell
-ng g c components/kind
+ng g c components/editor
 ```
