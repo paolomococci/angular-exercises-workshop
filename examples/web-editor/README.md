@@ -23,3 +23,9 @@ ng g c components/main
 ```shell
 ng g c components/editor
 ```
+
+## now I install ngx-wig
+
+```shell
+npm i --legacy-peer-deps ngx-wig
+```
