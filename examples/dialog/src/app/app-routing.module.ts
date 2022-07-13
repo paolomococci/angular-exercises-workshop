@@ -8,6 +8,7 @@ import {
 import { KindComponent } from './components/kind/kind.component'
 import { KindAnimationComponent } from './components/kind-animation/kind-animation.component'
 import { KindSlowlyComponent } from './components/kind-slowly/kind-slowly.component'
+import { InjectorComponent } from './components/injector/injector.component'
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'kind-slowly',
     component: KindSlowlyComponent
+  },
+  {
+    path: 'injector',
+    component: InjectorComponent
   },
   {
     path: '**',
