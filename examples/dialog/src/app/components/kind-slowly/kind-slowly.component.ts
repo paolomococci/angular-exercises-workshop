@@ -19,9 +19,17 @@ import {
 })
 export class KindSlowlyComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+    this.dialog.open(DialogContentComponent, {
+      width: '250px',
+      enterAnimationDuration,
+      exitAnimationDuration,
+    })
   }
 
 }
