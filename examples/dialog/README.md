@@ -74,6 +74,12 @@ ng g c components/dialog-animation
 ng g c components/injector
 ```
 
+## I create the injected-data-dialog component
+
+```shell
+ng g c components/injected-data-dialog
+```
+
 ## now I boot into development mode this example
 
 ```shell
