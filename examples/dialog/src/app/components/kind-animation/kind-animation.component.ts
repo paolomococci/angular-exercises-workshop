@@ -20,4 +20,6 @@ export class KindAnimationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {}
+
 }
