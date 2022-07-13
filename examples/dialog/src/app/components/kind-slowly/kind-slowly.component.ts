@@ -4,8 +4,7 @@ import {
 } from '@angular/core'
 
 import {
-  MatDialog,
-  MatDialogRef
+  MatDialog
 } from '@angular/material/dialog'
 
 import {
@@ -24,7 +23,10 @@ export class KindSlowlyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+  openDialog(
+    enterAnimationDuration: string,
+    exitAnimationDuration: string
+  ): void {
     this.dialog.open(DialogContentComponent, {
       width: '250px',
       enterAnimationDuration,
