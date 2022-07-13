@@ -26,58 +26,64 @@ npm install
 ng add @angular/material
 ```
 
-## I create the main component
+## I add main component
 
 ```shell
 ng g c components/main
 ```
 
-## I create the navbar component
+## I add navbar component
 
 ```shell
 ng g c components/navbar
 ```
 
-## I create the component for the element in question
+## I add the component for the element in question
 
 ```shell
 ng g c components/kind
 ```
 
-## I create the dialog-content component
+## I add dialog-content component
 
 ```shell
 ng g c components/dialog-content
 ```
 
-## I create the kind-animation component
+## I add kind-animation component
 
 ```shell
 ng g c components/kind-animation
 ```
 
-## I create the kind-slowly component
+## I add kind-slowly component
 
 ```shell
 ng g c components/kind-slowly
 ```
 
-## I create the dialog-animation component
+## I add dialog-animation component
 
 ```shell
 ng g c components/dialog-animation
 ```
 
-## I create the injector component
+## I add injector component
 
 ```shell
 ng g c components/injector
 ```
 
-## I create the injected-data-dialog component
+## I add injected-data-dialog component
 
 ```shell
 ng g c components/injected-data-dialog
+```
+
+## I add Fruit interface
+
+```shell
+ng g i models/Fruit --type=model
 ```
 
 ## now I boot into development mode this example
