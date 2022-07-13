@@ -13,6 +13,7 @@ import { KindAnimationComponent } from './components/kind-animation/kind-animati
 import { KindSlowlyComponent } from './components/kind-slowly/kind-slowly.component'
 import { DialogAnimationComponent } from './components/dialog-animation/dialog-animation.component'
 import { InjectorComponent } from './components/injector/injector.component'
+import { InjectedDataDialogComponent } from './components/injected-data-dialog/injected-data-dialog.component'
 
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
@@ -33,7 +34,8 @@ import {MatDialogModule} from '@angular/material/dialog'
     KindAnimationComponent,
     KindSlowlyComponent,
     DialogAnimationComponent,
-    InjectorComponent
+    InjectorComponent,
+    InjectedDataDialogComponent
   ],
   imports: [
     BrowserModule,
