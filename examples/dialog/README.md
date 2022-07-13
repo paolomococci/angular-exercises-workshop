@@ -68,6 +68,12 @@ ng g c components/kind-slowly
 ng g c components/dialog-animation
 ```
 
+## I create the injector component
+
+```shell
+ng g c components/injector
+```
+
 ## now I boot into development mode this example
 
 ```shell
