@@ -15,7 +15,7 @@ import {
 })
 export class KindAnimationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
