@@ -8,6 +8,10 @@ import {
   MatDialogRef
 } from '@angular/material/dialog'
 
+import {
+  DialogContentComponent
+} from './../dialog-content/dialog-content.component'
+
 @Component({
   selector: 'app-kind-animation',
   templateUrl: './kind-animation.component.html',
@@ -20,6 +24,12 @@ export class KindAnimationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {}
+  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+    this.dialog.open(DialogContentComponent, {
+      width: '250px',
+      enterAnimationDuration,
+      exitAnimationDuration,
+    })
+  }
 
 }
