@@ -3,6 +3,14 @@ import {
   OnInit
 } from '@angular/core'
 
+import {
+  MatDialog
+} from '@angular/material/dialog'
+
+import {
+  InjectedDataDialogComponent
+} from './../injected-data-dialog/injected-data-dialog.component'
+
 @Component({
   selector: 'app-injector',
   templateUrl: './injector.component.html',
@@ -10,9 +18,23 @@ import {
 })
 export class InjectorComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog(
+    enterAnimationDuration: string,
+    exitAnimationDuration: string
+  ) {
+    this.dialog.open(InjectedDataDialogComponent, {
+      width: '250px',
+      enterAnimationDuration,
+      exitAnimationDuration,
+      data: {
+        fruit: 'blueberry'
+      }
+    })
   }
 
 }
