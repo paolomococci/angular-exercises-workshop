@@ -14,6 +14,7 @@ import { KindSlowlyComponent } from './components/kind-slowly/kind-slowly.compon
 import { DialogAnimationComponent } from './components/dialog-animation/dialog-animation.component'
 import { InjectorComponent } from './components/injector/injector.component'
 import { InjectedDataDialogComponent } from './components/injected-data-dialog/injected-data-dialog.component'
+import { KindOverviewComponent } from './components/kind-overview/kind-overview.component'
 
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
@@ -22,7 +23,7 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { MatListModule } from '@angular/material/list'
-import {MatDialogModule} from '@angular/material/dialog'
+import { MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {MatDialogModule} from '@angular/material/dialog'
     KindSlowlyComponent,
     DialogAnimationComponent,
     InjectorComponent,
-    InjectedDataDialogComponent
+    InjectedDataDialogComponent,
+    KindOverviewComponent
   ],
   imports: [
     BrowserModule,
