@@ -86,6 +86,12 @@ ng g c components/injected-data-dialog
 ng g i models/Fruit --type=model
 ```
 
+## I add kind-overview component
+
+```shell
+ng g c components/kind-overview
+```
+
 ## now I boot into development mode this example
 
 ```shell
