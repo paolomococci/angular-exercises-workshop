@@ -1,1 +1,27 @@
-<p>injected-data-dialog works!</p>
+<h1 mat-dialog-title>favorite fruit</h1>
+<div mat-dialog-content>
+  is:
+  <ul>
+    <li>
+      <span *ngIf="isPreferred('cherry')">&#10003;</span> cherry
+    </li>
+    <li>
+      <span *ngIf="isPreferred('apricot')">&#10003;</span> apricot
+    </li>
+    <li>
+      <span *ngIf="isPreferred('grape')">&#10003;</span> grape
+    </li>
+    <li>
+      <span *ngIf="isPreferred('peach')">&#10003;</span> peach
+    </li>
+    <li>
+      <span *ngIf="isPreferred('orange')">&#10003;</span> orange
+    </li>
+    <li>
+      <span *ngIf="isPreferred('raspberry')">&#10003;</span> raspberry
+    </li>
+    <li>
+      <span *ngIf="isPreferred('blueberry')">&#10003;</span> blueberry
+    </li>
+  </ul>
+</div>
