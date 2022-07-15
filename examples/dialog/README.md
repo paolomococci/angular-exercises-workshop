@@ -92,6 +92,12 @@ ng g i models/Fruit --type=model
 ng g c components/kind-overview
 ```
 
+## I add dialog-overview component
+
+```shell
+ng g c components/dialog-overview
+```
+
 ## now I boot into development mode this example
 
 ```shell
