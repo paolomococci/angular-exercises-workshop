@@ -98,10 +98,10 @@ ng g c components/kind-overview
 ng g c components/dialog-overview
 ```
 
-## I add Vegetables interface
+## I add DataAssociation interface
 
 ```shell
-ng g i models/Vegetables --type=model
+ng g i models/DataAssociation --type=model
 ```
 
 ## now I boot into development mode this example
