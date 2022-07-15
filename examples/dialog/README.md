@@ -98,6 +98,12 @@ ng g c components/kind-overview
 ng g c components/dialog-overview
 ```
 
+## I add Vegetables interface
+
+```shell
+ng g i models/Vegetables --type=model
+```
+
 ## now I boot into development mode this example
 
 ```shell
