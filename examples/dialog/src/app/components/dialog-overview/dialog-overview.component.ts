@@ -10,8 +10,8 @@ import {
 } from '@angular/material/dialog'
 
 import {
-  Vegetables
-} from './../../models/vegetables.model'
+  DataAssociation
+} from './../../models/data-association.model'
 
 @Component({
   selector: 'app-dialog-overview',
@@ -22,7 +22,7 @@ export class DialogOverviewComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<DialogOverviewComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Vegetables
+    @Inject(MAT_DIALOG_DATA) public data: DataAssociation
   ) { }
 
   ngOnInit(): void {
