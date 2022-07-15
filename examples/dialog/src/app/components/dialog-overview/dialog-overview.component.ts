@@ -28,4 +28,8 @@ export class DialogOverviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  whenClickedNo(): void {
+    this.dialogRef.close()
+  }
+
 }
