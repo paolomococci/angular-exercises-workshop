@@ -1,3 +1,16 @@
 <section>
-  <p>kind-overview works!</p>
+  <ol>
+    <li>
+      <mat-form-field appearance="fill">
+        <mat-label>Your name, please.</mat-label>
+        <input matInput [(ngModel)]="name">
+      </mat-form-field>
+    </li>
+    <li>
+      <button mat-raised-button (click)="openDialog()">pick one</button>
+    </li>
+      <li *ngIf="vegetable">
+        your choice is: <i>{{vegetable}}</i>
+    </li>
+  </ol>
 </section>
