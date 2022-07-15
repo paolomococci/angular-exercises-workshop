@@ -3,6 +3,14 @@ import {
   OnInit
  } from '@angular/core'
 
+ import {
+  MatDialog
+ } from '@angular/material/dialog'
+
+ import {
+  DialogOverviewComponent
+ } from './../dialog-overview/dialog-overview.component'
+
 @Component({
   selector: 'app-kind-overview',
   templateUrl: './kind-overview.component.html',
@@ -22,7 +30,7 @@ export class KindOverviewComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogOverviewComponent, {
-    width: '300px',
+      width: '300px',
       data: {
         name: this.name,
         vegetable: this.vegetable
