@@ -27,7 +27,16 @@ export class KindOverviewComponent implements OnInit {
         name: this.name,
         vegetable: this.vegetable
       }
-  })  
+    })
+
+    dialogRef
+      .afterClosed()
+      .subscribe(
+        result => {
+          console.log('the dialog has been closed')
+          this.vegetable = result
+        }
+      )
   }
 
 }
