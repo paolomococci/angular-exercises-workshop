@@ -3,6 +3,16 @@
   <p>Which vegetable do you prefer to eat?</p>
   <mat-form-field appearance="fill">
     <mat-label>favorite vegetable</mat-label>
-    <input matInput>
+    <input matInput [(ngModel)]="data.vegetable">
   </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="whenClickedNo()">
+    no thanks
+  </button>
+  <button mat-button
+    [mat-dialog-close]="data.vegetable"
+    cdkFocusInitial>
+    OK
+  </button>
 </div>
