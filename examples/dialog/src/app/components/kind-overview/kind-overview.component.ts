@@ -21,7 +21,13 @@ export class KindOverviewComponent implements OnInit {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(DialogOverviewComponent, {})  
+    const dialogRef = this.dialog.open(DialogOverviewComponent, {
+    width: '300px',
+      data: {
+        name: this.name,
+        vegetable: this.vegetable
+      }
+  })  
   }
 
 }
