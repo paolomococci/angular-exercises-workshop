@@ -20,4 +20,6 @@ export class KindOverviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openDialog(): void {}
+
 }
