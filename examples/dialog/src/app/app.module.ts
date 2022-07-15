@@ -15,6 +15,7 @@ import { DialogAnimationComponent } from './components/dialog-animation/dialog-a
 import { InjectorComponent } from './components/injector/injector.component'
 import { InjectedDataDialogComponent } from './components/injected-data-dialog/injected-data-dialog.component'
 import { KindOverviewComponent } from './components/kind-overview/kind-overview.component'
+import { DialogOverviewComponent } from './components/dialog-overview/dialog-overview.component'
 
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
@@ -37,7 +38,8 @@ import { MatDialogModule } from '@angular/material/dialog'
     DialogAnimationComponent,
     InjectorComponent,
     InjectedDataDialogComponent,
-    KindOverviewComponent
+    KindOverviewComponent,
+    DialogOverviewComponent
   ],
   imports: [
     BrowserModule,
