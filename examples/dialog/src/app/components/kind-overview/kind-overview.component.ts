@@ -10,6 +10,9 @@ import {
 })
 export class KindOverviewComponent implements OnInit {
 
+  vegetable!: string
+  name!: string
+
   constructor(
     public dialog: MatDialog
   ) { }
