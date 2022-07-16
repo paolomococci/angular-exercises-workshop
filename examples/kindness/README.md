@@ -1,13 +1,13 @@
 # kindness, app used as a template
 
-Angular version 14.0.0
+Angular version 14.0.6
 
 ## scaffolding
 
 This is an alternative method, if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
-npx -p @angular/cli@14.0.0 ng new kindness -S -g --routing --style=sass
+npx -p @angular/cli@14.0.6 ng new kindness -S -g --routing --style=sass
 ```
 
 ### Or, if you already have this project kindness, remember to type the following command inside the root directory of the same:
