@@ -1,6 +1,6 @@
 # dialog
 
-Angular version 14.0.4
+Angular version 14.0.6
 
 ## scaffolding
 
@@ -11,7 +11,7 @@ ng new dialog -S -g --routing --style=sass --skip-install
 Alternative method if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
-npx -p @angular/cli@14.0.0 ng new dialog -S -g --routing --style=sass --skip-install
+npx -p @angular/cli@14.0.6 ng new dialog -S -g --routing --style=sass --skip-install
 ```
 
 ### Or, if you already have this project dialog, remember to type the following command inside the root directory of the same:
