@@ -17,4 +17,8 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setStep(index: number) {
+    this.step = index
+  }
+
 }
