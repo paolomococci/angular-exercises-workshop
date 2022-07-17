@@ -62,3 +62,5 @@ In this type of application it is of fundamental importance to add the following
 6. MatNativeDateModule
 
 especially the fourth on the list.
+
+![panel screenshot]()
