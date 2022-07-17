@@ -1,19 +1,69 @@
 <section>
-  <mat-accordion class="headers-align">
+  <mat-accordion class="kind-headers-align">
+
     <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
       <mat-expansion-panel-header>
         <mat-panel-title>
           add user data
         </mat-panel-title>
         <mat-panel-description>
-          type your name
+          type your name and age
+          <mat-icon>manage_accounts</mat-icon>
         </mat-panel-description>
-        <mat-icon>manage_accounts</mat-icon>
       </mat-expansion-panel-header>
       <mat-form-field appearance="fill">
         <mat-label>name</mat-label>
         <input matInput>
       </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>age</mat-label>
+        <input matInput type="number" min="18">
+      </mat-form-field>
+      <mat-action-row>
+        <button mat-button color="primary" (click)="nextStep()">next</button>
+      </mat-action-row>
     </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          vegetables
+        </mat-panel-title>
+        <mat-panel-description>
+          type your preferred
+          <mat-icon>grass</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-form-field appearance="fill">
+        <mat-label>vegetable</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-action-row>
+        <button mat-button color="warn" (click)="previousStep()">previous</button>
+        <button mat-button color="primary" (click)="nextStep()">next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          day of delivery
+        </mat-panel-title>
+        <mat-panel-description>
+          type date you prefer
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-form-field appearance="fill">
+        <mat-label>date</mat-label>
+        <input matInput [matDatepicker]="picker" (focus)="picker.open()" readonly>
+      </mat-form-field>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-action-row>
+        <button mat-button color="warn" (click)="previousStep()">previous</button>
+        <button mat-button color="primary" (click)="nextStep()">next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
   </mat-accordion>
 </section>
