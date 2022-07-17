@@ -63,4 +63,4 @@ In this type of application it is of fundamental importance to add the following
 
 especially the fourth on the list.
 
-![panel screenshot]()
+![panel screenshot](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/panel_2022-07-17.png)
