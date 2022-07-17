@@ -10,6 +10,8 @@ import {
 })
 export class KindComponent implements OnInit {
 
+  step: number = 0
+
   constructor() { }
 
   ngOnInit(): void {
