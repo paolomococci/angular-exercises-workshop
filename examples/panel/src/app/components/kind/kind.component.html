@@ -1,3 +1,7 @@
 <section>
-  <mat-accordion class="headers-align"></mat-accordion>
+  <mat-accordion class="headers-align">
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+
+    </mat-expansion-panel>
+  </mat-accordion>
 </section>
