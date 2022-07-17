@@ -49,3 +49,16 @@ ng g c components/kind
 ```shell
 ng serve -o
 ```
+
+## important note
+
+In this type of application it is of fundamental importance to add the following modules to the app.module.ts file:
+
+1. FormsModule
+2. ReactiveFormsModule
+3. MatFormFieldModule
+4. MatInputModule
+5. MatDatepickerModule
+6. MatNativeDateModule
+
+especially the fourth on the list.
