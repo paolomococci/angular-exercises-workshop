@@ -21,4 +21,8 @@ export class KindComponent implements OnInit {
     this.step = index
   }
 
+  nextStep() {}
+
+  previousStep() {}
+
 }
