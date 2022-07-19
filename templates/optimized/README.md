@@ -32,6 +32,12 @@ ng g m modules/stuffing
 ng g c components/main
 ```
 
+## I create the navbar component
+
+```shell
+ng g c components/navbar
+```
+
 ## serve
 
 ```shell
