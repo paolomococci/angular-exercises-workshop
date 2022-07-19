@@ -20,12 +20,6 @@ npm install
 ng add @angular/material
 ```
 
-## I add material module
-
-```shell
-ng g m modules/stuffing
-```
-
 ## I create main component
 
 ```shell
@@ -42,6 +36,18 @@ ng g c components/navbar
 
 ```shell
 ng g c components/variety
+```
+
+## I add stuffing module
+
+```shell
+ng g m modules/stuffing
+```
+
+## I add loom module
+
+```shell
+ng g m modules/loom
 ```
 
 ## serve
