@@ -20,6 +20,7 @@ import {
 export class VarietyComponent implements OnInit {
 
   varietyControl = new FormControl('')
+
   options: string[] = [
     'one',
     'two',
@@ -29,6 +30,8 @@ export class VarietyComponent implements OnInit {
     'six',
     'seven'
   ]
+
+  filteredOptions!: Observable<string[]>
 
   constructor() { }
 
