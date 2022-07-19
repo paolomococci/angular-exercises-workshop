@@ -26,16 +26,22 @@ ng add @angular/material
 ng g m modules/stuffing
 ```
 
-## I create the main component
+## I create main component
 
 ```shell
 ng g c components/main
 ```
 
-## I create the navbar component
+## I create navbar component
 
 ```shell
 ng g c components/navbar
+```
+
+## I create variety component
+
+```shell
+ng g c components/variety
 ```
 
 ## serve
