@@ -19,6 +19,17 @@ import {
 })
 export class VarietyComponent implements OnInit {
 
+  varietyControl = new FormControl('')
+  options: string[] = [
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven'
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
