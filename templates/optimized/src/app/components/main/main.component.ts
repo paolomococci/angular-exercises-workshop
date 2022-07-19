@@ -1,7 +1,8 @@
 import {
   Component,
-  OnInit
- } from '@angular/core'
+  OnInit,
+  Input
+} from '@angular/core'
 
 @Component({
   selector: 'app-main',
@@ -9,6 +10,9 @@ import {
   styleUrls: ['./main.component.sass']
 })
 export class MainComponent implements OnInit {
+
+  @Input()
+  title!: string
 
   constructor() { }
 
