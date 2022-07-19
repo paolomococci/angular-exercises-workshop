@@ -18,6 +18,12 @@ I add material module
 ng g m modules/stuffing
 ```
 
+### I install Angular Material to this template
+
+```shell
+ng add @angular/material
+```
+
 ## serve
 
 ```shell
