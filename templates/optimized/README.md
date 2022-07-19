@@ -1,5 +1,7 @@
 # optimized
 
+Angular 14.0.6
+
 ## scaffolding
 
 ```shell
