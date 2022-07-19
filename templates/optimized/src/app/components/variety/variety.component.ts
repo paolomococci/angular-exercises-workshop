@@ -36,6 +36,23 @@ export class VarietyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.filteredOptions = this.varietyControl
+      .valueChanges
+      .pipe(
+        startWith(''),
+        map(
+          value => this._filter(value || '')
+        ),
+      )
+  }
+
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase()
+    return this.options.filter(
+      option => option
+        .toLowerCase()
+        .includes(filterValue)
+    )
   }
 
 }
