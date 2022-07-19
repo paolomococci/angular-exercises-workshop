@@ -20,6 +20,10 @@ import { DialogModule } from '@angular/cdk/dialog'
 import { MainComponent } from './components/main/main.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { VarietyComponent } from './components/variety/variety.component'
+
+import { LoomModule } from './modules/loom/loom.module'
+import { StuffingModule } from './modules/stuffing/stuffing.module'
+
 import { HttpClientModule } from '@angular/common/http'
 import { LayoutModule } from '@angular/cdk/layout'
 
@@ -47,7 +51,9 @@ import { LayoutModule } from '@angular/cdk/layout'
     LayoutModule,
     OverlayModule,
     PortalModule,
-    ScrollingModule
+    ScrollingModule,
+    StuffingModule,
+    LoomModule
   ],
   providers: [],
   bootstrap: [AppComponent]
