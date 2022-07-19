@@ -50,6 +50,12 @@ ng g m modules/stuffing
 ng g m modules/loom
 ```
 
+## I add helper module
+
+```shell
+ng g m modules/helper
+```
+
 ## serve
 
 ```shell
