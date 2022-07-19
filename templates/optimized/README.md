@@ -26,6 +26,12 @@ ng add @angular/material
 ng g m modules/stuffing
 ```
 
+## I create the main component
+
+```shell
+ng g c components/main
+```
+
 ## serve
 
 ```shell
