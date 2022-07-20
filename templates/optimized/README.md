@@ -62,4 +62,6 @@ ng g m modules/helper
 ng serve -o
 ```
 
+## screenshot
+
 ![optimized screenshot](https://github.com/paolomococci/angular-exercises-workshop/blob/main/screenshots/optimized_2022-07-20.png)
