@@ -19,3 +19,9 @@ npm install
 ```shell
 ng add @angular/material
 ```
+
+## serve
+
+```shell
+ng serve -o
+```
