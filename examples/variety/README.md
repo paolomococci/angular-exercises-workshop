@@ -7,3 +7,9 @@ Angular 14.0.6
 ```shell
 ng new variety -S -g --routing --style=sass --skip-install
 ```
+
+## install
+
+```shell
+npm install
+```
