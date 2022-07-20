@@ -61,3 +61,5 @@ ng g m modules/helper
 ```shell
 ng serve -o
 ```
+
+![optimized screenshot]()
