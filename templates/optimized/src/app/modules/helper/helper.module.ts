@@ -22,7 +22,6 @@ import { DialogModule } from '@angular/cdk/dialog'
     CommonModule
   ],
   exports: [
-
     A11yModule,
     CdkAccordionModule,
     CdkMenuModule,
