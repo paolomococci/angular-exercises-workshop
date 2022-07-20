@@ -1,0 +1,18 @@
+<section>
+  <form class="variety-form">
+    <mat-form-field class="variety-full-width" appearance="fill">
+      <mat-label>number</mat-label>
+      <input type="text"
+        placeholder="pick one"
+        aria-label="number"
+        matInput
+        [formControl]="varietyControl"
+        [matAutocomplete]="auto">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+  </form>
+</section>
