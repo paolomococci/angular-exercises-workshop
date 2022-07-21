@@ -14,6 +14,11 @@ import { OverlayModule } from '@angular/cdk/overlay'
 import { CdkMenuModule } from '@angular/cdk/menu'
 import { DialogModule } from '@angular/cdk/dialog'
 
+import {
+  FormsModule,
+  ReactiveFormsModule
+ } from '@angular/forms'
+
 
 
 @NgModule({
@@ -34,6 +39,8 @@ import { DialogModule } from '@angular/cdk/dialog'
     OverlayModule,
     PortalModule,
     ScrollingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class HelperModule { }
