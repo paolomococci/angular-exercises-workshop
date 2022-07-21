@@ -1,6 +1,6 @@
-# form-one, app used as a template
+# form-one
 
-Angular 14.0.6
+Angular 14.1.0
 
 ## scaffolding
 
