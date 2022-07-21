@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 
 import { MainComponent } from './components/main/main.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
-import { VarietyComponent } from './components/variety/variety.component'
+import { KindComponent } from './components/kind/kind.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -16,7 +16,7 @@ import { HelperModule } from './modules/helper/helper.module'
     AppComponent,
     MainComponent,
     NavbarComponent,
-    VarietyComponent
+    KindComponent
   ],
   imports: [
     BrowserModule,
