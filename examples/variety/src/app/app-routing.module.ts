@@ -6,22 +6,22 @@ import {
 } from '@angular/router'
 
 import {
-  VarietyComponent
-} from './components/variety/variety.component'
+  KindComponent
+} from './components/kind/kind.component'
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/variety',
+    redirectTo: '/kind',
     pathMatch: 'full'
   },
   {
-    path: 'variety',
-    component: VarietyComponent
+    path: 'kind',
+    component: KindComponent
   },
   {
     path: '**',
-    redirectTo: '/variety',
+    redirectTo: '/kind',
     pathMatch: 'full'
   },
 ]
