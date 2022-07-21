@@ -26,6 +26,12 @@ ng add @angular/material
 ng g c components/main
 ```
 
+## I create navbar component
+
+```shell
+ng g c components/navbar
+```
+
 ## serve
 
 ```shell
