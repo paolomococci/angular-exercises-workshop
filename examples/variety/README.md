@@ -32,10 +32,10 @@ ng g c components/main
 ng g c components/navbar
 ```
 
-## I create variety component
+## I create kind component
 
 ```shell
-ng g c components/variety
+ng g c components/kind
 ```
 
 ## I add helper module
