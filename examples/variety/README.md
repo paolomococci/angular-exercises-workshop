@@ -20,6 +20,12 @@ npm install
 ng add @angular/material
 ```
 
+## I create main component
+
+```shell
+ng g c components/main
+```
+
 ## serve
 
 ```shell
