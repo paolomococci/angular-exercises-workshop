@@ -32,6 +32,12 @@ ng g c components/main
 ng g c components/navbar
 ```
 
+## I create variety component
+
+```shell
+ng g c components/variety
+```
+
 ## serve
 
 ```shell
