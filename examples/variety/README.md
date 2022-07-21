@@ -38,6 +38,12 @@ ng g c components/navbar
 ng g c components/variety
 ```
 
+## I add helper module
+
+```shell
+ng g m modules/helper
+```
+
 ## serve
 
 ```shell
