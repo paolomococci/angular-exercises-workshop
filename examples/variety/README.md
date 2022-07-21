@@ -1,6 +1,6 @@
 # variety, app used as a template
 
-Angular 14.0.6
+Angular 14.1.0
 
 ## scaffolding
 
