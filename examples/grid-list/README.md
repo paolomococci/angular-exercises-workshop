@@ -26,22 +26,28 @@ npm install
 ng add @angular/material
 ```
 
-## I create the main component
+## I create main component
 
 ```shell
 ng g c components/main
 ```
 
-## I create the navbar component
+## I create navbar component
 
 ```shell
 ng g c components/navbar
 ```
 
-## I create the component for the element in question
+## I create component for the element in question
 
 ```shell
 ng g c components/kind
+```
+
+## I create Tile interface
+
+```shell
+ng g i interfaces/Tile --type=model
 ```
 
 ## now I boot into development mode this example
