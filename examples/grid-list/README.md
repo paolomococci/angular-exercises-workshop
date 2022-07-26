@@ -47,7 +47,7 @@ ng g c components/kind
 ## I create Tile interface
 
 ```shell
-ng g i interfaces/Tile --type=model
+ng g i models/Tile --type=model
 ```
 
 ## now I boot into development mode this example
