@@ -1,6 +1,6 @@
 export interface Tile {
   color: string
-  columns: string
-  rows: string
+  columns: number
+  rows: number
   text: string
 }
