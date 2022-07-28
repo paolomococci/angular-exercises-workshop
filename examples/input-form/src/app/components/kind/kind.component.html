@@ -47,6 +47,13 @@
             <input matInput placeholder="for example Italy">
           </mat-form-field>
         </td>
+        <td>
+          <mat-form-field class="input-full-width" appearance="fill">
+            <mat-label>zip code</mat-label>
+            <input matInput #zipCode maxlength="5" placeholder="01234">
+            <mat-hint align="end">{{zipCode.value.length}} / 5</mat-hint>
+          </mat-form-field>
+        </td>
       </tr>
     </table>
 
