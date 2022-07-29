@@ -44,6 +44,12 @@ ng g c components/navbar
 ng g c components/kind
 ```
 
+## I create kind-iconic
+
+```shell
+ng g c components/kind-iconic
+```
+
 ## now I boot into development mode this example
 
 ```shell
