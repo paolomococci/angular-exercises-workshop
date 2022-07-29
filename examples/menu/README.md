@@ -50,6 +50,12 @@ ng g c components/kind
 ng g c components/kind-iconic
 ```
 
+## I create kind-positioning
+
+```shell
+ng g c components/kind-positioning
+```
+
 ## now I boot into development mode this example
 
 ```shell
