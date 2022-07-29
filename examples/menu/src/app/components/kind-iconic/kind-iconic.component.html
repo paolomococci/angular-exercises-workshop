@@ -5,14 +5,33 @@
           <mat-card-subtitle>iconic menu</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        an example of a menu represented by an icon
+        An example of a menu represented by an icon.
       </mat-card-content>
       <mat-card-actions align="start">
-          <button mat-button (click)="onAction1">menu</button>
-
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="example of icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>settings</mat-icon>
+              <span>settings</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>delete</mat-icon>
+              <span>delete</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>notifications off</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>star</mat-icon>
+              <span>star</span>
+            </button>
+          </mat-menu>
       </mat-card-actions>
       <mat-card-footer>
-        example of a menu
+        example of menu highlighted by an icon
       </mat-card-footer>
   </mat-card>
 </section>
