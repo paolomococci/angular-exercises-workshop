@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MainComponent } from './components/main/main.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { KindComponent } from './components/kind/kind.component'
+import { KindIconicComponent } from './components/kind-iconic/kind-iconic.component'
 
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
@@ -23,7 +24,8 @@ import { MatMenuModule } from '@angular/material/menu'
     AppComponent,
     MainComponent,
     KindComponent,
-    NavbarComponent
+    NavbarComponent,
+    KindIconicComponent
   ],
   imports: [
     BrowserModule,
