@@ -1,3 +1,4 @@
+import { KindIconicComponent } from './components/kind-iconic/kind-iconic.component';
 import { NgModule } from '@angular/core'
 
 import {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'kind',
     component: KindComponent
+  },
+  {
+    path: 'kind-iconic',
+    component: KindIconicComponent
   },
   {
     path: '**',
