@@ -17,6 +17,14 @@
         <button mat-menu-item>blueberries</button>
       </mat-menu>
 
+      <button mat-button [matMenuTriggerFor]="belowMenu">below</button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item>sour cherries</button>
+        <button mat-menu-item>blackberries</button>
+        <button mat-menu-item>raspberries</button>
+        <button mat-menu-item>blueberries</button>
+      </mat-menu>
+
     </mat-card-actions>
     <mat-card-footer>
       menu with four types of positioning
