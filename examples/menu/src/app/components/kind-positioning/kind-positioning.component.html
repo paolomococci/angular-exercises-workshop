@@ -1,5 +1,23 @@
 <section>
   <mat-card>
-
+    <mat-card-header>
+        <mat-card-title>kind positioning</mat-card-title>
+        <mat-card-subtitle>menu positioning</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        Example of menu.
+    </mat-card-content>
+    <mat-card-actions align="start">
+      <button mat-button [matMenuTriggerFor]="menu">sample</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>sour cherries</button>
+        <button mat-menu-item>blackberries</button>
+        <button mat-menu-item>raspberries</button>
+        <button mat-menu-item>blueberries</button>
+      </mat-menu>
+    </mat-card-actions>
+    <mat-card-footer>
+      example of menu
+    </mat-card-footer>
   </mat-card>
 </section>
