@@ -1,4 +1,3 @@
-import { KindIconicComponent } from './components/kind-iconic/kind-iconic.component';
 import { NgModule } from '@angular/core'
 
 import {
@@ -7,6 +6,8 @@ import {
 } from '@angular/router'
 
 import { KindComponent } from './components/kind/kind.component'
+import { KindIconicComponent } from './components/kind-iconic/kind-iconic.component'
+import { KindPositioningComponent } from './components/kind-positioning/kind-positioning.component'
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'kind-iconic',
     component: KindIconicComponent
+  },
+  {
+    path: 'kind-positioning',
+    component: KindPositioningComponent
   },
   {
     path: '**',
