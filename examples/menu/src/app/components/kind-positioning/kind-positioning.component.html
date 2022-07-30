@@ -8,13 +8,15 @@
         Example with four types of positioning.
     </mat-card-content>
     <mat-card-actions align="start">
-      <button mat-button [matMenuTriggerFor]="menu">sample</button>
-      <mat-menu #menu="matMenu">
+
+      <button mat-button [matMenuTriggerFor]="aboveMenu">above</button>
+      <mat-menu #aboveMenu="matMenu" yPosition="above">
         <button mat-menu-item>sour cherries</button>
         <button mat-menu-item>blackberries</button>
         <button mat-menu-item>raspberries</button>
         <button mat-menu-item>blueberries</button>
       </mat-menu>
+
     </mat-card-actions>
     <mat-card-footer>
       menu with four types of positioning
