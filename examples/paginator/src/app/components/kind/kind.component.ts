@@ -12,7 +12,7 @@ import { interval } from 'rxjs'
 })
 export class KindComponent implements OnInit {
 
-  progressBarValue = 100
+  progressBarValue:number = 100
   currentSeconds: number = 0
 
   cardContextText: string[] = [
