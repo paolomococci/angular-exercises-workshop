@@ -10,4 +10,14 @@
     <input matInput [(ngModel)]="pageSize" type="number">
   </mat-form-field>
 
+  <mat-form-field appearance="fill">
+    <mat-label>page size options</mat-label>
+    <input
+      matInput
+      [ngModel]="pageSizeOptions"
+      (ngModelChange)="setPageSizeOptions($event)"
+      [ngModelOptions]="{updateOn: 'blur'}"
+      placeholder="example 1,2,3,5,8,13,21,34,55,89,144">
+  </mat-form-field>
+
 </section>
