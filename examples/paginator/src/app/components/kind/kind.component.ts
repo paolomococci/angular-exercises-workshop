@@ -3,7 +3,7 @@ import {
   OnInit
 } from '@angular/core'
 
-import { interval } from 'rxjs'
+import { PageEvent } from '@angular/material/paginator'
 
 @Component({
   selector: 'app-kind',
