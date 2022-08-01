@@ -12,19 +12,34 @@ import { PageEvent } from '@angular/material/paginator'
 })
 export class KindComponent implements OnInit {
 
-  length: number = 100
-  pageSize: number = 10
+  length: number = 144
+  pageSize: number = 5
 
   pageSizeOptions: number[] = [
+    1,
+    2,
+    3,
     5,
-    10,
-    25,
-    100
+    8,
+    13,
+    21,
+    34,
+    55,
+    89,
+    144
   ]
+
+  pageEvent!: PageEvent
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setPageSizeOptions(setPageSizeOptionsInput: string): void {
+    if (setPageSizeOptionsInput)
+      this.pageSizeOptions = setPageSizeOptionsInput.split(',')
+        .map(s => +s)
   }
 
 }
