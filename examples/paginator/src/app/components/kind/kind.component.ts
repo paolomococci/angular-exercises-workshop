@@ -31,9 +31,9 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  startTimer(seconds: number) {
+  startTimer(seconds: number): void {
     const timer$ = interval(500)
-    const sub = timer$.subscribe((sec) => {
+    const sub = timer$.subscribe((sec: number) => {
       this.progressBarValue = 100 - sec * 100 / seconds
       this.currentSeconds = sec
       if (this.currentSeconds === seconds) {
