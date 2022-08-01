@@ -3,12 +3,17 @@ import {
   OnInit
 } from '@angular/core'
 
+import { interval } from 'rxjs'
+
 @Component({
   selector: 'app-kind',
   templateUrl: './kind.component.html',
   styleUrls: ['./kind.component.sass']
 })
 export class KindComponent implements OnInit {
+
+  progressBarValue = 100
+  currentSeconds: number = 0
 
   cardContextText: string[] = [
     "But I must explain to you how all this mistaken idea of reprobating pleasure and extolling pain arose. To do so, I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
@@ -24,6 +29,17 @@ export class KindComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  startTimer(seconds: number) {
+    const timer$ = interval(500)
+    const sub = timer$.subscribe((sec) => {
+      this.progressBarValue = 100 - sec * 100 / seconds
+      this.currentSeconds = sec
+      if (this.currentSeconds === seconds) {
+        sub.unsubscribe()
+      }
+    })
   }
 
 }
