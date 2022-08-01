@@ -1,5 +1,9 @@
 # card
 
+Angular 13
+
+how to make an element disappear when a certain condition is true in angular
+
 ```shell
 ng new card -v -S -g --routing --style=sass
 ```
