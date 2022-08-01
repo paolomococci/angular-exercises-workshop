@@ -20,4 +20,11 @@
       placeholder="example 1,2,3,5,8,13,21,34,55,89,144">
   </mat-form-field>
 
+  <mat-paginator [length]="length"
+    [pageSize]="pageSize"
+    [pageSizeOptions]="pageSizeOptions"
+    (page)="pageEvent = $event"
+    aria-label="Select page">
+  </mat-paginator>
+
 </section>
