@@ -1,3 +1,22 @@
 <section>
-  <p>kind works!</p>
+  <mat-card class="kind-card">
+    <mat-card-title>Marcus Tullius Cicero</mat-card-title>
+    <mat-card-subtitle>derived from De "finibus bonorum et malorum"</mat-card-subtitle>
+    <mat-card-content>
+      <p *ngFor="let contextText of cardContextText">
+        {{contextText}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>
+        <mat-icon>thumb_up</mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-card-actions>
+    <mat-card-footer>
+      <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
 </section>
