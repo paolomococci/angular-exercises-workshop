@@ -27,4 +27,11 @@
     aria-label="Select page">
   </mat-paginator>
 
+  <div *ngIf="pageEvent">
+    <h5>page change event properties</h5>
+    <div>list length: {{pageEvent.length}}</div>
+    <div>page size: {{pageEvent.pageSize}}</div>
+    <div>page index: {{pageEvent.pageIndex}}</div>
+  </div>
+
 </section>
