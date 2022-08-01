@@ -12,6 +12,16 @@ import { PageEvent } from '@angular/material/paginator'
 })
 export class KindComponent implements OnInit {
 
+  length: number = 100
+  pageSize: number = 10
+
+  pageSizeOptions: number[] = [
+    5,
+    10,
+    25,
+    100
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
