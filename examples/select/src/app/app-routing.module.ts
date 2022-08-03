@@ -9,6 +9,10 @@ import {
   KindComponent
 } from './components/kind/kind.component'
 
+import {
+  KindDisabledComponent
+ } from './components/kind-disabled/kind-disabled.component'
+
 const routes: Routes = [
   {
     path: '',
@@ -18,6 +22,10 @@ const routes: Routes = [
   {
     path: 'kind',
     component: KindComponent
+  },
+  {
+    path: 'kind-disabled',
+    component: KindDisabledComponent
   },
   {
     path: '**',
