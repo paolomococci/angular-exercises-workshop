@@ -4,8 +4,12 @@
     <mat-card-subtitle>select your favorite fruit</mat-card-subtitle>
     <mat-card-content>
 
+      <p>
+        <mat-checkbox [formControl]="disableSelect">disable the following select</mat-checkbox>
+      </p>
+
       <mat-form-field appearance="fill">
-        <mat-select>
+        <mat-select [disabled]="disableSelect.value">
           <mat-option *ngFor="let fruit of fruits" [value]="fruit.value">
             {{fruit.viewValue}}
           </mat-option>
