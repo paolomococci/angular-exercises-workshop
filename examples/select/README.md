@@ -38,6 +38,12 @@ ng g c components/navbar
 ng g c components/kind
 ```
 
+## I create kind-disabled component
+
+```shell
+ng g c components/kind-disabled
+```
+
 ## I add helper module
 
 ```shell
