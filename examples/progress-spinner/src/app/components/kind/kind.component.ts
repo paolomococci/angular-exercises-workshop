@@ -5,7 +5,7 @@ import {
 
 import { interval } from 'rxjs'
 import { ThemePalette } from '@angular/material/core'
-import { ProgressBarMode } from '@angular/material/progress-bar'
+import { ProgressSpinnerMode } from '@angular/material/progress-spinner'
 
 @Component({
   selector: 'app-kind',
@@ -16,7 +16,7 @@ import { ProgressBarMode } from '@angular/material/progress-bar'
 export class KindComponent implements OnInit {
 
   themePalette: ThemePalette = 'primary'
-  progressBarMode: ProgressBarMode = 'determinate'
+  progressSpinnerMode: ProgressSpinnerMode = 'determinate'
   progressBarValue:number = 50
   currentSeconds: number = 0
   progressBarBufferValue: number = 75
@@ -39,7 +39,7 @@ export class KindComponent implements OnInit {
   }
 
   startTimerVisibility(): boolean {
-    return (this.progressBarValue > 0 && this.progressBarMode === 'determinate')
+    return (this.progressBarValue > 0 && this.progressSpinnerMode === 'determinate')
   }
 
 }
