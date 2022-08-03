@@ -68,6 +68,12 @@ ng g c components/kind-error-state
 ng g cl handlers/ErrorSelectHandler
 ```
 
+## I create kind-validation component
+
+```shell
+ng g c components/kind-validation
+```
+
 ## serve
 
 ```shell
