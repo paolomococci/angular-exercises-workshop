@@ -15,6 +15,11 @@ import { ProgressBarMode } from '@angular/material/progress-bar'
 
 export class KindComponent implements OnInit {
 
+  color: ThemePalette = 'primary'
+  mode: ProgressBarMode = 'determinate'
+  value = 50
+  bufferValue = 75
+
   progressBarValue:number = 100
   currentSeconds: number = 0
 
