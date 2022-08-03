@@ -6,6 +6,7 @@ import { NavbarComponent } from './components/navbar/navbar.component'
 import { KindComponent } from './components/kind/kind.component'
 import { KindDisabledComponent } from './components/kind-disabled/kind-disabled.component'
 import { KindErrorStateComponent } from './components/kind-error-state/kind-error-state.component'
+import { KindValidationComponent } from './components/kind-validation/kind-validation.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -20,7 +21,8 @@ import { HelperModule } from './modules/helper/helper.module'
     NavbarComponent,
     KindComponent,
     KindDisabledComponent,
-    KindErrorStateComponent
+    KindErrorStateComponent,
+    KindValidationComponent
   ],
   imports: [
     BrowserModule,
