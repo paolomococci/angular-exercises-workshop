@@ -1,0 +1,101 @@
+<section>
+
+  <mat-card class="kind-card">
+    <mat-card-title>
+      progress bar configuration
+    </mat-card-title>
+    <mat-card-subtitle>
+      a simple example of configuration controls
+    </mat-card-subtitle>
+    <mat-card-content>
+
+      <section class="kind-section">
+        <label class="kind-margin">color:</label>
+        <mat-radio-group [(ngModel)]="themePalette">
+          <mat-radio-button class="kind-margin" value="primary">
+            primary
+          </mat-radio-button>
+          <mat-radio-button class="kind-margin" value="accent">
+            accent
+          </mat-radio-button>
+          <mat-radio-button class="kind-margin" value="warn">
+            warn
+          </mat-radio-button>
+        </mat-radio-group>
+      </section>
+
+      <section class="kind-section">
+        <label class="kind-margin">mode:</label>
+        <mat-radio-group [(ngModel)]="progressBarMode">
+          <mat-radio-button class="kind-margin" value="determinate">
+            determinate
+          </mat-radio-button>
+          <mat-radio-button class="kind-margin" value="indeterminate">
+            indeterminate
+          </mat-radio-button>
+          <mat-radio-button class="kind-margin" value="buffer">
+            buffer
+          </mat-radio-button>
+          <mat-radio-button class="kind-margin" value="query">
+            query
+          </mat-radio-button>
+        </mat-radio-group>
+      </section>
+
+      <section class="kind-section" *ngIf="progressBarMode === 'determinate' || progressBarMode === 'buffer'">
+        <label class="kind-margin">progress:</label>
+        <mat-slider class="kind-margin" [(ngModel)]="progressBarValue"></mat-slider>
+      </section>
+
+      <section class="kind-section" *ngIf="progressBarMode === 'buffer'">
+        <label class="kind-margin">buffer:</label>
+        <mat-slider class="kind-margin" [(ngModel)]="progressBarBufferValue"></mat-slider>
+      </section>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>
+        <mat-icon>thumb_up</mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+</section>
+
+<section>
+
+  <mat-card>
+    <mat-card-header>
+        <mat-card-title>results</mat-card-title>
+        <mat-card-subtitle>the results of the previous settings are shown below</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+
+      <section class="kind-section">
+        <mat-progress-bar
+          class="kind-margin"
+          [color]="themePalette"
+          [mode]="progressBarMode"
+          [value]="progressBarValue"
+          [bufferValue]="progressBarBufferValue"
+        ></mat-progress-bar>
+      </section>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <section *ngIf="startTimerVisibility()" class="kind-section">
+        <p>you have a minute to read the quote, start now:</p>
+        <button mat-raised-button (click)="startTimer(60)">
+          <mat-icon>restart_alt</mat-icon>
+        </button>
+      </section>
+    </mat-card-actions>
+    <mat-card-footer>
+      <p class="kind-margin">the results of the previous settings are shown below</p>
+    </mat-card-footer>
+</mat-card>
+
+</section>
