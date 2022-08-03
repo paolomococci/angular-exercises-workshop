@@ -12,6 +12,7 @@ export class ErrorSelectHandler implements ErrorStateMatcher {
     control: FormControl | null,
     form: FormGroupDirective | NgForm | null
   ): boolean {
-    throw new Error('Method not implemented.')
+    const isSubmitted = form && form.submitted
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted))
   }
 }
