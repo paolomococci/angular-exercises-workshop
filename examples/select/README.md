@@ -62,6 +62,12 @@ ng g i models/Fruit --type=model
 ng g c components/kind-error-state
 ```
 
+## I create class ErrorSelectHandler in folder handlers
+
+```shell
+ng g cl handlers/ErrorSelectHandler
+```
+
 ## serve
 
 ```shell
