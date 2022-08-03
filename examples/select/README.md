@@ -44,6 +44,12 @@ ng g c components/kind
 ng g c components/kind-disabled
 ```
 
+## I create kind-error-state component
+
+```shell
+ng g c components/kind-error-state
+```
+
 ## I add helper module
 
 ```shell
