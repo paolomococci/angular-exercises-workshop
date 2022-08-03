@@ -8,7 +8,10 @@ import {
 import { ErrorStateMatcher } from '@angular/material/core'
 
 export class ErrorSelectHandler implements ErrorStateMatcher {
-  isErrorState(control: AbstractControl<any, any> | null, form: FormGroupDirective | NgForm | null): boolean {
+  isErrorState(
+    control: FormControl | null,
+    form: FormGroupDirective | NgForm | null
+  ): boolean {
     throw new Error('Method not implemented.')
   }
 }
