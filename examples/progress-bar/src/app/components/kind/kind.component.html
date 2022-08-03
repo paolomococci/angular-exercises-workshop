@@ -87,9 +87,8 @@
     </mat-card-content>
     <mat-card-actions>
       <section *ngIf="startTimerVisibility()" class="kind-section">
-        <p>you have a minute to read the quote, start now:</p>
         <button mat-raised-button (click)="startTimer(60)">
-          <mat-icon>restart_alt</mat-icon>
+          <mat-icon>start</mat-icon>
         </button>
       </section>
     </mat-card-actions>
