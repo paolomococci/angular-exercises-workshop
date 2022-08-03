@@ -3,7 +3,7 @@ import {
   OnInit
 } from '@angular/core'
 
-import { FormControl } from '@angular/forms'
+import { Fruit } from 'src/app/models/fruit.model'
 
 @Component({
   selector: 'app-kind',
@@ -11,6 +11,8 @@ import { FormControl } from '@angular/forms'
   styleUrls: ['./kind.component.sass']
 })
 export class KindComponent implements OnInit {
+
+  fruits: Fruit[] = []
 
   constructor() { }
 
