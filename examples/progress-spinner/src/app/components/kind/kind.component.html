@@ -26,30 +26,19 @@
 
       <section class="kind-section">
         <label class="kind-margin">mode:</label>
-        <mat-radio-group [(ngModel)]="progressBarMode">
+        <mat-radio-group [(ngModel)]="progressSpinnerMode">
           <mat-radio-button class="kind-margin" value="determinate">
             determinate
           </mat-radio-button>
           <mat-radio-button class="kind-margin" value="indeterminate">
             indeterminate
           </mat-radio-button>
-          <mat-radio-button class="kind-margin" value="buffer">
-            buffer
-          </mat-radio-button>
-          <mat-radio-button class="kind-margin" value="query">
-            query
-          </mat-radio-button>
         </mat-radio-group>
       </section>
 
-      <section class="kind-section" *ngIf="progressBarMode === 'determinate' || progressBarMode === 'buffer'">
+      <section class="kind-section" *ngIf="progressSpinnerMode === 'determinate'">
         <label class="kind-margin">progress:</label>
         <mat-slider class="kind-margin" [(ngModel)]="progressBarValue"></mat-slider>
-      </section>
-
-      <section class="kind-section" *ngIf="progressBarMode === 'buffer'">
-        <label class="kind-margin">buffer:</label>
-        <mat-slider class="kind-margin" [(ngModel)]="progressBarBufferValue"></mat-slider>
       </section>
 
     </mat-card-content>
@@ -75,13 +64,12 @@
     <mat-card-content>
 
       <section class="kind-section">
-        <mat-progress-bar
+        <mat-progress-spinner
           class="kind-margin"
           [color]="themePalette"
-          [mode]="progressBarMode"
+          [mode]="progressSpinnerMode"
           [value]="progressBarValue"
-          [bufferValue]="progressBarBufferValue"
-        ></mat-progress-bar>
+        ></mat-progress-spinner>
       </section>
 
     </mat-card-content>
