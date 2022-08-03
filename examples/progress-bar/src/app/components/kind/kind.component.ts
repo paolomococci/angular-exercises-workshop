@@ -15,13 +15,12 @@ import { ProgressBarMode } from '@angular/material/progress-bar'
 
 export class KindComponent implements OnInit {
 
-  color: ThemePalette = 'primary'
-  mode: ProgressBarMode = 'determinate'
-  value = 50
-  bufferValue = 75
-
-  progressBarValue:number = 100
+  themePalette: ThemePalette = 'primary'
+  progressBarMode: ProgressBarMode = 'determinate'
+  progressBarValue:number = 50
   currentSeconds: number = 0
+  progressBarBufferValue: number = 75
+
 
   constructor() { }
 
@@ -31,12 +30,16 @@ export class KindComponent implements OnInit {
   startTimer(seconds: number): void {
     const timer$ = interval(1000)
     const sub = timer$.subscribe((sec: number) => {
-      this.progressBarValue = 100 - sec * 100 / seconds
+      this.progressBarValue = this.progressBarValue - sec * 100 / seconds
       this.currentSeconds = sec
       if (this.currentSeconds === seconds) {
         sub.unsubscribe()
       }
     })
+  }
+
+  startTimerVisibility(): boolean {
+    return (this.progressBarValue > 0 && this.progressBarMode === 'determinate')
   }
 
 }
