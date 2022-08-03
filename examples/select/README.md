@@ -20,6 +20,12 @@ npm install
 ng add @angular/material
 ```
 
+## I add helper module
+
+```shell
+ng g m modules/helper
+```
+
 ## I create main component
 
 ```shell
@@ -48,12 +54,6 @@ ng g c components/kind-disabled
 
 ```shell
 ng g c components/kind-error-state
-```
-
-## I add helper module
-
-```shell
-ng g m modules/helper
 ```
 
 ## serve
