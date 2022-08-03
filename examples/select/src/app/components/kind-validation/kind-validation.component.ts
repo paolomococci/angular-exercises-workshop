@@ -17,6 +17,8 @@ import {
 })
 export class KindValidationComponent implements OnInit {
 
+  fruitControl = new FormControl<Fruit | null>(null, Validators.required)
+
   fruits: Fruit[] = [
     {value: '11001', viewValue: 'apple'},
     {value: '11002', viewValue: 'grape'},
