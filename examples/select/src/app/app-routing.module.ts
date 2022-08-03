@@ -8,12 +8,18 @@ import {
 import {
   KindComponent
 } from './components/kind/kind.component'
+
 import {
   KindDisabledComponent
  } from './components/kind-disabled/kind-disabled.component'
- import {
+
+import {
   KindErrorStateComponent
   } from './components/kind-error-state/kind-error-state.component'
+
+import {
+    KindValidationComponent
+   } from './components/kind-validation/kind-validation.component'
 
 const routes: Routes = [
   {
@@ -32,6 +38,10 @@ const routes: Routes = [
   {
     path: 'kind-error-state',
     component: KindErrorStateComponent
+  },
+  {
+    path: 'kind-validation',
+    component: KindValidationComponent
   },
   {
     path: '**',
