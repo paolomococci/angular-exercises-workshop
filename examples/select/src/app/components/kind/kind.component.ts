@@ -12,7 +12,15 @@ import { Fruit } from 'src/app/models/fruit.model'
 })
 export class KindComponent implements OnInit {
 
-  fruits: Fruit[] = []
+  fruits: Fruit[] = [
+    {value: '11001', viewValue: ''},
+    {value: '11002', viewValue: ''},
+    {value: '11003', viewValue: ''},
+    {value: '11004', viewValue: ''},
+    {value: '11005', viewValue: ''},
+    {value: '11006', viewValue: ''},
+    {value: '11007', viewValue: ''}
+  ]
 
   constructor() { }
 
