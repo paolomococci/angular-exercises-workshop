@@ -3,6 +3,8 @@ import {
   OnInit
  } from '@angular/core'
 
+ import { FormControl } from '@angular/forms'
+
  import { Fruit } from 'src/app/models/fruit.model'
 
 @Component({
@@ -11,6 +13,8 @@ import {
   styleUrls: ['./kind-disabled.component.sass']
 })
 export class KindDisabledComponent implements OnInit {
+
+  disableSelect = new FormControl(false)
 
   fruits: Fruit[] = [
     {value: '11001', viewValue: 'apple'},
