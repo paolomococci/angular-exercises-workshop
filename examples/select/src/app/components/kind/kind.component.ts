@@ -13,13 +13,14 @@ import { Fruit } from 'src/app/models/fruit.model'
 export class KindComponent implements OnInit {
 
   fruits: Fruit[] = [
-    {value: '11001', viewValue: ''},
-    {value: '11002', viewValue: ''},
-    {value: '11003', viewValue: ''},
-    {value: '11004', viewValue: ''},
-    {value: '11005', viewValue: ''},
-    {value: '11006', viewValue: ''},
-    {value: '11007', viewValue: ''}
+    {value: '11001', viewValue: 'apple'},
+    {value: '11002', viewValue: 'grape'},
+    {value: '11003', viewValue: 'orange'},
+    {value: '11004', viewValue: 'pear'},
+    {value: '11005', viewValue: 'banana'},
+    {value: '11006', viewValue: 'mango'},
+    {value: '11007', viewValue: 'avocado'},
+    {value: '11008', viewValue: 'pineapple'}
   ]
 
   constructor() { }
