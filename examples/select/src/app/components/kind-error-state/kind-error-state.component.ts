@@ -3,6 +3,8 @@ import {
   OnInit
  } from '@angular/core'
 
+ import { FormControl } from '@angular/forms'
+
 @Component({
   selector: 'app-kind-error-state',
   templateUrl: './kind-error-state.component.html',
