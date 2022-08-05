@@ -10,6 +10,8 @@ import {
 })
 export class KindComponent implements OnInit {
 
+  showFiller:boolean = false
+
   constructor() { }
 
   ngOnInit(): void {
