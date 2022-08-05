@@ -15,9 +15,24 @@ import {
 })
 export class KindFormComponent implements OnInit {
 
-  constructor() { }
+  isSwitched = false
+
+  formGroup = this._formBuilder.group(
+    {
+      enableWifi: '',
+      acceptEthicsOfConduct: ['', Validators.requiredTrue]
+    }
+  )
+
+  constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+  }
+
+  onFormSubmit() {
+    alert(
+      JSON.stringify(this.formGroup.value, null, 2)
+    )
   }
 
 }
