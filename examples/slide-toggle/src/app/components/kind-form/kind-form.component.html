@@ -1,11 +1,47 @@
 <section>
   <mat-card class="kind-card">
-    <mat-card-title>slide</mat-card-title>
-    <mat-card-subtitle>switching control example</mat-card-subtitle>
+    <mat-card-title>slide toggle</mat-card-title>
+    <mat-card-subtitle>using a simple NgModel</mat-card-subtitle>
     <mat-card-content>
-      <mat-slide-toggle>
-        form
-      </mat-slide-toggle>
+
+      <mat-slide-toggle [(ngModel)]="isSwitched">slide toggle is switched to: {{isSwitched}}</mat-slide-toggle>
+
+      <mat-divider class="kind-divider"></mat-divider>
+
+      <h3>slide toggle inside of a template-driven form</h3>
+      <form class="kind-form" #form="ngForm" (ngSubmit)="onFormSubmit()" ngNativeValidate>
+        <mat-slide-toggle ngModel name="enableWifi">
+          enable wifi
+        </mat-slide-toggle>
+        <mat-slide-toggle ngModel name="acceptEthicsOfConduct" required>
+          accept the code of ethics of conduct
+        </mat-slide-toggle>
+        <button mat-raised-button type="submit">
+          <mat-icon title="save settings">
+            save
+          </mat-icon>
+        </button>
+      </form>
+
+      <mat-divider class="kind-divider"></mat-divider>
+
+      <h3>slide toggle inside of a reactive form</h3>
+      <form class="kind-form" [formGroup]="formGroup" (ngSubmit)="onFormSubmit()" ngNativeValidate>
+        <mat-slide-toggle formControlName="enableWifi">
+          enable wifi
+        </mat-slide-toggle>
+        <mat-slide-toggle formControlName="acceptEthicsOfConduct">
+          accept the code of ethics of conduct
+        </mat-slide-toggle>
+        <button mat-raised-button type="submit">
+          <mat-icon title="save settings">
+            save
+          </mat-icon>
+        </button>
+      </form>
+
+      <mat-divider class="kind-divider"></mat-divider>
+
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>
@@ -16,7 +52,7 @@
       </button>
     </mat-card-actions>
     <mat-card-footer>
-      <p class="kind-paragraph-padding">switching control example</p>
+      <p class="kind-paragraph-padding">reactive form group status: {{formGroup.status}}</p>
     </mat-card-footer>
   </mat-card>
 </section>
