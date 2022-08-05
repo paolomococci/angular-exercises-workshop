@@ -11,7 +11,7 @@ import {
 export class KindComponent implements OnInit {
 
   showFiller:boolean = false
-  extraText: string = "sample of extra text"
+  extraText: string = "Some simple extra text for demonstration purposes only."
 
   constructor() { }
 
