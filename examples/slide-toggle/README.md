@@ -20,6 +20,12 @@ npm install
 ng add @angular/material
 ```
 
+## I add helper module
+
+```shell
+ng g m modules/helper
+```
+
 ## I create main component
 
 ```shell
@@ -38,10 +44,10 @@ ng g c components/navbar
 ng g c components/kind
 ```
 
-## I add helper module
+## I create kind-form component
 
 ```shell
-ng g m modules/helper
+ng g c components/kind-form
 ```
 
 ## serve
