@@ -6,6 +6,7 @@ import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatCardModule } from '@angular/material/card'
 import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatButtonModule } from '@angular/material/button'
 
 import { KindComponent } from './components/kind/kind.component'
 
@@ -19,7 +20,8 @@ import { KindComponent } from './components/kind/kind.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
