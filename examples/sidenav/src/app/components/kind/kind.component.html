@@ -5,14 +5,14 @@
       <p *ngIf="showFiller">
         {{extraText}}
       </p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
+      <button mat-raised-button (click)="showFiller = !showFiller">
         toggle extra text
       </button>
     </mat-drawer>
 
 
     <div class="kind-sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
+      <button mat-button type="button" (click)="drawer.toggle()">
         toggle sidenav
       </button>
     </div>
