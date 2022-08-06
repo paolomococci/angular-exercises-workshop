@@ -27,7 +27,9 @@
         <mat-checkbox class="kind-margin" [(ngModel)]="showNotches">
           show notches
         </mat-checkbox>
-
+        <mat-checkbox class="kind-margin" [(ngModel)]="autoNotches" *ngIf="showNotches">
+          auto notches
+        </mat-checkbox>
       </div>
 
       <div class="kind-div"></div>
