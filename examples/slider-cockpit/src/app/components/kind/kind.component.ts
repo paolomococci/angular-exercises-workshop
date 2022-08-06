@@ -10,6 +10,9 @@ import {
 })
 export class KindComponent implements OnInit {
 
+  autoNotches: boolean = false
+  disabled: boolean = false
+
   constructor() { }
 
   ngOnInit(): void {
