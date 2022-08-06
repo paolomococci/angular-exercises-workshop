@@ -12,6 +12,10 @@ export class KindComponent implements OnInit {
 
   autoNotches: boolean = false
   disabled: boolean = false
+  invert: boolean = false
+  showNotches: boolean = false
+  thumbLabel: boolean = false
+  vertical: boolean = false
 
   constructor() { }
 
