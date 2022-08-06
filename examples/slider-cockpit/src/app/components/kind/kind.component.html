@@ -30,6 +30,10 @@
         <mat-checkbox class="kind-margin" [(ngModel)]="autoNotches" *ngIf="showNotches">
           auto notches
         </mat-checkbox>
+        <mat-form-field class="kind-margin kind-width" appearance="fill" *ngIf="showNotches && !autoNotches">
+          <mat-label>notch interval</mat-label>
+          <input matInput type="number" [(ngModel)]="notchInterval">
+        </mat-form-field>
       </div>
 
       <div class="kind-div"></div>
