@@ -29,4 +29,8 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getSliderTickInterval(): number | 'auto' {
+    return 0
+  }
+
 }
