@@ -74,7 +74,11 @@
     </div>
 
     <div>
-      <mat-slider></mat-slider>
+      <mat-slider class="kind-margin"
+        [max]="max" [min]="min" [step]="step"
+        [disabled]="disabled" [invert]="invert" [vertical]="vertical"
+        [thumbLabel]="thumbLabel" [tickInterval]="getSliderNotchInterval()"
+        [(ngModel)]="value" aria-labelledby="kind-name-label"></mat-slider>
     </div>
 
     <mat-card-actions>
