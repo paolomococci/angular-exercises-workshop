@@ -66,7 +66,12 @@
     <mat-card-title>result</mat-card-title>
     <mat-card-subtitle>slider configuration result</mat-card-subtitle>
 
-    <div class="kind-label-container" [class]="vertical ? 'kind-label-vertical' : 'kind-label-horizontal'"></div>
+    <div class="kind-label-container" [class]="vertical ? 'kind-label-vertical' : 'kind-label-horizontal'">
+      <label id="kind-name-label" class="kind-name-label">max value</label>
+      <label class="kind-value-label">
+        {{value}}
+      </label>
+    </div>
 
     <mat-card-actions>
       <button mat-button>
