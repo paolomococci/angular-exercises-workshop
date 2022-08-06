@@ -30,6 +30,8 @@ export class KindComponent implements OnInit {
   }
 
   getSliderTickInterval(): number | 'auto' {
+    if (this.showNotches)
+      return this.autoNotches ? 'auto' : this.notchInterval
     return 0
   }
 
