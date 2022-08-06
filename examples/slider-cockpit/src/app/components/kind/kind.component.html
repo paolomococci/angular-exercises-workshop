@@ -5,7 +5,10 @@
     <mat-card-content>
 
       <div class="kind-section">
-        <mat-form-field class="kind-margin kind-width" appearance="fill"></mat-form-field>
+        <mat-form-field class="kind-margin kind-width" appearance="fill">
+          <mat-label>value</mat-label>
+          <input matInput type="number" [(ngModel)]="value">
+        </mat-form-field>
       </div>
 
     </mat-card-content>
