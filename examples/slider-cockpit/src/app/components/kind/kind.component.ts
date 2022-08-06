@@ -29,7 +29,7 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getSliderTickInterval(): number | 'auto' {
+  getSliderNotchInterval(): number | 'auto' {
     if (this.showNotches)
       return this.autoNotches ? 'auto' : this.notchInterval
     return 0
