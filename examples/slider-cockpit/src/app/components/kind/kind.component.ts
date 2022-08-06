@@ -17,6 +17,13 @@ export class KindComponent implements OnInit {
   thumbLabel: boolean = false
   vertical: boolean = false
 
+  min: number = 0
+  max: number = 100
+  value: number = 0
+  step: number = 1
+  notchInterval: number = 1
+
+
   constructor() { }
 
   ngOnInit(): void {
