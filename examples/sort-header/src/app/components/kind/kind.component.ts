@@ -15,7 +15,7 @@ import { Fruit } from 'src/app/interfaces/fruit.model'
 export class KindComponent implements OnInit {
 
   fruits: Fruit[] = [
-    {name: "apricot", water: 86.2, carbohydrates: 6.7, proteins: 0.4, fat: null, fiber: null},
+    {name: "apricot", water: 86.2, carbohydrates: 6.7, proteins: 0.4, fat: 0.09, fiber: 1.3},
     {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
     {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
     {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
