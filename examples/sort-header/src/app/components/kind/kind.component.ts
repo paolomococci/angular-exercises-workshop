@@ -32,4 +32,8 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sortFruits() {}
+
+  compare() {}
+
 }
