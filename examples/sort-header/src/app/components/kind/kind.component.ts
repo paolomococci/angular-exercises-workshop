@@ -3,6 +3,8 @@ import {
   OnInit
 } from '@angular/core'
 
+import { Sort } from '@angular/material/sort'
+
 @Component({
   selector: 'app-kind',
   templateUrl: './kind.component.html',
