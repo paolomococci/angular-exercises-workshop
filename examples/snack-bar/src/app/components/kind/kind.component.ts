@@ -12,7 +12,7 @@ import { MatSnackBar } from '@angular/material/snack-bar'
 })
 export class KindComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
