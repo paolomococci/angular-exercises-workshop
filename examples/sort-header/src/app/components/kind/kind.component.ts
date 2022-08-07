@@ -34,6 +34,12 @@ export class KindComponent implements OnInit {
 
   sortFruits() {}
 
-  compare() {}
+  compare(
+    first: number | string,
+    second: number | string,
+    isAsc: boolean
+  ) {
+    return (first < second ? -1 : 1) * (isAsc ? 1 : -1)
+  }
 
 }
