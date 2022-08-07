@@ -32,7 +32,7 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sortFruits() {}
+  sortFruits(sort: Sort) {}
 
   compare(
     first: number | string,
