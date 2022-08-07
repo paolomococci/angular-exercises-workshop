@@ -20,12 +20,7 @@ export class KindComponent implements OnInit {
     {name: "avocado", water: 64, carbohydrates: 2.1, proteins: 6.2,  fat: 24.2, fiber: 3.5},
     {name: "orange", water: 89.1, carbohydrates: 8.2, proteins: 0.6,  fat: 0.3, fiber: 1.8},
     {name: "banana", water: 78.9, carbohydrates: 17.8, proteins: 1.31,  fat: 0.29, fiber: 1.7},
-    {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
-    {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
-    {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
-    {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
-    {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
-    {name: "", water: null, carbohydrates: null, proteins: null,  fat: null, fiber: null},
+    {name: "strawberry", water: 91.6, carbohydrates: 5.52, proteins: 0.85,  fat: 0.38, fiber: 1.65}
   ]
 
   constructor() { }
