@@ -40,7 +40,27 @@ export class KindComponent implements OnInit {
       return
     }
 
-
+    this.sortedFruits = temp.sort(
+      (first, second) => {
+        const isAsc = sort.direction === 'asc'
+        switch (sort.active) {
+          case 'name':
+            return this.compare(first.name, second.name, isAsc)
+          case 'water':
+            return this.compare(first.water, second.water, isAsc)
+          case 'carbohydrates':
+            return this.compare(first.carbohydrates, second.carbohydrates, isAsc)
+          case 'proteins':
+            return this.compare(first.proteins, second.proteins, isAsc)
+          case 'fat':
+            return this.compare(first.fat, second.fat, isAsc)
+          case 'fiber':
+            return this.compare(first.fiber, second.fiber, isAsc)
+          default:
+            return 0
+        }
+      }
+    )
   }
 
   compare(
