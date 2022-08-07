@@ -44,6 +44,12 @@ ng g c components/kind
 ng g m modules/helper
 ```
 
+## I generate Fruit interface
+
+```shell
+ng g i interfaces/Fruit --type=model
+```
+
 ## serve
 
 ```shell
