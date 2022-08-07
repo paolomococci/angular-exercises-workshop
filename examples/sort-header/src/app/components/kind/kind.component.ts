@@ -23,6 +23,8 @@ export class KindComponent implements OnInit {
     {name: "strawberry", water: 91.6, carbohydrates: 5.52, proteins: 0.85,  fat: 0.38, fiber: 1.65}
   ]
 
+  sortedFruits!: Fruit[]
+
   constructor() { }
 
   ngOnInit(): void {
