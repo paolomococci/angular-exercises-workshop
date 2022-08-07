@@ -6,16 +6,18 @@
 
       <mat-form-field appearance="fill">
         <mat-label>message to show</mat-label>
-        <input matInput value="I like this component!" #message>
+        <input matInput value="I like this component:" #message>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>action to do</mat-label>
+        <input matInput value="View this component!" #action>
       </mat-form-field>
 
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>
-        <mat-icon>thumb_up</mat-icon>
-      </button>
-      <button mat-button>
-        <mat-icon>share</mat-icon>
+      <button  mat-stroked-button (click)="openSnackBar(message.value, action.value)">
+        <mat-icon>visibility</mat-icon>
       </button>
     </mat-card-actions>
     <mat-card-footer>
