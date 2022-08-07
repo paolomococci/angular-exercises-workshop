@@ -25,7 +25,9 @@ export class KindComponent implements OnInit {
 
   sortedFruits!: Fruit[]
 
-  constructor() { }
+  constructor() {
+    this.sortedFruits = this.fruits.slice()
+  }
 
   ngOnInit(): void {
   }
