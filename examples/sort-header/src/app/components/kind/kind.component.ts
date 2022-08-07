@@ -15,17 +15,17 @@ import { Fruit } from 'src/app/interfaces/fruit.model'
 export class KindComponent implements OnInit {
 
   fruits: Fruit[] = [
-    {name: "apricot", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
-    {name: "", water: null, calories: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "apricot", water: 86.2, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
+    {name: "", water: null, carbohydrates: null, proteins: null, carbs: null, fat: null, fiber: null},
   ]
 
   constructor() { }
