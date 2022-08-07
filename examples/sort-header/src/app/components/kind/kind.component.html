@@ -5,7 +5,7 @@
     <mat-card-content>
 
       <div class="mat-sort-header-container">
-        <table matSort>
+        <table  matSort (matSortChange)="sortFruits($event)">
           <tr>
             <th>fruit (100g)</th>
             <th>water (g)</th>
