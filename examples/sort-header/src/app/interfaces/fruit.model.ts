@@ -1,7 +1,7 @@
 export interface Fruit {
   name: string
   water: number | null
-  calories: number | null
+  carbohydrates: number | null
   proteins: number | null
   carbs: number | null
   fat: number | null
