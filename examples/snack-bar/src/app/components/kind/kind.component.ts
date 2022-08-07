@@ -17,4 +17,8 @@ export class KindComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action)
+  }
+
 }
