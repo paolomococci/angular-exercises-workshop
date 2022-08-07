@@ -7,12 +7,12 @@
       <div class="mat-sort-header-container">
         <table  matSort (matSortChange)="sortFruits($event)">
           <tr>
-            <th>fruit (100g)</th>
-            <th>water (g)</th>
-            <th>carbohydrates (g)</th>
-            <th>proteins (g)</th>
-            <th>fat (g)</th>
-            <th>fiber (g)</th>
+            <th mat-sort-header="name">fruit (100g)</th>
+            <th mat-sort-header="water">water (g)</th>
+            <th mat-sort-header="carbohydrates">carbohydrates (g)</th>
+            <th mat-sort-header="proteins">proteins (g)</th>
+            <th mat-sort-header="fat">fat (g)</th>
+            <th mat-sort-header="fiber">fiber (g)</th>
           </tr>
           <tr>
             <td></td>
