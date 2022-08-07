@@ -14,13 +14,25 @@
             <th mat-sort-header="fat">fat (g)</th>
             <th mat-sort-header="fiber">fiber (g)</th>
           </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr *ngFor="let fruit of sortedFruits">
+            <td>
+              {{fruit.name}}
+            </td>
+            <td>
+              {{fruit.water}}
+            </td>
+            <td>
+              {{fruit.carbohydrates}}
+            </td>
+            <td>
+              {{fruit.proteins}}
+            </td>
+            <td>
+              {{fruit.fat}}
+            </td>
+            <td>
+              {{fruit.fiber}}
+            </td>
           </tr>
         </table>
       </div>
