@@ -3,6 +3,11 @@ import {
   OnInit
 } from '@angular/core'
 
+import {
+  FormBuilder,
+  Validators
+} from '@angular/forms'
+
 @Component({
   selector: 'app-kind',
   templateUrl: './kind.component.html',
