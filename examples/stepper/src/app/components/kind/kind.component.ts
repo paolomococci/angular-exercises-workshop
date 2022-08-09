@@ -19,6 +19,10 @@ export class KindComponent implements OnInit {
     firstCtrl: ['', Validators.required]
   })
 
+  secondFormGroup = this._formBuilder.group({
+    secondCtrl: ['', Validators.required]
+  })
+
   constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
