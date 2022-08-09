@@ -31,7 +31,13 @@
           </form>
         </mat-step>
 
-        <mat-step></mat-step>
+        <mat-step>
+          <ng-template matStepLabel>done</ng-template>
+          are you done
+          <div>
+            <button mat-button matStepperPrevious>back</button>
+          </div>
+        </mat-step>
 
       </mat-stepper>
 
