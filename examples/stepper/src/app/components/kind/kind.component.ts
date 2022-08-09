@@ -15,7 +15,9 @@ import {
 })
 export class KindComponent implements OnInit {
 
-  constructor() { }
+  firstFormGroup = this._formBuilder.group({})
+
+  constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
   }
