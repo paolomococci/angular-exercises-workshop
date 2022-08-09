@@ -9,6 +9,10 @@ import {
   KindComponent
 } from './components/kind/kind.component'
 
+import {
+  KindVerticalComponent
+} from './components/kind-vertical/kind-vertical.component'
+
 const routes: Routes = [
   {
     path: '',
@@ -18,6 +22,10 @@ const routes: Routes = [
   {
     path: 'kind',
     component: KindComponent
+  },
+  {
+    path: 'kind-vertical',
+    component: KindVerticalComponent
   },
   {
     path: '**',
