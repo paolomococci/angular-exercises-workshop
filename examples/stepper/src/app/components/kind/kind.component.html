@@ -4,7 +4,15 @@
     <mat-card-subtitle>sub-title</mat-card-subtitle>
     <mat-card-content>
 
-      <mat-stepper headerPosition="bottom" #stepper></mat-stepper>
+      <mat-stepper headerPosition="bottom" #stepper>
+
+        <mat-step [stepControl]="firstFormGroup"></mat-step>
+
+        <mat-step [stepControl]="secondFormGroup" optional></mat-step>
+
+        <mat-step></mat-step>
+
+      </mat-stepper>
 
     </mat-card-content>
     <mat-card-actions>
