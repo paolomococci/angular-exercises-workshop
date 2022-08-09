@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { MainComponent } from './components/main/main.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { KindComponent } from './components/kind/kind.component'
+import { KindVerticalComponent } from './components/kind-vertical/kind-vertical.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -16,7 +17,8 @@ import { HelperModule } from './modules/helper/helper.module'
     AppComponent,
     MainComponent,
     NavbarComponent,
-    KindComponent
+    KindComponent,
+    KindVerticalComponent
   ],
   imports: [
     BrowserModule,
