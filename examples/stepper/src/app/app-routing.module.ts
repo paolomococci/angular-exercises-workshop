@@ -1,3 +1,4 @@
+import { KindErrorComponent } from './components/kind-error/kind-error.component';
 import { NgModule } from '@angular/core'
 
 import {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'kind-vertical',
     component: KindVerticalComponent
+  },
+  {
+    path: 'kind-error',
+    component: KindErrorComponent
   },
   {
     path: '**',
