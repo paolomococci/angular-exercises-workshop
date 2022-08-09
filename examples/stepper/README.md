@@ -44,6 +44,12 @@ ng g c components/kind
 ng g c components/kind-vertical
 ```
 
+## I create kind-error component
+
+```shell
+ng g c components/kind-error
+```
+
 ## I add helper module
 
 ```shell
