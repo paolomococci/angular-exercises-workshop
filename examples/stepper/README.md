@@ -38,6 +38,12 @@ ng g c components/navbar
 ng g c components/kind
 ```
 
+## I create kind-vertical component
+
+```shell
+ng g c components/kind-vertical
+```
+
 ## I add helper module
 
 ```shell
