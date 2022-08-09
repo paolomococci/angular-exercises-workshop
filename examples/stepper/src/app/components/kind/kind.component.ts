@@ -15,7 +15,9 @@ import {
 })
 export class KindComponent implements OnInit {
 
-  firstFormGroup = this._formBuilder.group({})
+  firstFormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required]
+  })
 
   constructor(private _formBuilder: FormBuilder) { }
 
