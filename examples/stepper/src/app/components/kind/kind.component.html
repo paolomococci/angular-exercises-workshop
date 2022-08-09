@@ -18,7 +18,18 @@
           </form>
         </mat-step>
 
-        <mat-step [stepControl]="secondFormGroup" optional></mat-step>
+        <mat-step [stepControl]="secondFormGroup" optional>
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>surname</ng-template>
+            <mat-form-field>
+              <input matInput placeholder="last name" formControlName="secondCtrl" required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>back</button>
+              <button mat-button matStepperNext>next</button>
+            </div>
+          </form>
+        </mat-step>
 
         <mat-step></mat-step>
 
