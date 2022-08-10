@@ -6,25 +6,27 @@
 
       <mat-stepper #stepper>
 
-        <mat-step [stepControl]="firstFormGroup">
+        <mat-step [stepControl]="firstFormGroup" errorMessage="name is required">
           <form [formGroup]="firstFormGroup">
             <ng-template matStepLabel>name</ng-template>
             <mat-form-field>
               <input matInput placeholder="first name" formControlName="firstCtrl" required>
             </mat-form-field>
             <div>
+              <p>skip to a different step to view the type of error</p>
               <button mat-button matStepperNext>next</button>
             </div>
           </form>
         </mat-step>
 
-        <mat-step [stepControl]="secondFormGroup" optional>
+        <mat-step [stepControl]="secondFormGroup" errorMessage="surname is required">
           <form [formGroup]="secondFormGroup">
             <ng-template matStepLabel>surname</ng-template>
             <mat-form-field>
               <input matInput placeholder="last name" formControlName="secondCtrl" required>
             </mat-form-field>
             <div>
+              <p>skip to a different step to view the type of error</p>
               <button mat-button matStepperPrevious>back</button>
               <button mat-button matStepperNext>next</button>
             </div>
