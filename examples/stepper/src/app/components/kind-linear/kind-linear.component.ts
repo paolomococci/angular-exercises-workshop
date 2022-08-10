@@ -3,6 +3,11 @@ import {
   OnInit
 } from '@angular/core'
 
+import {
+  FormBuilder,
+  Validators
+} from '@angular/forms'
+
 @Component({
   selector: 'app-kind-linear',
   templateUrl: './kind-linear.component.html',
@@ -12,7 +17,15 @@ export class KindLinearComponent implements OnInit {
 
   isLinear = false
 
-  constructor() { }
+  firstFormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required]
+  })
+
+  secondFormGroup = this._formBuilder.group({
+    secondCtrl: ['', Validators.required]
+  })
+
+  constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
   }
