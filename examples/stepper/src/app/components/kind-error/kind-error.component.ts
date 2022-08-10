@@ -15,7 +15,13 @@ import {
 @Component({
   selector: 'app-kind-error',
   templateUrl: './kind-error.component.html',
-  styleUrls: ['./kind-error.component.sass']
+  styleUrls: ['./kind-error.component.sass'],
+  providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: {showError: true}
+    }
+  ]
 })
 export class KindErrorComponent implements OnInit {
 
