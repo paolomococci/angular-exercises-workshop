@@ -10,6 +10,8 @@ import {
 })
 export class KindLinearComponent implements OnInit {
 
+  isLinear = false
+
   constructor() { }
 
   ngOnInit(): void {
