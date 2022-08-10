@@ -3,6 +3,11 @@ import {
   OnInit
 } from '@angular/core'
 
+import {
+  FormBuilder,
+  Validators
+} from '@angular/forms'
+
 @Component({
   selector: 'app-kind-error',
   templateUrl: './kind-error.component.html',
@@ -10,7 +15,15 @@ import {
 })
 export class KindErrorComponent implements OnInit {
 
-  constructor() { }
+  firstFormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required]
+  })
+
+  secondFormGroup = this._formBuilder.group({
+    secondCtrl: ['', Validators.required]
+  })
+
+  constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
   }
