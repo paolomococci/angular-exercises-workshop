@@ -44,12 +44,10 @@
 
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>
-        <mat-icon>thumb_up</mat-icon>
-      </button>
-      <button mat-button>
-        <mat-icon>share</mat-icon>
-      </button>
+      <mat-form-field class="kind-input-wrapper" appearance="fill">
+        <mat-label for="duration">animation duration:</mat-label>
+      <input matInput id="duration" value="2000" type="number" min="0" step="100" #duration>
+      </mat-form-field>
     </mat-card-actions>
     <mat-card-footer>
       <p class="kind-paragraph-padding">Your first and last name, please</p>
