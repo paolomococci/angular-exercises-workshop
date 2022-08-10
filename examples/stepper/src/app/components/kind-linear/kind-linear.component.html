@@ -4,7 +4,7 @@
     <mat-card-subtitle>Your first and last name, please</mat-card-subtitle>
     <mat-card-content>
 
-      <mat-stepper headerPosition="bottom" #stepper>
+      <mat-stepper headerPosition="bottom" [linear]="isLinear" #stepper>
 
         <mat-step [stepControl]="firstFormGroup">
           <form [formGroup]="firstFormGroup">
