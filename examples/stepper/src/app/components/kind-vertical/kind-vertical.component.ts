@@ -5,7 +5,7 @@ import {
 
 import {
   FormBuilder,
-  Validators
+  FormGroup
 } from '@angular/forms'
 
 @Component({
@@ -15,12 +15,12 @@ import {
 })
 export class KindVerticalComponent implements OnInit {
 
-  firstFormGroup = this._formBuilder.group({
-    firstCtrl: ['', Validators.required]
+  firstFormGroup: FormGroup = this._formBuilder.group({
+    firstCtrl: ['']
   })
 
-  secondFormGroup = this._formBuilder.group({
-    secondCtrl: ['', Validators.required]
+  secondFormGroup: FormGroup = this._formBuilder.group({
+    secondCtrl: ['']
   })
 
   constructor(private _formBuilder: FormBuilder) { }
