@@ -8,6 +8,10 @@ import {
   Validators
 } from '@angular/forms'
 
+import {
+  STEPPER_GLOBAL_OPTIONS
+} from '@angular/cdk/stepper'
+
 @Component({
   selector: 'app-kind-error',
   templateUrl: './kind-error.component.html',
