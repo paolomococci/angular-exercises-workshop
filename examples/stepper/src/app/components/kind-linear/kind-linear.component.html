@@ -1,1 +1,58 @@
-<p>kind-linear works!</p>
+<section>
+  <mat-card class="kind-card">
+    <mat-card-title>name</mat-card-title>
+    <mat-card-subtitle>Your first and last name, please</mat-card-subtitle>
+    <mat-card-content>
+
+      <mat-stepper headerPosition="bottom" #stepper>
+
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>name</ng-template>
+            <mat-form-field>
+              <input matInput placeholder="first name" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperNext>next</button>
+            </div>
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="secondFormGroup" optional>
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>surname</ng-template>
+            <mat-form-field>
+              <input matInput placeholder="last name" formControlName="secondCtrl" required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>back</button>
+              <button mat-button matStepperNext>next</button>
+            </div>
+          </form>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>done</ng-template>
+          are you done
+          <div>
+            <button mat-button matStepperPrevious>back</button>
+            <button mat-button (click)="stepper.reset()">reset</button>
+          </div>
+        </mat-step>
+
+      </mat-stepper>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>
+        <mat-icon>thumb_up</mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-card-actions>
+    <mat-card-footer>
+      <p class="kind-paragraph-padding">Your first and last name, please</p>
+    </mat-card-footer>
+  </mat-card>
+</section>
