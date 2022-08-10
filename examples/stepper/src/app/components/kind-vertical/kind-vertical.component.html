@@ -4,7 +4,7 @@
     <mat-card-subtitle>Your first and last name, please</mat-card-subtitle>
     <mat-card-content>
 
-      <mat-stepper headerPosition="bottom" #stepper>
+      <mat-vertical-stepper [linear]="false" #stepper [animationDuration]="duration.value">
 
         <mat-step [stepControl]="firstFormGroup">
           <form [formGroup]="firstFormGroup">
@@ -40,7 +40,7 @@
           </div>
         </mat-step>
 
-      </mat-stepper>
+      </mat-vertical-stepper>
 
     </mat-card-content>
     <mat-card-actions>
