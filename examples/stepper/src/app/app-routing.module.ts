@@ -1,4 +1,3 @@
-import { KindErrorComponent } from './components/kind-error/kind-error.component';
 import { NgModule } from '@angular/core'
 
 import {
@@ -13,6 +12,14 @@ import {
 import {
   KindVerticalComponent
 } from './components/kind-vertical/kind-vertical.component'
+
+import {
+  KindErrorComponent
+} from './components/kind-error/kind-error.component'
+
+import {
+  KindLinearComponent
+} from './components/kind-linear/kind-linear.component'
 
 const routes: Routes = [
   {
@@ -31,6 +38,10 @@ const routes: Routes = [
   {
     path: 'kind-error',
     component: KindErrorComponent
+  },
+  {
+    path: 'kind-linear',
+    component: KindLinearComponent
   },
   {
     path: '**',
