@@ -80,6 +80,12 @@ ng g c components/kind-expandable
 ng g c components/kind-filtering
 ```
 
+## I add kind-footer component
+
+```shell
+ng g c components/kind-footer
+```
+
 ## serve
 
 ```shell
