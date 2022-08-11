@@ -50,6 +50,12 @@ ng g m modules/helper
 ng g c components/kind-stylized
 ```
 
+## I add kind-crud component
+
+```shell
+ng g c components/kind-crud
+```
+
 ## serve
 
 ```shell
