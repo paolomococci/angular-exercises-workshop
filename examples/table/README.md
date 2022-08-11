@@ -44,6 +44,12 @@ ng g c components/kind
 ng g m modules/helper
 ```
 
+## I add kind-stylized component
+
+```shell
+ng g c components/kind-stylized
+```
+
 ## serve
 
 ```shell
