@@ -8,6 +8,7 @@ import {
 import { KindComponent } from './components/kind/kind.component'
 import { KindStylizedComponent } from './components/kind-stylized/kind-stylized.component'
 import { KindCrudComponent } from './components/kind-crud/kind-crud.component'
+import { KindDynamicallyComponent } from './components/kind-dynamically/kind-dynamically.component'
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'kind-crud',
     component: KindCrudComponent
+  },
+  {
+    path: 'kind-dynamically',
+    component: KindDynamicallyComponent
   },
   {
     path: '**',
