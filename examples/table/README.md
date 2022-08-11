@@ -74,6 +74,12 @@ ng g c components/kind-observable
 ng g c components/kind-expandable
 ```
 
+## I add kind-filtering component
+
+```shell
+ng g c components/kind-filtering
+```
+
 ## serve
 
 ```shell
