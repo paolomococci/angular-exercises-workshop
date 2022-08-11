@@ -10,6 +10,7 @@ import { KindDynamicallyComponent } from './components/kind-dynamically/kind-dyn
 import { KindObservableComponent } from './components/kind-observable/kind-observable.component'
 import { KindExpandableComponent } from './components/kind-expandable/kind-expandable.component'
 import { KindFilteringComponent } from './components/kind-filtering/kind-filtering.component'
+import { KindFooterComponent } from './components/kind-footer/kind-footer.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -28,7 +29,8 @@ import { HelperModule } from './modules/helper/helper.module'
     KindDynamicallyComponent,
     KindObservableComponent,
     KindExpandableComponent,
-    KindFilteringComponent
+    KindFilteringComponent,
+    KindFooterComponent
   ],
   imports: [
     BrowserModule,
