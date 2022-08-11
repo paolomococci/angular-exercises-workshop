@@ -62,6 +62,12 @@ ng g c components/kind-crud
 ng g c components/kind-dynamically
 ```
 
+## I add kind-observable component
+
+```shell
+ng g c components/kind-observable
+```
+
 ## serve
 
 ```shell
