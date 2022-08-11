@@ -10,6 +10,7 @@ import { KindStylizedComponent } from './components/kind-stylized/kind-stylized.
 import { KindCrudComponent } from './components/kind-crud/kind-crud.component'
 import { KindDynamicallyComponent } from './components/kind-dynamically/kind-dynamically.component'
 import { KindObservableComponent } from './components/kind-observable/kind-observable.component'
+import { KindExpandableComponent } from './components/kind-expandable/kind-expandable.component'
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'kind-observable',
     component: KindObservableComponent
+  },
+  {
+    path: 'kind-expandable',
+    component: KindExpandableComponent
   },
   {
     path: '**',
