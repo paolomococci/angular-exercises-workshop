@@ -56,6 +56,12 @@ ng g c components/kind-stylized
 ng g c components/kind-crud
 ```
 
+## I add kind-dynamically component
+
+```shell
+ng g c components/kind-dynamically
+```
+
 ## serve
 
 ```shell
