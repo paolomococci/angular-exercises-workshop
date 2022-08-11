@@ -12,6 +12,7 @@ import { KindDynamicallyComponent } from './components/kind-dynamically/kind-dyn
 import { KindObservableComponent } from './components/kind-observable/kind-observable.component'
 import { KindExpandableComponent } from './components/kind-expandable/kind-expandable.component'
 import { KindFilteringComponent } from './components/kind-filtering/kind-filtering.component'
+import { KindFooterComponent } from './components/kind-footer/kind-footer.component'
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'kind-filtering',
     component: KindFilteringComponent
+  },
+  {
+    path: 'kind-footer',
+    component: KindFooterComponent
   },
   {
     path: '**',
