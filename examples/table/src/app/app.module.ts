@@ -15,6 +15,7 @@ import { KindRetrieverComponent } from './components/kind-retriever/kind-retriev
 import { KindMultipleComponent } from './components/kind-multiple/kind-multiple.component'
 import { KindSortingComponent } from './components/kind-sorting/kind-sorting.component'
 import { KindPaginationComponent } from './components/kind-pagination/kind-pagination.component'
+import { KindSelectionComponent } from './components/kind-selection/kind-selection.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -38,7 +39,8 @@ import { HelperModule } from './modules/helper/helper.module'
     KindRetrieverComponent,
     KindMultipleComponent,
     KindSortingComponent,
-    KindPaginationComponent
+    KindPaginationComponent,
+    KindSelectionComponent
   ],
   imports: [
     BrowserModule,
