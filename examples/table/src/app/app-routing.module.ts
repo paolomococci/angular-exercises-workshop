@@ -7,17 +7,18 @@ import {
 } from '@angular/router'
 
 import { KindComponent } from './components/kind/kind.component'
-import { KindStylizedComponent } from './components/kind-stylized/kind-stylized.component'
+
 import { KindCrudComponent } from './components/kind-crud/kind-crud.component'
 import { KindDynamicallyComponent } from './components/kind-dynamically/kind-dynamically.component'
-import { KindObservableComponent } from './components/kind-observable/kind-observable.component'
 import { KindExpandableComponent } from './components/kind-expandable/kind-expandable.component'
 import { KindFilteringComponent } from './components/kind-filtering/kind-filtering.component'
 import { KindFooterComponent } from './components/kind-footer/kind-footer.component'
-import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
 import { KindMultipleComponent } from './components/kind-multiple/kind-multiple.component'
+import { KindObservableComponent } from './components/kind-observable/kind-observable.component'
 import { KindPaginationComponent } from './components/kind-pagination/kind-pagination.component'
+import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
 import { KindSelectionComponent } from './components/kind-selection/kind-selection.component'
+import { KindStylizedComponent } from './components/kind-stylized/kind-stylized.component'
 
 const routes: Routes = [
   {
