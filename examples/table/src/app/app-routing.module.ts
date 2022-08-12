@@ -16,6 +16,7 @@ import { KindFilteringComponent } from './components/kind-filtering/kind-filteri
 import { KindFooterComponent } from './components/kind-footer/kind-footer.component'
 import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
 import { KindMultipleComponent } from './components/kind-multiple/kind-multiple.component'
+import { KindPaginationComponent } from './components/kind-pagination/kind-pagination.component'
 
 const routes: Routes = [
   {
@@ -66,6 +67,10 @@ const routes: Routes = [
   {
     path: 'kind-sorting',
     component: KindSortingComponent
+  },
+  {
+    path: 'kind-pagination',
+    component: KindPaginationComponent
   },
   {
     path: '**',
