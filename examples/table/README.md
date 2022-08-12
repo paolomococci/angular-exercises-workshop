@@ -104,6 +104,12 @@ ng g c components/kind-multiple
 ng g c components/kind-sorting
 ```
 
+## I add kind-pagination component
+
+```shell
+ng g c components/kind-pagination
+```
+
 ## serve
 
 ```shell
