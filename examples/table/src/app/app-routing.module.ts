@@ -1,3 +1,4 @@
+import { KindSortingComponent } from './components/kind-sorting/kind-sorting.component';
 import { NgModule } from '@angular/core'
 
 import {
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path: 'kind-multiple',
     component: KindMultipleComponent
+  },
+  {
+    path: 'kind-sorting',
+    component: KindSortingComponent
   },
   {
     path: '**',
