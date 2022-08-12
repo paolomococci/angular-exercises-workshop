@@ -14,6 +14,7 @@ import { KindExpandableComponent } from './components/kind-expandable/kind-expan
 import { KindFilteringComponent } from './components/kind-filtering/kind-filtering.component'
 import { KindFooterComponent } from './components/kind-footer/kind-footer.component'
 import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
+import { KindMultipleComponent } from './components/kind-multiple/kind-multiple.component'
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'kind-retriever',
     component: KindRetrieverComponent
+  },
+  {
+    path: 'kind-multiple',
+    component: KindMultipleComponent
   },
   {
     path: '**',
