@@ -11,6 +11,7 @@ import { KindObservableComponent } from './components/kind-observable/kind-obser
 import { KindExpandableComponent } from './components/kind-expandable/kind-expandable.component'
 import { KindFilteringComponent } from './components/kind-filtering/kind-filtering.component'
 import { KindFooterComponent } from './components/kind-footer/kind-footer.component'
+import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -30,7 +31,8 @@ import { HelperModule } from './modules/helper/helper.module'
     KindObservableComponent,
     KindExpandableComponent,
     KindFilteringComponent,
-    KindFooterComponent
+    KindFooterComponent,
+    KindRetrieverComponent
   ],
   imports: [
     BrowserModule,
