@@ -92,6 +92,12 @@ ng g c components/kind-footer
 ng g c components/kind-retriever
 ```
 
+## I add kind-multiple component
+
+```shell
+ng g c components/kind-multiple
+```
+
 ## serve
 
 ```shell
