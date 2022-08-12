@@ -1,4 +1,3 @@
-import { KindSortingComponent } from './components/kind-sorting/kind-sorting.component';
 import { NgModule } from '@angular/core'
 
 import {
@@ -18,6 +17,7 @@ import { KindObservableComponent } from './components/kind-observable/kind-obser
 import { KindPaginationComponent } from './components/kind-pagination/kind-pagination.component'
 import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
 import { KindSelectionComponent } from './components/kind-selection/kind-selection.component'
+import { KindSortingComponent } from './components/kind-sorting/kind-sorting.component'
 import { KindStylizedComponent } from './components/kind-stylized/kind-stylized.component'
 
 const routes: Routes = [
