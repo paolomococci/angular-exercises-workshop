@@ -98,6 +98,12 @@ ng g c components/kind-retriever
 ng g c components/kind-multiple
 ```
 
+## I add kind-sorting component
+
+```shell
+ng g c components/kind-sorting
+```
+
 ## serve
 
 ```shell
