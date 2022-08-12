@@ -13,6 +13,7 @@ import { KindObservableComponent } from './components/kind-observable/kind-obser
 import { KindExpandableComponent } from './components/kind-expandable/kind-expandable.component'
 import { KindFilteringComponent } from './components/kind-filtering/kind-filtering.component'
 import { KindFooterComponent } from './components/kind-footer/kind-footer.component'
+import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'kind-footer',
     component: KindFooterComponent
+  },
+  {
+    path: 'kind-retriever',
+    component: KindRetrieverComponent
   },
   {
     path: '**',
