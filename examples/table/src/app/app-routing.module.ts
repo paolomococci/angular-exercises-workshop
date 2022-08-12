@@ -31,20 +31,12 @@ const routes: Routes = [
     component: KindComponent
   },
   {
-    path: 'kind-stylized',
-    component: KindStylizedComponent
-  },
-  {
     path: 'kind-crud',
     component: KindCrudComponent
   },
   {
     path: 'kind-dynamically',
     component: KindDynamicallyComponent
-  },
-  {
-    path: 'kind-observable',
-    component: KindObservableComponent
   },
   {
     path: 'kind-expandable',
@@ -59,24 +51,32 @@ const routes: Routes = [
     component: KindFooterComponent
   },
   {
-    path: 'kind-retriever',
-    component: KindRetrieverComponent
-  },
-  {
     path: 'kind-multiple',
     component: KindMultipleComponent
   },
   {
-    path: 'kind-sorting',
-    component: KindSortingComponent
+    path: 'kind-observable',
+    component: KindObservableComponent
   },
   {
     path: 'kind-pagination',
     component: KindPaginationComponent
   },
   {
+    path: 'kind-retriever',
+    component: KindRetrieverComponent
+  },
+  {
     path: 'kind-selection',
     component: KindSelectionComponent
+  },
+  {
+    path: 'kind-sorting',
+    component: KindSortingComponent
+  },
+  {
+    path: 'kind-stylized',
+    component: KindStylizedComponent
   },
   {
     path: '**',
