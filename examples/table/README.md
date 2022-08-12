@@ -110,6 +110,12 @@ ng g c components/kind-sorting
 ng g c components/kind-pagination
 ```
 
+## I add kind-selection component
+
+```shell
+ng g c components/kind-selection
+```
+
 ## serve
 
 ```shell
