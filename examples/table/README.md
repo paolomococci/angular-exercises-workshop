@@ -86,6 +86,12 @@ ng g c components/kind-filtering
 ng g c components/kind-footer
 ```
 
+## I add kind-retriever component
+
+```shell
+ng g c components/kind-retriever
+```
+
 ## serve
 
 ```shell
