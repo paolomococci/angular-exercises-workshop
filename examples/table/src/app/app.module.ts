@@ -13,6 +13,7 @@ import { KindFilteringComponent } from './components/kind-filtering/kind-filteri
 import { KindFooterComponent } from './components/kind-footer/kind-footer.component'
 import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
 import { KindMultipleComponent } from './components/kind-multiple/kind-multiple.component'
+import { KindSortingComponent } from './components/kind-sorting/kind-sorting.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -34,7 +35,8 @@ import { HelperModule } from './modules/helper/helper.module'
     KindFilteringComponent,
     KindFooterComponent,
     KindRetrieverComponent,
-    KindMultipleComponent
+    KindMultipleComponent,
+    KindSortingComponent
   ],
   imports: [
     BrowserModule,
