@@ -17,6 +17,7 @@ import { KindFooterComponent } from './components/kind-footer/kind-footer.compon
 import { KindRetrieverComponent } from './components/kind-retriever/kind-retriever.component'
 import { KindMultipleComponent } from './components/kind-multiple/kind-multiple.component'
 import { KindPaginationComponent } from './components/kind-pagination/kind-pagination.component'
+import { KindSelectionComponent } from './components/kind-selection/kind-selection.component'
 
 const routes: Routes = [
   {
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: 'kind-pagination',
     component: KindPaginationComponent
+  },
+  {
+    path: 'kind-selection',
+    component: KindSelectionComponent
   },
   {
     path: '**',
