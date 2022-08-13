@@ -56,6 +56,12 @@ ng g c components/kind-bottom
 ng g c components/kind-slow
 ```
 
+## I add kind-icon component
+
+```shell
+ng g c components/kind-icon
+```
+
 ## serve
 
 ```shell
