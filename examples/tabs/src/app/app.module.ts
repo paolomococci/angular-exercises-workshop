@@ -6,6 +6,7 @@ import { NavbarComponent } from './components/navbar/navbar.component'
 import { KindComponent } from './components/kind/kind.component'
 import { KindBottomComponent } from './components/kind-bottom/kind-bottom.component'
 import { KindSlowComponent } from './components/kind-slow/kind-slow.component'
+import { KindIconComponent } from './components/kind-icon/kind-icon.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -20,7 +21,8 @@ import { HelperModule } from './modules/helper/helper.module'
     NavbarComponent,
     KindComponent,
     KindBottomComponent,
-    KindSlowComponent
+    KindSlowComponent,
+    KindIconComponent
   ],
   imports: [
     BrowserModule,
