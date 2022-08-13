@@ -50,6 +50,12 @@ ng g m modules/helper
 ng g c components/kind-bottom
 ```
 
+## I add kind-slow component
+
+```shell
+ng g c components/kind-slow
+```
+
 ## serve
 
 ```shell
