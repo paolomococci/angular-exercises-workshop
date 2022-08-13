@@ -7,6 +7,7 @@ import {
 
 import { KindComponent } from './components/kind/kind.component'
 import { KindBottomComponent } from './components/kind-bottom/kind-bottom.component'
+import { KindSlowComponent } from './components/kind-slow/kind-slow.component'
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'kind-bottom',
     component: KindBottomComponent
+  },
+  {
+    path: 'kind-slow',
+    component: KindSlowComponent
   },
   {
     path: '**',
