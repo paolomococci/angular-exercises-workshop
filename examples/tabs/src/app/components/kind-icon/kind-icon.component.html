@@ -3,10 +3,21 @@
     <mat-card-title>icon</mat-card-title>
     <mat-card-subtitle>custom label template</mat-card-subtitle>
     <mat-card-content>
-      <mat-tab-group headerPosition="below" animationDuration="2000ms">
-        <mat-tab label="first">content of first tab</mat-tab>
-        <mat-tab label="second">content of second tab</mat-tab>
-        <mat-tab label="third">content of third tab</mat-tab>
+      <mat-tab-group headerPosition="below" animationDuration="1500ms">
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="kind-tab-icon">
+              home
+            </mat-icon>
+          </ng-template>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="kind-tab-icon">
+              settings
+            </mat-icon>
+          </ng-template>
+        </mat-tab>
       </mat-tab-group>
     </mat-card-content>
     <mat-card-actions>
