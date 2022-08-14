@@ -116,6 +116,12 @@ ng g c components/kind-pagination
 ng g c components/kind-selection
 ```
 
+# I create Element interface
+
+```shell
+ng g i models/Element --type=model
+```
+
 ## serve
 
 ```shell
