@@ -20,19 +20,19 @@ npm install
 ng add @angular/material
 ```
 
-## I create main component
+## I add main component
 
 ```shell
 ng g c components/main
 ```
 
-## I create navbar component
+## I add navbar component
 
 ```shell
 ng g c components/navbar
 ```
 
-## I create kind component
+## I add kind component
 
 ```shell
 ng g c components/kind
