@@ -122,6 +122,12 @@ ng g c components/kind-selection
 ng g i models/Element --type=model
 ```
 
+# I create ElementEnum enum
+
+```shell
+ng g e enumerations/ElementEnum --type=enumeration
+```
+
 ## serve
 
 ```shell
