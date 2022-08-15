@@ -5,4 +5,6 @@ export interface Element {
   group: string | null
   mass: number | null
   weight: number | null
+  radioactive: boolean | null
+  artificially: boolean | null
 }
