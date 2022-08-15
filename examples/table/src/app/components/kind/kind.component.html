@@ -6,7 +6,14 @@
 
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-        <ng-container matColumnDef="atomic"></ng-container>
+        <ng-container matColumnDef="atomic">
+          <th mat-header-cell *matHeaderCellDef>
+            Atomic
+          </th>
+          <td mat-cell *matCellDef="let element">
+            {{element.atomic}}
+          </td>
+        </ng-container>
 
         <ng-container matColumnDef="symbol"></ng-container>
 
