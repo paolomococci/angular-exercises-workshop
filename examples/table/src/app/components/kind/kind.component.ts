@@ -108,22 +108,22 @@ const ELEMENT_DATA: Element[] = [
   {atomic:100, symbol:'Fm', name:'Fermium', group:'actinide', mass:257.09511, weight:257, radioactive:true, artificially:true},
   {atomic:101, symbol:'Md', name:'Mendelevium', group:'actinide', mass:258.09843, weight:258, radioactive:true, artificially:true},
   {atomic:102, symbol:'No', name:'Nobelium', group:'actinide', mass:259.101, weight:259, radioactive:true, artificially:true},
-  {atomic:103, symbol:'Lr', name:'Lawrencium', group:'actinide', mass:266.12, weight:262, radioactive:true, artificially:true},
+  {atomic:103, symbol:'Lr', name:'Lawrencium', group:'actinide', mass:262.12, weight:262, radioactive:true, artificially:true},
   {atomic:104, symbol:'Rf', name:'Rutherfordium', group:'transition metal', mass:267.122, weight:263, radioactive:true, artificially:true},
   {atomic:105, symbol:'Db', name:'Dubnium', group:'transition metal', mass:268.126, weight:268, radioactive:true, artificially:true},
-  {atomic:106, symbol:'Sg', name:'Seaborgium', group:'transition metal', mass:269.128, weight:271, radioactive:true, artificially:true},
-  {atomic:107, symbol:'Bh', name:'Bohrium', group:'transition metal', mass:270.133, weight:270, radioactive:true, artificially:true},
-  {atomic:108, symbol:'Hs', name:'Hassium', group:'transition metal', mass:269.1336, weight:270, radioactive:true, artificially:true},
-  {atomic:109, symbol:'Mt', name:'Meitnerium', group:'transition metal', mass:277.154, weight:278, radioactive:true, artificially:true},
-  {atomic:110, symbol:'Ds', name:'Darmstadtium', group:'transition metal', mass:282.166, weight:281, radioactive:true, artificially:true},
+  {atomic:106, symbol:'Sg', name:'Seaborgium', group:'transition metal', mass:271.134, weight:271, radioactive:true, artificially:true},
+  {atomic:107, symbol:'Bh', name:'Bohrium', group:'transition metal', mass:274.144, weight:270, radioactive:true, artificially:true},
+  {atomic:108, symbol:'Hs', name:'Hassium', group:'transition metal', mass:277.152, weight:270, radioactive:true, artificially:true},
+  {atomic:109, symbol:'Mt', name:'Meitnerium', group:'transition metal', mass:278.156, weight:278, radioactive:true, artificially:true},
+  {atomic:110, symbol:'Ds', name:'Darmstadtium', group:'transition metal', mass:281.165, weight:281, radioactive:true, artificially:true},
   {atomic:111, symbol:'Rg', name:'Roentgenium', group:'transition metal', mass:282.169, weight:281, radioactive:true, artificially:true},
-  {atomic:112, symbol:'Cn', name:'Copernicium', group:'transition metal', mass:286.179, weight:285, radioactive:true, artificially:true},
-  {atomic:113, symbol:'Nh', name:'Nihonium', group:'post-transition metal', mass:286.182, weight:286, radioactive:true, artificially:true},
-  {atomic:114, symbol:'Fl', name:'Flerovium', group:'post-transition metal', mass:290.192, weight:289, radioactive:true, artificially:true},
+  {atomic:112, symbol:'Cn', name:'Copernicium', group:'transition metal', mass:285.177, weight:285, radioactive:true, artificially:true},
+  {atomic:113, symbol:'Nh', name:'Nihonium', group:'post-transition metal', mass:286.183, weight:286, radioactive:true, artificially:true},
+  {atomic:114, symbol:'Fl', name:'Flerovium', group:'post-transition metal', mass:289.191, weight:289, radioactive:true, artificially:true},
   {atomic:115, symbol:'Mc', name:'Moscovium', group:'post-transition metal', mass:290.196, weight:289, radioactive:true, artificially:true},
   {atomic:116, symbol:'Lv', name:'Livermorium', group:'post-transition metal', mass:293.205, weight:293, radioactive:true, artificially:true},
   {atomic:117, symbol:'Ts', name:'Tennessine', group:'halogen', mass:294.211, weight:294, radioactive:true, artificially:true},
-  {atomic:118, symbol:'Og', name:'Oganesson', group:'noble gas', mass:295.216, weight:294, radioactive:true, artificially:true}
+  {atomic:118, symbol:'Og', name:'Oganesson', group:'noble gas', mass:294.214, weight:294, radioactive:true, artificially:true}
 ]
 
 @Component({
