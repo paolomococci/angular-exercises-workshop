@@ -5,7 +5,9 @@ import {
 
 import { Element } from 'src/app/models/element.model'
 
-const ELEMENT_DATA: Element[] = []
+const ELEMENT_DATA: Element[] = [
+  {atomic:1, symbol:'H', name:'Hydrogen', group:'Nonmetal', mass:1.0079, weight:1},
+]
 
 @Component({
   selector: 'app-kind',
