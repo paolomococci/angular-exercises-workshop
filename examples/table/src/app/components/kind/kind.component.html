@@ -33,7 +33,14 @@
           </td>
         </ng-container>
 
-        <ng-container matColumnDef="group"></ng-container>
+        <ng-container matColumnDef="group">
+          <th mat-header-cell *matHeaderCellDef>
+            Atomic
+          </th>
+          <td mat-cell *matCellDef="let element">
+            {{element.group}}
+          </td>
+        </ng-container>
 
         <ng-container matColumnDef="mass"></ng-container>
 
