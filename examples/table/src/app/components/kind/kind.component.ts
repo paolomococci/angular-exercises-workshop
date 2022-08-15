@@ -9,6 +9,7 @@ const ELEMENT_DATA: Element[] = [
   {atomic:1, symbol:'H', name:'Hydrogen', group:'Nonmetal', mass:1.0079, weight:1},
   {atomic:2, symbol:'He', name:'Helium', group:'Noble Gas', mass:4.0026, weight:4},
   {atomic:3, symbol:'Li', name:'Lithium', group:'Alkali Metal', mass:6.941, weight:7},
+  {atomic:null, symbol:null, name:null, group:null, mass:null, weight:null},
 ]
 
 @Component({
