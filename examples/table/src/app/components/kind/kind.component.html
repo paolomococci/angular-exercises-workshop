@@ -42,7 +42,14 @@
           </td>
         </ng-container>
 
-        <ng-container matColumnDef="mass"></ng-container>
+        <ng-container matColumnDef="mass">
+          <th mat-header-cell *matHeaderCellDef>
+            Atomic
+          </th>
+          <td mat-cell *matCellDef="let element">
+            {{element.mass}}
+          </td>
+        </ng-container>
 
         <ng-container matColumnDef="radioactive"></ng-container>
 
