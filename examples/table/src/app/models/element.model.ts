@@ -1,8 +1,8 @@
 export interface Element {
-  atomic: number
-  symbol: string
-  name: string
-  group: string
-  mass: number
-  weight: number
+  atomic: number | null
+  symbol: string | null
+  name: string | null
+  group: string | null
+  mass: number | null
+  weight: number | null
 }
