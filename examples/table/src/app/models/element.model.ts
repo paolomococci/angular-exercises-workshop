@@ -3,5 +3,6 @@ export interface Element {
   symbol: string
   name: string
   group: string
+  mass: number
   weight: number
 }
