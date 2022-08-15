@@ -51,7 +51,14 @@
           </td>
         </ng-container>
 
-        <ng-container matColumnDef="radioactive"></ng-container>
+        <ng-container matColumnDef="radioactive">
+          <th mat-header-cell *matHeaderCellDef>
+            Atomic
+          </th>
+          <td mat-cell *matCellDef="let element">
+            {{element.radioactive}}
+          </td>
+        </ng-container>
 
         <ng-container matColumnDef="artificially"></ng-container>
 
