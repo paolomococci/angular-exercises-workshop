@@ -133,6 +133,18 @@ const ELEMENT_DATA: Element[] = [
 })
 export class KindComponent implements OnInit {
 
+  displayedColumns: string[] = [
+    'atomic',
+    'symbol',
+    'name',
+    'group',
+    'mass',
+    'radioactive',
+    'artificially'
+  ]
+
+  dataSource = ELEMENT_DATA
+
   constructor() { }
 
   ngOnInit(): void {
