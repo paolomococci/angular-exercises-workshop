@@ -4,7 +4,26 @@
     <mat-card-subtitle>basic use</mat-card-subtitle>
     <mat-card-content>
 
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8"></table>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="atomic"></ng-container>
+
+        <ng-container matColumnDef="symbol"></ng-container>
+
+        <ng-container matColumnDef="name"></ng-container>
+
+        <ng-container matColumnDef="group"></ng-container>
+
+        <ng-container matColumnDef="mass"></ng-container>
+
+        <ng-container matColumnDef="radioactive"></ng-container>
+
+        <ng-container matColumnDef="artificially"></ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+      </table>
 
     </mat-card-content>
     <mat-card-actions>
