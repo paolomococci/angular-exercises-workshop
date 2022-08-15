@@ -122,10 +122,10 @@ ng g c components/kind-selection
 ng g i models/Element --type=model
 ```
 
-# I create ElementEnum enum
+# I create ChemicalGroup enum
 
 ```shell
-ng g e enumerations/ElementEnum --type=enumeration
+ng g e enumerations/ChemicalGroup --type=enumeration
 ```
 
 ## serve
