@@ -1,6 +1,6 @@
 # grid-list
 
-Angular version 14.1.0
+Angular version 14.1.3
 
 ## scaffolding
 
