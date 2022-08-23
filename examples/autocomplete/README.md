@@ -1,6 +1,6 @@
 # autocomplete
 
-Angular 14.0.6
+Angular 14.1.3
 
 ## scaffolding
 
