@@ -1,6 +1,6 @@
 # kindness, app used as a template
 
-Angular version 14.1.1
+Angular version 14.1.3
 
 ## scaffolding
 
