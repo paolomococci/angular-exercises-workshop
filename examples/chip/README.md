@@ -1,6 +1,6 @@
 # chip
 
-Angular version 14.0.0
+Angular version 14.1.3
 
 ## scaffolding
 
