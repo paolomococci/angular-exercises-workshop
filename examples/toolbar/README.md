@@ -1,6 +1,6 @@
 # toolbar
 
-Angular 14.1.2
+Angular 14.1.3
 
 ## scaffolding
 
