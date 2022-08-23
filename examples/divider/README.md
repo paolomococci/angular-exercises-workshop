@@ -1,6 +1,6 @@
 # divider
 
-Angular version 14.0.6
+Angular version 14.1.3
 
 ## scaffolding
 
