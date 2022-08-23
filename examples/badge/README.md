@@ -1,5 +1,7 @@
 # badge
 
+Angular 13
+
 ```shell
 ng new badge -v -S -g --routing --style=sass
 ```
