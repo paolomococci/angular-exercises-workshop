@@ -1,5 +1,7 @@
 # bottom-sheet
 
+Angular 13
+
 ```shell
 ng new bottom-sheet -v -S -g --routing --style=sass
 ```
