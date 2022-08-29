@@ -1,6 +1,6 @@
 # optimized
 
-Angular 14.0.6
+Angular 14.2.0
 
 ## scaffolding
 
