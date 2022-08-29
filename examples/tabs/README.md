@@ -1,6 +1,6 @@
 # tabs
 
-Angular 14.1.2
+Angular 14.2.0
 
 ## scaffolding
 
