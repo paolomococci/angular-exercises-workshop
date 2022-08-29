@@ -1,6 +1,6 @@
 # progress-bar
 
-Angular 14.1.3
+Angular 14.2.0
 
 ## scaffolding
 
