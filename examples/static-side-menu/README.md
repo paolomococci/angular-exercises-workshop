@@ -1,6 +1,6 @@
 # static-side-menu, app used as a template
 
-Angular version 14.0.0
+Angular version 14.2.0
 
 ## scaffolding
 
