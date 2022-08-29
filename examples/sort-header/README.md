@@ -1,6 +1,6 @@
 # sort-header
 
-Angular 14.1.1
+Angular 14.2.0
 
 ## scaffolding
 
