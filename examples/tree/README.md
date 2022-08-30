@@ -50,6 +50,12 @@ ng g m modules/helper
 ng g cl nodes/DynamicNode
 ```
 
+## I add FamilyData class
+
+```shell
+ng g cl nodes/FamilyData
+```
+
 ## serve
 
 ```shell
