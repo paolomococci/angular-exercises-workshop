@@ -17,6 +17,7 @@ export class KindComponent implements OnInit {
 
   treeControl!: FlatTreeControl<DynamicNode>
   dataSource!: DynamicDataSource
+
   getLevel = (node: DynamicNode) => node.level
 
   constructor(
