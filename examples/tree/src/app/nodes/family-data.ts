@@ -25,4 +25,9 @@ export class FamilyData {
   getChildren(node: string): string[] | undefined {
     return this.dataMap.get(node)
   }
+
+  isExpandable(node: string): boolean {
+    return this.dataMap.has(node)
+  }
+
 }
