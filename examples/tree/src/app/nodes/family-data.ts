@@ -5,4 +5,8 @@ export class FamilyData {
       ['Doe', ['John', 'Madeline', 'James']]
     ]
   )
+
+  rootLevelNodes: string[] = [
+    'Doe'
+  ]
 }
