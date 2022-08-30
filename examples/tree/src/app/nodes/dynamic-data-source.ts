@@ -92,9 +92,13 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
             ...nodes
           )
         } else {
-
+          let count = 0
+          for (let i = index + 1; i < this.data.length && this.data[i].level > node.level; i++, count++) {}
+          this.data.splice(index + 1, count)
         }
-      }
+        this.dataChange.next(this.data)
+        node.isLoading = false
+      }, 900
     )
   }
 
