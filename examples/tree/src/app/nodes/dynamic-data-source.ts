@@ -54,7 +54,7 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
     this.dataChange.next(value)
   }
 
-  private handleTreeControl(change: SelectionChange<DynamicNode>) {
+  private handleTreeControl(change: SelectionChange<DynamicNode>): void {
     if (change.added) {
       change.added.forEach(
         node => this.toggleNode(node, true)
@@ -67,8 +67,10 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
     }
   }
 
-  private toggleNode(node: DynamicNode, arg1: boolean): void {
-    throw new Error("Method not implemented.")
+  private toggleNode(
+    node: DynamicNode, expand: boolean
+  ): void {
+    node.isLoading = true
   }
 
 }
