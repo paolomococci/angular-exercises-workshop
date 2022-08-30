@@ -44,6 +44,12 @@ ng g c components/kind
 ng g m modules/helper
 ```
 
+## I add DynamicNode class
+
+```shell
+ng g cl nodes/DynamicNode
+```
+
 ## serve
 
 ```shell
