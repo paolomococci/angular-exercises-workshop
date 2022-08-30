@@ -20,6 +20,10 @@ export class KindComponent implements OnInit {
 
   getLevel = (node: DynamicNode) => node.level
   isExpandable = (node: DynamicNode) => node.expandable
+  hasChild = (
+    _: number,
+    _nodeData: DynamicNode
+  ) => _nodeData.expandable
 
   constructor(
     database: FamilyData
