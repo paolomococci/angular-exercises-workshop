@@ -6,6 +6,7 @@ import {
 
 import { DynamicNode } from 'src/app/nodes/dynamic-node'
 import { FamilyData } from 'src/app/nodes/family-data'
+import { DynamicDataSource } from 'src/app/nodes/dynamic-data-source'
 
 @Component({
   selector: 'app-kind',
@@ -15,6 +16,7 @@ import { FamilyData } from 'src/app/nodes/family-data'
 export class KindComponent implements OnInit {
 
   treeControl!: FlatTreeControl<DynamicNode>
+  dataSource!: DynamicDataSource
 
   constructor(
     database: FamilyData
