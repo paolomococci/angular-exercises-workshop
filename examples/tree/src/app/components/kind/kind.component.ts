@@ -25,6 +25,10 @@ export class KindComponent implements OnInit {
       this.getLevel,
       this.isExpandable
     )
+    this.dataSource = new DynamicDataSource(
+      this.treeControl,
+      database
+    )
   }
 
   ngOnInit(): void {
