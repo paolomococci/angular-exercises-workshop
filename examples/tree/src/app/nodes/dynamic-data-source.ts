@@ -76,6 +76,9 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
     if (!children || index < 0) {
       return
     }
+    setTimeout(
+      () => {}
+    )
   }
 
 }
