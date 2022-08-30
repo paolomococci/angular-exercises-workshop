@@ -77,7 +77,24 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
       return
     }
     setTimeout(
-      () => {}
+      () => {
+        if (expand) {
+          const nodes = children.map(
+            name => new DynamicNode(
+              name,
+              node.level + 1,
+              this._database.isExpandable(name)
+            )
+          )
+          this.data.splice(
+            index + 1,
+            0,
+            ...nodes
+          )
+        } else {
+
+        }
+      }
     )
   }
 
