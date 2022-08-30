@@ -56,6 +56,12 @@ ng g cl nodes/DynamicNode
 ng g cl nodes/FamilyData
 ```
 
+## I add DynamicDataSource class
+
+```shell
+ng g cl nodes/DynamicDataSource
+```
+
 ## serve
 
 ```shell
