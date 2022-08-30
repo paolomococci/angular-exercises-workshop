@@ -41,9 +41,7 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
     )
   }
 
-  disconnect(collectionViewer: CollectionViewer): void {
-    throw new Error("Method not implemented.")
-  }
+  disconnect(collectionViewer: CollectionViewer): void {}
 
   get data(): DynamicNode[] {
     return this.dataChange.value
