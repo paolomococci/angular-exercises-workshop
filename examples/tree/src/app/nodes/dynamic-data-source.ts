@@ -13,6 +13,8 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
 
   dataChange = new BehaviorSubject<DynamicNode[]>([])
 
+  constructor() {}
+
   connect(collectionViewer: CollectionViewer): Observable<readonly DynamicNode[]> {
     throw new Error("Method not implemented.")
   }
