@@ -9,13 +9,15 @@ import {
 } from "rxjs"
 
 import { DynamicNode } from "./dynamic-node"
+import { FamilyData } from "./family-data"
 
 export class DynamicDataSource implements DataSource<DynamicNode> {
 
   dataChange = new BehaviorSubject<DynamicNode[]>([])
 
   constructor(
-    private _treeControl: FlatTreeControl<DynamicNode>
+    private _treeControl: FlatTreeControl<DynamicNode>,
+    private _database: FamilyData
   ) {}
 
   connect(collectionViewer: CollectionViewer): Observable<readonly DynamicNode[]> {
