@@ -2,6 +2,7 @@ import {
   CollectionViewer,
   DataSource
 } from "@angular/cdk/collections"
+import { FlatTreeControl } from "@angular/cdk/tree"
 import {
   BehaviorSubject,
   Observable
@@ -13,7 +14,9 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
 
   dataChange = new BehaviorSubject<DynamicNode[]>([])
 
-  constructor() {}
+  constructor(
+    private _treeControl: FlatTreeControl<DynamicNode>
+  ) {}
 
   connect(collectionViewer: CollectionViewer): Observable<readonly DynamicNode[]> {
     throw new Error("Method not implemented.")
