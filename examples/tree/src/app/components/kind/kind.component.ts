@@ -19,6 +19,7 @@ export class KindComponent implements OnInit {
   dataSource!: DynamicDataSource
 
   getLevel = (node: DynamicNode) => node.level
+  isExpandable = (node: DynamicNode) => node.expandable
 
   constructor(
     database: FamilyData
