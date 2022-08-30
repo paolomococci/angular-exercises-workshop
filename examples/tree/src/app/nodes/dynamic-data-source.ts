@@ -24,4 +24,7 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
   get data(): DynamicNode[] {
     return this.dataChange.value
   }
+
+  set data(value: DynamicNode[]) {}
+
 }
