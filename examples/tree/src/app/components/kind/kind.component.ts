@@ -3,6 +3,8 @@ import {
   OnInit
 } from '@angular/core'
 
+import { FamilyData } from 'src/app/nodes/family-data'
+
 @Component({
   selector: 'app-kind',
   templateUrl: './kind.component.html',
@@ -10,7 +12,9 @@ import {
 })
 export class KindComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    database: FamilyData
+  ) { }
 
   ngOnInit(): void {
   }
