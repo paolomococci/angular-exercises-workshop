@@ -32,6 +32,9 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
     return this.dataChange.value
   }
 
-  set data(value: DynamicNode[]) {}
+  set data(value: DynamicNode[]) {
+    this._treeControl.dataNodes = value
+    this.dataChange.next(value)
+  }
 
 }
