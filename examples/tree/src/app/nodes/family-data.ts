@@ -1,3 +1,5 @@
+import { DynamicNode } from "./dynamic-node"
+
 export class FamilyData {
 
   dataMap = new Map<string, string[]>(
@@ -9,4 +11,14 @@ export class FamilyData {
   rootLevelNodes: string[] = [
     'Doe'
   ]
+
+  initialData(): DynamicNode[] {
+    return this.rootLevelNodes.map(
+      name => new DynamicNode(
+        name,
+        0,
+        true
+      )
+    )
+  }
 }
