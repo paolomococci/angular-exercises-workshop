@@ -18,18 +18,23 @@ export class KindComponent implements OnInit {
   treeControl!: FlatTreeControl<DynamicNode>
   dataSource!: DynamicDataSource
 
+  constructor(
+    database: FamilyData
+  ) {
+    this.treeControl = new FlatTreeControl<DynamicNode>(
+      this.getLevel,
+      this.isExpandable
+    )
+  }
+
+  ngOnInit(): void {
+  }
+
   getLevel = (node: DynamicNode) => node.level
   isExpandable = (node: DynamicNode) => node.expandable
   hasChild = (
     _: number,
     _nodeData: DynamicNode
   ) => _nodeData.expandable
-
-  constructor(
-    database: FamilyData
-  ) { }
-
-  ngOnInit(): void {
-  }
 
 }
