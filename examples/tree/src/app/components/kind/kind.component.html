@@ -16,6 +16,7 @@
             </mat-icon>
           </button>
           {{node.item}}
+          <mat-progress-bar *ngIf="node.isLoading" mode="indeterminate" class="tree-progress-bar"></mat-progress-bar>
         </mat-tree-node>
       </mat-tree>
 
