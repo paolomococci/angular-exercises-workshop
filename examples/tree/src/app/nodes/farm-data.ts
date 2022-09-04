@@ -126,4 +126,8 @@ export class FarmData {
     )
   }
 
+  getChildren(node: string): string[] | undefined {
+    return this.dataMap.get(node)
+  }
+
 }
