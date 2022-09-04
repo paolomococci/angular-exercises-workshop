@@ -58,6 +58,9 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
   ): void {
     const children = this._database.getChildren(node.item)
     const index = this.data.indexOf(node)
+    if (!children || index < 0) {
+      return
+    }
   }
 
 }
