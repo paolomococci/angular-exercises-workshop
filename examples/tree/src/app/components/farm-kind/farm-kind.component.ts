@@ -28,7 +28,6 @@ export class FarmKindComponent implements OnInit {
       this.treeControl,
       database
     )
-
     this.dataSource.data = database.initialData()
   }
 
