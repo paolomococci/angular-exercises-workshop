@@ -62,6 +62,9 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
       return
     }
     node.isLoading = true
+    setTimeout(() => {
+      if (expand) {} else {}
+    }, 300)
   }
 
 }
