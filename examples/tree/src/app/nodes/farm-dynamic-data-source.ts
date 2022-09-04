@@ -61,6 +61,7 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
     if (!children || index < 0) {
       return
     }
+    node.isLoading = true
   }
 
 }
