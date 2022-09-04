@@ -29,6 +29,7 @@ export class KindComponent implements OnInit {
       this.treeControl,
       database
     )
+    this.dataSource.data = database.initialData()
   }
 
   ngOnInit(): void {
