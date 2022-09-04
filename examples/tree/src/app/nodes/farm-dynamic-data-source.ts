@@ -4,18 +4,24 @@ import {
   SelectionChange
 } from "@angular/cdk/collections"
 
+import { FlatTreeControl } from "@angular/cdk/tree"
+
 import {
   BehaviorSubject,
   Observable
 } from "rxjs"
 
+import { FarmData } from "./farm-data"
 import { FarmDynamicNode } from "./farm-dynamic-node"
 
 export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
 
   dataChange = new BehaviorSubject<FarmDynamicNode[]>([])
 
-  constructor() {}
+  constructor(
+    private _treeControl: FlatTreeControl<FarmDynamicNode>,
+    private _database: FarmData
+  ) {}
 
   connect(collectionViewer: CollectionViewer): Observable<readonly FarmDynamicNode[]> {
     return new Observable<FarmDynamicNode[]>
