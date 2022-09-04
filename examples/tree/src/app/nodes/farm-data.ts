@@ -111,4 +111,9 @@ export class FarmData {
     ],
   ])
 
+  rootLevelNodes: string[] = [
+    'Fruits',
+    'Vegetables'
+  ]
+
 }
