@@ -38,7 +38,19 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
     this.dataChange.next(value)
   }
 
-  private handleTreeControl(change: SelectionChange<FarmDynamicNode>): void {}
+  private handleTreeControl(change: SelectionChange<FarmDynamicNode>): void {
+    if (change.added) {
+      change.added.forEach(node => this.toggleNode(node, true))
+    }
+    if (change.removed) {
+      change.removed
+        .slice()
+        .reverse()
+        .forEach(
+          node => this.toggleNode(node, false)
+        )
+    }
+  }
 
   private toggleNode(
     node: FarmDynamicNode,
