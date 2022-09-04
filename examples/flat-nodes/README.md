@@ -44,6 +44,12 @@ ng g c components/kind
 ng g m modules/helper
 ```
 
+## I add Food interface
+
+```shell
+ng g i models/Food --type=model
+```
+
 ## serve
 
 ```shell
