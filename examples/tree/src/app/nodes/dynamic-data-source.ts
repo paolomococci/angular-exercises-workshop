@@ -66,7 +66,8 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
   }
 
   private toggleNode(
-    node: DynamicNode, expand: boolean
+    node: DynamicNode,
+    expand: boolean
   ): void {
     node.isLoading = true
     const children = this._database.getChildren(node.item)
