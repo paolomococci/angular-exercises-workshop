@@ -24,6 +24,15 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
   ) {}
 
   connect(collectionViewer: CollectionViewer): Observable<readonly FarmDynamicNode[]> {
+    this._treeControl.expansionModel.changed.subscribe(
+      change => {
+        if (
+          (change as SelectionChange<FarmDynamicNode>).added || (change as SelectionChange<FarmDynamicNode>).removed
+        ) {
+          this.handleTreeControl(change as SelectionChange<FarmDynamicNode>)
+        }
+      }
+    )
     return new Observable<FarmDynamicNode[]>
   }
 
