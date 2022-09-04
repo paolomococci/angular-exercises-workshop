@@ -55,6 +55,9 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
   private toggleNode(
     node: FarmDynamicNode,
     expand: boolean
-  ): void {}
+  ): void {
+    const children = this._database.getChildren(node.item)
+    const index = this.data.indexOf(node)
+  }
 
 }
