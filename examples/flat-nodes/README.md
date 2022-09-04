@@ -56,6 +56,12 @@ ng g i models/Food --type=model
 ng g i models/FlatNode --type=model
 ```
 
+## I add FoodData class
+
+```shell
+ng g cl data/FoodData
+```
+
 ## serve
 
 ```shell
