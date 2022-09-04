@@ -1,17 +1,39 @@
 import {
   CollectionViewer,
-  DataSource
+  DataSource,
+  SelectionChange
 } from "@angular/cdk/collections"
-import { Observable } from "rxjs"
+
+import {
+  BehaviorSubject,
+  Observable
+} from "rxjs"
 
 import { FarmDynamicNode } from "./farm-dynamic-node"
 
 export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
 
+  dataChange = new BehaviorSubject<FarmDynamicNode[]>([])
+
+  constructor() {}
+
   connect(collectionViewer: CollectionViewer): Observable<readonly FarmDynamicNode[]> {
-    throw new Error("Method not implemented.");
+    return new Observable<FarmDynamicNode[]>
   }
-  disconnect(collectionViewer: CollectionViewer): void {
-    throw new Error("Method not implemented.");
+
+  disconnect(collectionViewer: CollectionViewer): void {}
+
+  get data(): FarmDynamicNode[] {
+    return this.dataChange.value
   }
+
+  set data(value: FarmDynamicNode[]) {}
+
+  private handleTreeControl(change: SelectionChange<FarmDynamicNode>): void {}
+
+  private toggleNode(
+    node: FarmDynamicNode,
+    expand: boolean
+  ): void {}
+
 }
