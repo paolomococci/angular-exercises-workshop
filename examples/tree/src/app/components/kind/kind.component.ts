@@ -4,8 +4,8 @@ import {
 } from '@angular/core'
 import { FlatTreeControl } from '@angular/cdk/tree'
 
-import { DynamicNode } from 'src/app/nodes/dynamic-node'
 import { FamilyData } from 'src/app/nodes/family-data'
+import { DynamicNode } from 'src/app/nodes/dynamic-node'
 import { DynamicDataSource } from 'src/app/nodes/dynamic-data-source'
 
 @Component({
