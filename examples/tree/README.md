@@ -82,6 +82,12 @@ ng g cl nodes/FarmDynamicNode
 ng g cl nodes/FarmData
 ```
 
+## I add FarmDynamicDataSource class
+
+```shell
+ng g cl nodes/FarmDynamicDataSource
+```
+
 ## serve
 
 ```shell
