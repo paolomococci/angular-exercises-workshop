@@ -97,7 +97,7 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
         }
         this.dataChange.next(this.data)
         node.isLoading = false
-      }, 900
+      }, 500
     )
   }
 
