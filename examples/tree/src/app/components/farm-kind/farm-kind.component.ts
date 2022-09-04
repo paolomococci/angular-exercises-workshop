@@ -15,9 +15,9 @@ import { FarmDynamicDataSource } from 'src/app/nodes/farm-dynamic-data-source'
 })
 export class FarmKindComponent implements OnInit {
 
-  treeControl: FlatTreeControl<FarmDynamicNode>
+  treeControl!: FlatTreeControl<FarmDynamicNode>
 
-  dataSource: FarmDynamicDataSource
+  dataSource!: FarmDynamicDataSource
 
   constructor(database: FarmData) {
     this.treeControl = new FlatTreeControl<FarmDynamicNode>(
