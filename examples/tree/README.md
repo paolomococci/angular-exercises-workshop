@@ -64,6 +64,12 @@ ng g cl nodes/FamilyData
 ng g cl nodes/DynamicDataSource
 ```
 
+## I create farm-kind component
+
+```shell
+ng g c components/farm-kind
+```
+
 ## serve
 
 ```shell
