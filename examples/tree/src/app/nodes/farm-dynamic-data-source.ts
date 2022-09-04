@@ -8,6 +8,8 @@ import { FlatTreeControl } from "@angular/cdk/tree"
 
 import {
   BehaviorSubject,
+  map,
+  merge,
   Observable
 } from "rxjs"
 
@@ -33,7 +35,12 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
         }
       }
     )
-    return new Observable<FarmDynamicNode[]>
+    return merge(
+      collectionViewer.viewChange,
+      this.dataChange
+    ).pipe(
+      map(() => this.data)
+    )
   }
 
   disconnect(collectionViewer: CollectionViewer): void {}
