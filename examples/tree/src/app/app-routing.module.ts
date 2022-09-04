@@ -8,6 +8,9 @@ import {
 import {
   KindComponent
 } from './components/kind/kind.component'
+import {
+  FarmKindComponent
+} from './components/farm-kind/farm-kind.component'
 
 const routes: Routes = [
   {
@@ -18,6 +21,10 @@ const routes: Routes = [
   {
     path: 'kind',
     component: KindComponent
+  },
+  {
+    path: 'farm-kind',
+    component: FarmKindComponent
   },
   {
     path: '**',
