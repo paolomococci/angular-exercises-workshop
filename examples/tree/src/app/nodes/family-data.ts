@@ -1,15 +1,30 @@
+import { Injectable } from "@angular/core"
 import { DynamicNode } from "./dynamic-node"
 
+@Injectable({providedIn: 'root'})
 export class FamilyData {
 
+  /* These data are purely invented, used for demonstration purposes only. */
   dataMap = new Map<string, string[]>(
     [
-      ['Doe', ['John', 'Madeline', 'James']]
+      ['Doe', ['John', 'Madeline', 'James']],
+      ['Murray',['Acton', 'Rose', 'Olivia', 'Oscar']],
+      ['Cook',['Dean', 'Maisie', '', 'Tiffany']],
+      ['Fletcher',['Milo', 'Ashlee', 'Felicity', 'Charmaine', 'Avery']],
+      ['Kelly',['Knox', 'Natalie', 'Rose', 'Harlow']],
+      ['Lee',['Everett', 'Poppy', 'Tiffany', 'Ellis']],
+      ['Graham',['Willow', 'Ivy', 'Ashlee', 'Dean']],
     ]
   )
 
   rootLevelNodes: string[] = [
-    'Doe'
+    'Doe',
+    'Murray',
+    'Cook',
+    'Fletcher',
+    'Kelly',
+    'Lee',
+    'Graham',
   ]
 
   initialData(): DynamicNode[] {
