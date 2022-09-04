@@ -69,12 +69,12 @@ export class DynamicDataSource implements DataSource<DynamicNode> {
     node: DynamicNode,
     expand: boolean
   ): void {
-    node.isLoading = true
     const children = this._database.getChildren(node.item)
     const index = this.data.indexOf(node)
     if (!children || index < 0) {
       return
     }
+    node.isLoading = true
     setTimeout(
       () => {
         if (expand) {
