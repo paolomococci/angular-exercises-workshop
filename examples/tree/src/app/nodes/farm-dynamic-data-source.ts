@@ -33,7 +33,10 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
     return this.dataChange.value
   }
 
-  set data(value: FarmDynamicNode[]) {}
+  set data(value: FarmDynamicNode[]) {
+    this._treeControl.dataNodes = value
+    this.dataChange.next(value)
+  }
 
   private handleTreeControl(change: SelectionChange<FarmDynamicNode>): void {}
 
