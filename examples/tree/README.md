@@ -76,6 +76,12 @@ ng g c components/farm-kind
 ng g cl nodes/FarmDynamicNode
 ```
 
+## I add FarmData class
+
+```shell
+ng g cl nodes/FarmData
+```
+
 ## serve
 
 ```shell
