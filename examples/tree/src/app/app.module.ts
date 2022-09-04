@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { MainComponent } from './components/main/main.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { KindComponent } from './components/kind/kind.component'
+import { FarmKindComponent } from './components/farm-kind/farm-kind.component'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -17,7 +18,8 @@ import { HelperModule } from './modules/helper/helper.module'
     AppComponent,
     MainComponent,
     NavbarComponent,
-    KindComponent
+    KindComponent,
+    FarmKindComponent
   ],
   imports: [
     BrowserModule,
