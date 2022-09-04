@@ -116,4 +116,14 @@ export class FarmData {
     'Vegetables'
   ]
 
+  initialData(): FarmDynamicNode[] {
+    return this.rootLevelNodes.map(
+      name => new FarmDynamicNode(
+        name,
+        0,
+        true
+      )
+    )
+  }
+
 }
