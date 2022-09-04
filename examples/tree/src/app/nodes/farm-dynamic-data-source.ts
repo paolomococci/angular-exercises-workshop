@@ -63,7 +63,20 @@ export class FarmDynamicDataSource implements DataSource<FarmDynamicNode> {
     }
     node.isLoading = true
     setTimeout(() => {
-      if (expand) {} else {}
+      if (expand) {
+        const nodes = children.map(
+          name => new FarmDynamicNode(
+            name,
+            node.level + 1,
+            this._database.isExpandable(name)
+          ),
+        )
+        this.data.splice(
+          index + 1,
+          0,
+          ...nodes
+        )
+      } else {}
       this.dataChange.next(this.data)
       node.isLoading = false
     }, 300)
