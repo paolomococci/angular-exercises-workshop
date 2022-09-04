@@ -1,8 +1,8 @@
-import { FlatTreeControl } from '@angular/cdk/tree'
 import {
   Component,
   OnInit
 } from '@angular/core'
+import { FlatTreeControl } from '@angular/cdk/tree'
 
 import { DynamicNode } from 'src/app/nodes/dynamic-node'
 import { FamilyData } from 'src/app/nodes/family-data'
