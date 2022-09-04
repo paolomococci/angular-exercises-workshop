@@ -9,7 +9,7 @@ export class FamilyData {
     [
       ['Doe', ['John', 'Madeline', 'James']],
       ['Murray',['Acton', 'Rose', 'Olivia', 'Oscar']],
-      ['Cook',['Dean', 'Maisie', '', 'Tiffany']],
+      ['Cook',['Dean', 'Maisie', 'James', 'Tiffany']],
       ['Fletcher',['Milo', 'Ashlee', 'Felicity', 'Charmaine', 'Avery']],
       ['Kelly',['Knox', 'Natalie', 'Rose', 'Harlow']],
       ['Lee',['Everett', 'Poppy', 'Tiffany', 'Ellis']],
