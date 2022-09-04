@@ -50,6 +50,12 @@ ng g m modules/helper
 ng g i models/Food --type=model
 ```
 
+## I add FlatNode interface
+
+```shell
+ng g i models/FlatNode --type=model
+```
+
 ## serve
 
 ```shell
