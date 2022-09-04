@@ -3,5 +3,6 @@ export class FarmDynamicNode {
     public item: string,
     public level = 1,
     public expandable = false,
+    public isLoading = false
   ) {}
 }
