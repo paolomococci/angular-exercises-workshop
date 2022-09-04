@@ -8,6 +8,7 @@ import { KindComponent } from './components/kind/kind.component'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { HttpClientModule } from '@angular/common/http'
 
 import { HelperModule } from './modules/helper/helper.module'
 
@@ -22,6 +23,7 @@ import { HelperModule } from './modules/helper/helper.module'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     HelperModule
   ],
   providers: [],
