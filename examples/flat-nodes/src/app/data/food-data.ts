@@ -51,16 +51,28 @@ export class FoodData {
       ]
     },
     {
-      name: 'Vegetables'
+      name: 'Vegetables',
+      children: [
+        {name: ''}
+      ]
     },
     {
-      name: 'Meat'
+      name: 'Meat',
+      children: [
+        {name: ''}
+      ]
     },
     {
-      name: 'Fish'
+      name: 'Fish',
+      children: [
+        {name: ''}
+      ]
     },
     {
-      name: 'Drinks'
+      name: 'Drinks',
+      children: [
+        {name: ''}
+      ]
     }
   ]
 
