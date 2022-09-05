@@ -113,12 +113,15 @@ export class FoodData {
     {
       name: 'Drinks',
       children: [
-        {name: ''},
-        {name: ''},
-        {name: ''},
-        {name: ''},
-        {name: ''},
-        {name: ''},
+        {name: 'White wine'},
+        {name: 'Sparkling white wine'},
+        {name: 'Red wine'},
+        {name: 'Beer'},
+        {name: 'Unfiltered beer'},
+        {name: 'Still water'},
+        {name: 'Sparkling water'},
+        {name: 'Orange juice'},
+        {name: 'Tomato juice'},
       ]
     }
   ]
