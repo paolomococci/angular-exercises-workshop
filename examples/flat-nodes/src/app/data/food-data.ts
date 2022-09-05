@@ -4,7 +4,7 @@ import { Food } from "../models/food.model"
 @Injectable({providedIn: 'root'})
 export class FoodData {
 
-  /* Warning: these data are listed for demonstration purposes only! */
+  /* Attention please: these data are listed for demonstration purposes only! */
   static data: Food[] = [
     {
       name: 'Fruits',
