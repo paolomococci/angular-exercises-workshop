@@ -1,7 +1,5 @@
-import { Injectable } from "@angular/core"
 import { Food } from "../models/food.model"
 
-@Injectable({providedIn: 'root'})
 export class FoodData {
 
   /* Attention please: these data are listed for demonstration purposes only! */
@@ -125,6 +123,4 @@ export class FoodData {
       ]
     }
   ]
-
-  constructor() {}
 }
