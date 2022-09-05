@@ -107,7 +107,7 @@ export class FoodData {
         {name: 'Halibut'},
         {name: 'Amberjack'},
         {name: 'Dover sole'},
-        {name: 'Flounder'},
+        {name: 'Flounder'}
       ]
     },
     {
@@ -121,7 +121,7 @@ export class FoodData {
         {name: 'Still water'},
         {name: 'Sparkling water'},
         {name: 'Orange juice'},
-        {name: 'Tomato juice'},
+        {name: 'Tomato juice'}
       ]
     }
   ]
