@@ -40,6 +40,14 @@ export class FoodData {
         {name: 'Peach'},
         {name: 'Pear'},
         {name: 'Persimmon'},
+        {name: 'Plum'},
+        {name: 'Pineapple'},
+        {name: 'Pomegranate'},
+        {name: 'Pomelo'},
+        {name: 'Raspberry'},
+        {name: 'Rambutan'},
+        {name: 'Strawberry'},
+        {name: 'Watermelon'}
       ]
     },
     {
