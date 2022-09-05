@@ -14,7 +14,9 @@ export class FoodData {
         {name: 'Banana'},
         {name: 'Blackberry'},
         {name: 'Blueberry'},
-        {name: 'Breadfruit'}
+        {name: 'Breadfruit'},
+        {name: 'Cherry'},
+        {name: 'Coconut'},
       ]
     },
     {
