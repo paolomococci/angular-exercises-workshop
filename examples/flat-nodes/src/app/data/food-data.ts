@@ -21,4 +21,6 @@ export class FoodData {
       name: 'Drinks'
     }
   ]
+
+  constructor() {}
 }
