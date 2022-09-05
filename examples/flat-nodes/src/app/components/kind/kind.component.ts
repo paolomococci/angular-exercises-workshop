@@ -25,6 +25,12 @@ export class KindComponent implements OnInit {
 
   hasChild() {}
 
-  private _transformer = (node: Food, level: number) => {}
+  private _transformer = (node: Food, level: number) => {
+    return {
+      expandable: !!node.children && node.children.length > 0,
+      name: node.name,
+      level: level
+    }
+  }
 
 }
