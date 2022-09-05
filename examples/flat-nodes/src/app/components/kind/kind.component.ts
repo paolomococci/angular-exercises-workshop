@@ -44,17 +44,17 @@ export class KindComponent implements OnInit {
     node => node.children
   )
 
-  constructor(
-
-  ) { }
-
-  ngOnInit(): void {
-  }
-
   dataSource = new MatTreeFlatDataSource(
     this.treeControl,
     this.treeFlattener
   )
+
+  constructor() {
+    this.dataSource.data = FoodData.data
+  }
+
+  ngOnInit(): void {
+  }
 
   hasChild = (
     _: number,
