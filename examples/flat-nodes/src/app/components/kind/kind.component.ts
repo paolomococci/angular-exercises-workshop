@@ -3,6 +3,8 @@ import {
   OnInit
 } from '@angular/core'
 
+import { Food } from 'src/app/models/food.model'
+
 @Component({
   selector: 'app-kind',
   templateUrl: './kind.component.html',
@@ -23,6 +25,6 @@ export class KindComponent implements OnInit {
 
   hasChild() {}
 
-  private _transformer() {}
+  private _transformer = (node: Food, level: number) => {}
 
 }
