@@ -6,7 +6,16 @@ export class FoodData {
 
   static data: Food[] = [
     {
-      name: 'Fruits'
+      name: 'Fruits',
+      children: [
+        {name: 'Apple'},
+        {name: 'Apricot'},
+        {name: 'Avocado'},
+        {name: 'Banana'},
+        {name: 'Blackberry'},
+        {name: 'Blueberry'},
+        {name: 'Breadfruit'}
+      ]
     },
     {
       name: 'Vegetables'
