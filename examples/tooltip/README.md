@@ -1,6 +1,6 @@
 # tooltip
 
-Angular 14.2.0
+Angular 14.2.1
 
 ## scaffolding
 
