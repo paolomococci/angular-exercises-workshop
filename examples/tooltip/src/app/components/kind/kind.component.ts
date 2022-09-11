@@ -1,13 +1,15 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  ViewEncapsulation
 } from '@angular/core'
 import { FormControl } from '@angular/forms'
 
 @Component({
   selector: 'app-kind',
   templateUrl: './kind.component.html',
-  styleUrls: ['./kind.component.sass']
+  styleUrls: ['./kind.component.sass'],
+  encapsulation: ViewEncapsulation.None
 })
 export class KindComponent implements OnInit {
 
