@@ -4,13 +4,30 @@
     <mat-card-subtitle>tooltip with user field</mat-card-subtitle>
     <mat-card-content>
 
+      <mat-form-field appearance="fill">
+        <mat-label>tooltip position</mat-label>
+        <mat-select [formControl]="position">
+          <mat-option *ngFor="let positionOption of positionOptions" [value]="positionOption">
+            {{positionOption}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
       <mat-form-field class="user-field" appearance="fill">
         <mat-label>tooltip message</mat-label>
         <input matInput [formControl]="message">
       </mat-form-field>
-      <button mat-raised-button matTooltipClass="warning-tooltip" [matTooltip]="message.value || ''">
-        action
-      </button>
+
+      <div class="button-container">
+        <button
+          class="kind-button"
+          mat-raised-button
+          matTooltipClass="warning-tooltip"
+          [matTooltipPosition]="position.value!"
+          [matTooltip]="message.value || ''">
+          action
+        </button>
+      </div>
 
     </mat-card-content>
     <mat-card-actions>
