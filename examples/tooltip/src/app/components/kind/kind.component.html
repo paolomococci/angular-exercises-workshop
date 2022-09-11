@@ -8,6 +8,9 @@
         <mat-label>tooltip message</mat-label>
         <input matInput [formControl]="message">
       </mat-form-field>
+      <button mat-raised-button [matTooltip]="message.value || ''">
+        action
+      </button>
 
     </mat-card-content>
     <mat-card-actions>
