@@ -11,7 +11,7 @@ import { FormControl } from '@angular/forms'
 })
 export class KindComponent implements OnInit {
 
-  message = new FormControl('info on the action offered by the button')
+  message = new FormControl('info about the action offered by this button')
 
   constructor() { }
 
