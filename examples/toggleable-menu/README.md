@@ -1,6 +1,6 @@
 # toggleable-menu, app used as a template
 
-Angular version 14.2.1
+Angular version 14.2.2
 
 ## scaffolding
 
