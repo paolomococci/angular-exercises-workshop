@@ -1,6 +1,6 @@
 # dnd, (Drag and Drop)
 
-Angular 14.2.
+Angular 14.2.3
 
 How to use Angular Schematics.
 
