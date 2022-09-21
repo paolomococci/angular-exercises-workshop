@@ -1,6 +1,6 @@
 # radio
 
-Angular 14.2.2
+Angular 14.2.3
 
 ## scaffolding
 
