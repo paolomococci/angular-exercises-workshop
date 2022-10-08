@@ -1,5 +1,7 @@
 # WebEditor
 
+Angular 14.2.4
+
 ## scaffolding
 
 ```shell
