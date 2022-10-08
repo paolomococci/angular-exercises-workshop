@@ -1,6 +1,6 @@
 # snack-bar
 
-Angular 14.2.3
+Angular 14.2.4
 
 ## scaffolding
 
