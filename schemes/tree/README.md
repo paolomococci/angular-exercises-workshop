@@ -1,6 +1,6 @@
 # tree
 
-Angular 14.2.3
+Angular 14.2.5
 
 How to use Angular Schematics.
 
