@@ -1,3 +1,5 @@
 export const environment = {
-  production: false
+  production: false,
+  appTitle: 'Instance Methods',
+  appId: '1f5'
 }
