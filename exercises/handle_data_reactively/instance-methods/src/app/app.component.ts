@@ -1,5 +1,14 @@
-import { Component } from '@angular/core'
-import { map } from 'rxjs/operators'
+import {
+  Component
+} from '@angular/core'
+import {
+  map,
+  merge
+} from 'rxjs/operators'
+import {
+  Subscription,
+  interval
+} from 'rxjs'
 
 @Component({
   selector: 'app-root',
