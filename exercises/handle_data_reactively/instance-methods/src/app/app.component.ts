@@ -9,6 +9,7 @@ import {
   Subscription,
   interval
 } from 'rxjs'
+import { environment } from 'src/environments/environment'
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,6 @@ import {
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title: string = 'Instance Methods'
-  appId: string = '1F5'
+  title: string = environment.appTitle
+  appId: string = environment.appId
 }
