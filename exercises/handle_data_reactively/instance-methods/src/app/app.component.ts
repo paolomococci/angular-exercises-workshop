@@ -21,4 +21,6 @@ export class AppComponent {
   appId: string = environment.appId
 
   subscription: Subscription | undefined
+  inputStreamDataOne: number[] = [1,2,3,4,5,6,7,8,9]
+  inputStreamDataTwo: string[] = ['one','two','three','four','five','six','seven','eight','nine']
 }
