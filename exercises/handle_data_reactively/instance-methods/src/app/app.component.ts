@@ -19,4 +19,6 @@ import { environment } from 'src/environments/environment'
 export class AppComponent {
   title: string = environment.appTitle
   appId: string = environment.appId
+
+  subscription: Subscription | undefined
 }
