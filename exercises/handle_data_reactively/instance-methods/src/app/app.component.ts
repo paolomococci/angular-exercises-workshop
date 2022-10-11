@@ -33,6 +33,9 @@ export class AppComponent {
       .pipe(
         map(
           (output) => output % this.inputDataStreamTwo.length
+        ),
+        map(
+          (index) => this.inputDataStreamTwo[index]
         )
       )
   }
