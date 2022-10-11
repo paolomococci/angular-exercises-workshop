@@ -3,7 +3,7 @@ import {
 } from '@angular/core'
 import {
   map,
-  merge
+  mergeWith
 } from 'rxjs/operators'
 import {
   Subscription,
@@ -47,7 +47,7 @@ export class AppComponent {
         map(
           (index) => this.inputDataStreamOne[index]
         ),
-        merge(streamSourceTwo)
+        mergeWith(streamSourceTwo)
       )
       .subscribe(
         (element) => {
