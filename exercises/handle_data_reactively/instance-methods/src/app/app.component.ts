@@ -30,6 +30,11 @@ export class AppComponent {
   startStream(): void {
     const streamSourceOne = interval(1500)
     const streamSourceTwo = interval(1000)
+      .pipe(
+        map(
+          (output) => output % this.inputDataStreamTwo.length
+        )
+      )
   }
 
   stopStream(): void {}
