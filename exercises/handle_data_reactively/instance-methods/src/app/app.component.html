@@ -41,10 +41,10 @@
 
   <!-- button container -->
   <div class="buttons-container">
-    <button>
+    <button [disabled]="!!subscription" (click)="startStream()">
       START
     </button>
-    <button>
+    <button [disabled]="!subscription" (click)="stopStream()">
       STOP
     </button>
   </div>
@@ -53,16 +53,16 @@
   <div class="cards-container">
     <!-- input streams -->
     <div class="input-stream">
-      <div class="input-stream__item">
+      <div class="input-stream__item" *ngFor="let item of inputDataStreamOne">
         <!-- todo -->
       </div>
-      <div class="input-stream__item">
+      <div class="input-stream__item" *ngFor="let item of inputDataStreamTwo">
         <!-- todo -->
       </div>
     </div>
     <!-- output stream -->
     <div class="output-stream">
-      <div class="input-stream__item">
+      <div class="input-stream__item" *ngFor="let item of outputDataStream">
         <!-- todo -->
       </div>
     </div>
