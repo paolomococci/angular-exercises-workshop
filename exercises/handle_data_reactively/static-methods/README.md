@@ -11,3 +11,9 @@ ng n static-methods --routing --skip-tests --skip-install --style=sass
 ```shell
 npm install
 ```
+
+## serve in development mode
+
+```shell
+ng serve-o
+```
