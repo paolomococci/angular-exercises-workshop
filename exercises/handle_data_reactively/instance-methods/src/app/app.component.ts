@@ -51,6 +51,7 @@ export class AppComponent {
       )
       .subscribe(
         (element) => {
+          // TODO
           this.outputDataStream.push(element)
         }
       )
