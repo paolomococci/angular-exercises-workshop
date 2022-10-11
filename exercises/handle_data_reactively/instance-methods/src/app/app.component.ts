@@ -38,6 +38,18 @@ export class AppComponent {
           (index) => this.inputDataStreamTwo[index]
         )
       )
+
+    this.subscription = streamSourceOne
+      .pipe(
+        map(
+          (output) => output % this.inputDataStreamOne.length
+        ),
+        map(
+          (index) => this.inputDataStreamOne[index]
+        ),
+        merge(streamSourceTwo)
+      )
+      .subscribe()
   }
 
   stopStream(): void {}
