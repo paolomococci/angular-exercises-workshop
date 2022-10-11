@@ -25,7 +25,7 @@ export class AppComponent {
   inputDataStreamOne: string[] = ['1','2','3','4','5','6','7','8','9']
   inputDataStreamTwo: string[] = ['one','two','three','four','five','six','seven','eight','nine']
 
-  outputDataStream = []
+  outputDataStream: any = []
 
   startStream(): void {
     const streamSourceOne = interval(1500)
@@ -51,7 +51,6 @@ export class AppComponent {
       )
       .subscribe(
         (element) => {
-          // TODO
           this.outputDataStream.push(element)
         }
       )
