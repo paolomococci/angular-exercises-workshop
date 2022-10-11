@@ -22,7 +22,7 @@ export class AppComponent {
 
   subscription: Subscription | undefined
 
-  inputDataStreamOne: number[] = [1,2,3,4,5,6,7,8,9]
+  inputDataStreamOne: string[] = ['1','2','3','4','5','6','7','8','9']
   inputDataStreamTwo: string[] = ['one','two','three','four','five','six','seven','eight','nine']
 
   outputDataStream = []
@@ -56,6 +56,9 @@ export class AppComponent {
       )
   }
 
-  stopStream(): void {}
+  stopStream(): void {
+    this.subscription?.unsubscribe()
+    this.subscription = undefined
+  }
 
 }
