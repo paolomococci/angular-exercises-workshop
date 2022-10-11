@@ -27,4 +27,8 @@ export class AppComponent {
 
   outputDataStream = []
 
+  startStream(): void {}
+
+  stopStream(): void {}
+
 }
