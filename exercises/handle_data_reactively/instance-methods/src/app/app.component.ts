@@ -27,7 +27,10 @@ export class AppComponent {
 
   outputDataStream = []
 
-  startStream(): void {}
+  startStream(): void {
+    const streamSourceOne = interval(1500)
+    const streamSourceTwo = interval(1000)
+  }
 
   stopStream(): void {}
 
