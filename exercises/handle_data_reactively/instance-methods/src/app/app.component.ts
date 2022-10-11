@@ -49,7 +49,11 @@ export class AppComponent {
         ),
         merge(streamSourceTwo)
       )
-      .subscribe()
+      .subscribe(
+        (element) => {
+          this.outputDataStream.push(element)
+        }
+      )
   }
 
   stopStream(): void {}
