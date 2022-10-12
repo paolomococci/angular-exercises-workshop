@@ -7,7 +7,7 @@ export class Data {
         {id: 'a7d8c3', genre: 'cartoon', title: 'something three'},
         {id: 'a7d8c4', genre: 'detective', title: 'something four'},
         {id: 'a7d8c5', genre: 'documentary', title: 'something five'},
-        {id: 'a7d8c6', genre: 'comedycomedy', title: 'something six'},
+        {id: 'a7d8c6', genre: 'comedy', title: 'something six'},
         {id: 'a7d8c7', genre: 'sentimental', title: 'something seven'},
         {id: 'a7d8c8', genre: 'cartoon', title: 'something eight'},
         {id: 'a7d8c9', genre: 'fantasy', title: 'something nine'},
