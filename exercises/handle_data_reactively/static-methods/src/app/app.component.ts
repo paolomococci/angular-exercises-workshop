@@ -1,5 +1,9 @@
 import { Component } from '@angular/core'
 import {
+  map,
+  tap 
+} from 'rxjs/operators'
+import {
   interval, 
   partition,
   merge,
