@@ -24,9 +24,8 @@ export class AppComponent {
   appId: string = environment.appId
 
   inputDataStream: Movie[] = Data.movies
-  outputDataStream: any[] = []
-  comedies: any[] = []
-  anything: any[] = []
+  comedies: string[] = []
+  anything: string[] = []
 
   subscription: Subscription | undefined
 
