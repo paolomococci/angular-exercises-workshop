@@ -60,15 +60,15 @@
     <!-- output stream of genre comedy -->
     <div class="output-stream">
       <h3>comedies</h3>
-      <div class="input-stream__item">
-        <!-- todo -->
+      <div class="input-stream__item" *ngFor="let item of comedies">
+        {{item}}
       </div>
     </div>
     <!-- output stream of genre anything -->
     <div class="output-stream">
       <h3>belonging to other genres</h3>
-      <div class="input-stream__item">
-        <!-- todo -->
+      <div class="input-stream__item" *ngFor="let item of anything">
+        {{item}}
       </div>
     </div>
   </div>
