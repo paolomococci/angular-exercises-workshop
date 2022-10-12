@@ -26,7 +26,7 @@ export class AppComponent {
   inputDataStream: Movie[] = Data.movies
   outputDataStream: any[] = []
   comedy: any[] = []
-  detective: any[] = []
+  someone: any[] = []
 
   startStream(): void {
     const streamSource = interval(1000)
@@ -37,6 +37,13 @@ export class AppComponent {
             return this.inputDataStream[index]
           }
         )
+      )
+      const [
+        comedyStream, 
+        somethingStream
+      ] = partition(
+        streamSource,
+        (item) => item.genre === 'comedy'
       )
   }
 
