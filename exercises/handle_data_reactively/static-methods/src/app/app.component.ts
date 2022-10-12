@@ -25,5 +25,6 @@ export class AppComponent {
 
   inputDataStream: Movie[] = Data.movies
   outputDataStream: any[] = []
-  
+  comedy: any[] = []
+  detective: any[] = []
 }
