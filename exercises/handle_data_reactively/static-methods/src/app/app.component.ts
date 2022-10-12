@@ -24,4 +24,6 @@ export class AppComponent {
   appId: string = environment.appId
 
   inputDataStream: Movie[] = Data.movies
+  outputDataStream: any[] = []
+  
 }
