@@ -26,7 +26,7 @@ export class AppComponent {
   inputDataStream: Movie[] = Data.movies
   outputDataStream: any[] = []
   comedy: any[] = []
-  someone: any[] = []
+  something: any[] = []
 
   subscription: Subscription | undefined
 
@@ -55,7 +55,11 @@ export class AppComponent {
           (comedy) => this.comedy.push(comedy.title)
         )
       ),
-      somethingStream.pipe()
+      somethingStream.pipe(
+        tap(
+          (something) => this.something.push(something.title)
+        )
+      )
     ).subscribe(
       (output) => console.log(output)
     )
