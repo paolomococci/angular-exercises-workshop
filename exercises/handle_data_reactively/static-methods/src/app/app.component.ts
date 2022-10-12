@@ -57,5 +57,8 @@ export class AppComponent {
     )
   }
 
-  stopStream(): void {}
+  stopStream(): void {
+    this.subscription?.unsubscribe()
+    this.subscription = undefined
+  }
 }
