@@ -1,7 +1,7 @@
 import { Movie } from "../model/movie.model"
 
 export class Data {
-    movies: Movie[] = [
+    static movies: Movie[] = [
         {id: 'a7d8c1', genre: 'detective', title: 'something one'},
         {id: 'a7d8c2', genre: 'comedy', title: 'something two'},
         {id: 'a7d8c3', genre: 'cartoon', title: 'something three'},
