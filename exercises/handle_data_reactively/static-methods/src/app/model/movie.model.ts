@@ -1,5 +1,5 @@
 export interface Movie {
     id: string
-    genre: string
-    title: string
+    genre: string | null
+    title: string | null
 }
