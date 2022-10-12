@@ -11,6 +11,8 @@ import {
 } from 'rxjs'
 
 import { environment } from 'src/environments/environment'
+import { Movie } from './model/movie.model'
+import { Data } from './repo/data.repo'
 
 @Component({
   selector: 'app-root',
