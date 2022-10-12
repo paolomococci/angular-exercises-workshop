@@ -22,4 +22,6 @@ import { Data } from './repo/data.repo'
 export class AppComponent {
   title: string = environment.appTitle
   appId: string = environment.appId
+
+  inputDataStream: Movie[] = Data.movies
 }
