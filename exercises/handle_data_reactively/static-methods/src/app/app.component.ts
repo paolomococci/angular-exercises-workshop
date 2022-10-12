@@ -49,7 +49,9 @@ export class AppComponent {
       (item) => item.genre === 'comedy'
     )
 
-    this.subscription = merge().subscribe()
+    this.subscription = merge().subscribe(
+      (output) => console.log(output)
+    )
   }
 
   stopStream(): void {}
