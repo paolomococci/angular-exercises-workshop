@@ -49,7 +49,10 @@ export class AppComponent {
       (item) => item.genre === 'comedy'
     )
 
-    this.subscription = merge().subscribe(
+    this.subscription = merge(
+      comedyStream.pipe(),
+      somethingStream.pipe()
+    ).subscribe(
       (output) => console.log(output)
     )
   }
