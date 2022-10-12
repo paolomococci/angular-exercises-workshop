@@ -27,4 +27,8 @@ export class AppComponent {
   outputDataStream: any[] = []
   comedy: any[] = []
   detective: any[] = []
+
+  startStream(): void {}
+
+  stopStream(): void {}
 }
