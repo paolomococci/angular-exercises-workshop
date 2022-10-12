@@ -28,7 +28,17 @@ export class AppComponent {
   comedy: any[] = []
   detective: any[] = []
 
-  startStream(): void {}
+  startStream(): void {
+    const streamSource = interval(1000)
+      .pipe(
+        map(
+          (input) => {
+            const index = input % this.inputDataStream.length
+            return this.inputDataStream[index]
+          }
+        )
+      )
+  }
 
   stopStream(): void {}
 }
