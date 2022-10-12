@@ -41,7 +41,7 @@
 
   <!-- button container -->
   <div class="buttons-container">
-    <button>
+    <button [disabled]="!!subscription" (click)="startStream()">
       START
     </button>
     <button>
