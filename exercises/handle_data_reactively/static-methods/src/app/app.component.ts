@@ -28,6 +28,8 @@ export class AppComponent {
   comedy: any[] = []
   someone: any[] = []
 
+  subscription: Subscription | undefined
+
   startStream(): void {
     const streamSource = interval(1000)
       .pipe(
@@ -38,6 +40,7 @@ export class AppComponent {
           }
         )
       )
+
     const [
       comedyStream, 
       somethingStream
@@ -45,6 +48,8 @@ export class AppComponent {
       streamSource,
       (item) => item.genre === 'comedy'
     )
+
+    this.subscription = merge().subscribe()
   }
 
   stopStream(): void {}
