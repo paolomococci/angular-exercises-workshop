@@ -38,13 +38,13 @@ export class AppComponent {
           }
         )
       )
-      const [
-        comedyStream, 
-        somethingStream
-      ] = partition(
-        streamSource,
-        (item) => item.genre === 'comedy'
-      )
+    const [
+      comedyStream, 
+      somethingStream
+    ] = partition(
+      streamSource,
+      (item) => item.genre === 'comedy'
+    )
   }
 
   stopStream(): void {}
