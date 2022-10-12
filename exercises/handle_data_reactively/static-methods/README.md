@@ -18,6 +18,12 @@ npm install
 ng g i model/movie --type=model
 ```
 
+## generate data class
+
+```shell
+ng g cl repo/data --skip-tests --type=repo
+```
+
 ## serve in development mode
 
 ```shell
