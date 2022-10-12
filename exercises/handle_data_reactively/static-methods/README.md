@@ -15,7 +15,7 @@ npm install
 ## generate movie interface
 
 ```shell
-ng g i interface/movie type=model
+ng g i model/movie --type=model
 ```
 
 ## serve in development mode
