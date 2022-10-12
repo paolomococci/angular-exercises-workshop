@@ -50,7 +50,11 @@ export class AppComponent {
     )
 
     this.subscription = merge(
-      comedyStream.pipe(),
+      comedyStream.pipe(
+        tap(
+          (comedy) => this.comedy.push(comedy.title)
+        )
+      ),
       somethingStream.pipe()
     ).subscribe(
       (output) => console.log(output)
