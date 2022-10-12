@@ -1,4 +1,11 @@
 import { Component } from '@angular/core'
+import {
+  interval, 
+  partition,
+  merge,
+  Subscription
+} from 'rxjs'
+
 import { environment } from 'src/environments/environment'
 
 @Component({
