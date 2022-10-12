@@ -44,7 +44,7 @@
     <button [disabled]="!!subscription" (click)="startStream()">
       START
     </button>
-    <button>
+    <button [disabled]="!subscription" (click)="stopStream()">
       STOP
     </button>
   </div>
