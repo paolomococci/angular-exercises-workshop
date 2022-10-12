@@ -25,8 +25,8 @@ export class AppComponent {
 
   inputDataStream: Movie[] = Data.movies
   outputDataStream: any[] = []
-  comedy: any[] = []
-  something: any[] = []
+  comedies: any[] = []
+  anything: any[] = []
 
   subscription: Subscription | undefined
 
@@ -42,22 +42,22 @@ export class AppComponent {
       )
 
     const [
-      comedyStream, 
-      somethingStream
+      comediesStream, 
+      anythingStream
     ] = partition(
       streamSource,
       (item) => item.genre === 'comedy'
     )
 
     this.subscription = merge(
-      comedyStream.pipe(
+      comediesStream.pipe(
         tap(
-          (comedy) => this.comedy.push(comedy.title)
+          (comedy) => this.comedies.push(comedy.title)
         )
       ),
-      somethingStream.pipe(
+      anythingStream.pipe(
         tap(
-          (something) => this.something.push(something.title)
+          (anything) => this.anything.push(anything.title)
         )
       )
     ).subscribe(
