@@ -26,8 +26,12 @@ npm i jest-preset-angular --save-dev --legacy-peer-deps
 npm r karma karma-chrome-launcher karma-jasmine-html-reporter @types/jasmine jasmine-core karma-jasmine --legacy-peer-deps
 ```
 
-## serve in development mode
+Also I deleted the karma.conf.js and src/test.ts files. 
+I created the jestSetup.ts file. 
+I have edited the package.json, angular.json and tsconfig.spec.json files.
+
+## running test command
 
 ```shell
-ng serve -o
+npm run test
 ```
