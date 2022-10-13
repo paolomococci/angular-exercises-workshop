@@ -17,6 +17,7 @@ npm install
 ```shell
 npm i jest --save-dev
 npm i @types/jest --save-dev
+npm i jest-preset-angular --save-dev --legacy-peer-deps
 ```
 
 ## serve in development mode
