@@ -35,17 +35,17 @@
   },
   "jest": {
     "verbose": true,
-    "preset": "",
+    "preset": "jest-preset-angular",
     "setupFilesAfterEnv": [
-      ""
+      "<rootDir>/jestSetup.ts"
     ],
     "testPathIgnorePatterns": [
-      "",
-      ""
+      "<rootDir>/node_modules/",
+      "<rootDir>/dist/"
     ],
     "globals": {
       "ts-jest": {
-        "tsconfig": "",
+        "tsconfig": "<rootDir>/tsconfig.spec.json",
         "stringifyContentPathRegex": "\\.html$"
       }
     }
