@@ -45,7 +45,7 @@
     "globals": {
       "ts-jest": {
         "tsconfig": "",
-        "stringifyContentPathRegex": ""
+        "stringifyContentPathRegex": "\\.html$"
       }
     }
   }
