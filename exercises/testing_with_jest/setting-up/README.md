@@ -16,6 +16,7 @@ npm install
 
 ```shell
 npm i jest --save-dev
+npm i @types/jest --save-dev
 ```
 
 ## serve in development mode
