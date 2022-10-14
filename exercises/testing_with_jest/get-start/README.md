@@ -19,3 +19,9 @@ npm i jest --save-dev
 npm i @types/jest --save-dev
 npm i jest-preset-angular --save-dev --legacy-peer-deps
 ```
+
+## remove some packages
+
+```shell
+npm r karma karma-chrome-launcher karma-jasmine-html-reporter @types/jasmine jasmine-core karma-jasmine --legacy-peer-deps
+```
