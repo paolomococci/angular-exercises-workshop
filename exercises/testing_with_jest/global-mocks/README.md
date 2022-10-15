@@ -6,31 +6,13 @@
 ng n global-mocks --routing --skip-install --style=sass
 ```
 
-## installation
+## already having an package.json file with the appropriate dependencies, I can proceed with the installation
 
 ```shell
-npm install
+npm install --legacy-peer-deps
 ```
 
-## install Jest
-
-```shell
-npm i jest --save-dev
-npm i @types/jest --save-dev
-npm i jest-preset-angular --save-dev --legacy-peer-deps
-```
-
-## remove some packages
-
-```shell
-npm r karma karma-chrome-launcher karma-jasmine-html-reporter @types/jasmine jasmine-core karma-jasmine --legacy-peer-deps
-```
-
-Also I deleted the karma.conf.js and src/test.ts files. 
-I created the jestSetup.ts file. 
-I have edited the package.json, angular.json and tsconfig.spec.json files.
-
-## running test command
+## now I can proceed with a first check
 
 ```shell
 npm run test
