@@ -1,13 +1,13 @@
 # checkbox
 
-Angular version 14.2.5
+Angular version 14.2.6
 
 ## scaffolding
 
 This is an alternative method, if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
-npx -p @angular/cli@14.2.5 ng new checkbox -S -g --routing --style=sass
+npx -p @angular/cli@14.2.6 ng new checkbox -S -g --routing --style=sass
 ```
 
 ### Or, if you already have this project checkbox, remember to type the following command inside the root directory of the same:
