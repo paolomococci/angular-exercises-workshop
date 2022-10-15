@@ -1,6 +1,6 @@
 # paginator
 
-Angular 14.2.5
+Angular 14.2.6
 
 ## scaffolding
 
