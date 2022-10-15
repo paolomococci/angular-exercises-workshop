@@ -17,3 +17,9 @@ npm install --legacy-peer-deps
 ```shell
 npm run test
 ```
+
+## I create a sample component
+
+```shell
+ng g c components/sample
+```
