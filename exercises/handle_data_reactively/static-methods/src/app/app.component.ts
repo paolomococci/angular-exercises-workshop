@@ -10,7 +10,7 @@ import {
   Subscription
 } from 'rxjs'
 
-import { environment } from 'src/environments/environment'
+import { environment } from './../environments/environment'
 import { Movie } from './model/movie.model'
 import { Data } from './repo/data.repo'
 
