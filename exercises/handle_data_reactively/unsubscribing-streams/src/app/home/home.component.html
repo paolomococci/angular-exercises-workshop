@@ -9,8 +9,8 @@
   <div class="cards-container">
     <!-- input streams -->
     <div class="input-stream">
-      <div class="input-stream__item">
-        <!-- todo -->
+      <div class="input-stream__item" *ngFor="let item of inputDataStream">
+        {{item}}
       </div>
     </div>
     <!-- output stream -->
