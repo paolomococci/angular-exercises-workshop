@@ -15,8 +15,8 @@
     </div>
     <!-- output stream -->
     <div class="output-stream">
-      <div class="input-stream__item">
-        <!-- todo -->
+      <div class="input-stream__item" *ngFor="let item of outputDataStream">
+        {{item}}
       </div>
     </div>
   </div>
