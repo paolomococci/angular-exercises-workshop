@@ -8,7 +8,6 @@ import { Subscription, interval } from 'rxjs'
   styleUrls: ['./home.component.sass'],
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  isComponentAlive: boolean = false
 
   subscription: Subscription | undefined
 
