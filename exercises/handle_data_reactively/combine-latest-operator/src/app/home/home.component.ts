@@ -1,6 +1,7 @@
 import {
   Component,
-  OnInit 
+  OnInit,
+  OnDestroy
 } from '@angular/core'
 
 @Component({
@@ -8,11 +9,14 @@ import {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  ngOnDestroy(): void {
+    throw new Error('Method not implemented.')
   }
 
 }
