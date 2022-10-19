@@ -4,6 +4,7 @@ import {
   OnDestroy
 } from '@angular/core'
 import { FormGroup } from '@angular/forms'
+import { Observable } from 'rxjs'
 import { Color } from '../data/color.model'
 import { Example } from '../data/example'
 
@@ -18,7 +19,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   colorOptions: Color[] = Example.colors
   borderRadiusOptions: number[] = [1,1,2,3,5,8,13,21,34,55]
 
-  boxForm = new FormGroup()
+  boxForm = new FormGroup({})
+
+  boxStyles$!: Observable<{}>
 
   constructor() { }
 
