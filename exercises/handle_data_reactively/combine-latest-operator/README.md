@@ -17,3 +17,9 @@ npm install
 ```shell
 ng g c home
 ```
+
+## adding color interface
+
+```shell
+ng g i data/color --type=model
+```
