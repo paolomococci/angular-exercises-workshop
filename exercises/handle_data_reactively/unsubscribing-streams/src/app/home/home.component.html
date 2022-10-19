@@ -1,10 +1,10 @@
 <div>
   <!-- button container -->
   <div class="buttons-container">
-    <button [disabled]="!!subscription">
+    <button [disabled]="!!subscription" (click)="startStream()">
         START
     </button>
-    <button [disabled]="!subscription">
+    <button [disabled]="!subscription" (click)="stopStream()">
         STOP
     </button>
   </div>
