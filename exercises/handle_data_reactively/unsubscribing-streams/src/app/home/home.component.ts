@@ -3,6 +3,7 @@ import {
   OnInit,
   OnDestroy
 } from '@angular/core'
+import { Subscription } from 'rxjs'
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,12 @@ import {
 export class HomeComponent implements OnInit, OnDestroy {
 
   isComponentAlive: boolean = false
+
+  subscription: Subscription | undefined
+
+  inputDataStream: string[] = ['one','two','three','four','five','six','seven','eight','nine']
+
+  outputDataStream: any = []
 
   constructor() {}
 
