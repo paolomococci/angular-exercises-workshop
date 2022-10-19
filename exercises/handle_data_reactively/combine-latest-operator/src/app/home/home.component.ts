@@ -31,4 +31,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     throw new Error('Method not implemented.')
   }
 
+  listenToInputChange() {}
+
 }
