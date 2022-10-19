@@ -3,6 +3,8 @@ import {
   OnInit,
   OnDestroy
 } from '@angular/core'
+import { Color } from '../data/color.model'
+import { Example } from '../data/example'
 
 @Component({
   selector: 'app-home',
@@ -12,6 +14,7 @@ import {
 export class HomeComponent implements OnInit, OnDestroy {
 
   sizeOptions: number[] = [90,180,270,360,450,540,630,720,810,900]
+  colorOptions: Color[] = Example.colors
 
   constructor() { }
 
