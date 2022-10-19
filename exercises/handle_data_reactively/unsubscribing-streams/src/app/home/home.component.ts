@@ -34,4 +34,13 @@ export class HomeComponent implements OnInit, OnDestroy {
     throw new Error('Method not implemented.')
   }
 
+  startStream(): void {
+    const streamSource = interval(1000)
+  }
+
+  stopStream(): void {
+    this.subscription?.unsubscribe()
+    this.subscription = undefined
+  }
+
 }
