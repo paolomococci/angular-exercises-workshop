@@ -1,55 +1,51 @@
-import {
-  Component,
-  OnInit,
-  OnDestroy
-} from '@angular/core'
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
-import {
-  Subscription,
-  interval
-} from 'rxjs'
+import { Subscription, interval } from 'rxjs';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
+  styleUrls: ['./home.component.sass'],
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  isComponentAlive: boolean = false;
 
-  isComponentAlive: boolean = false
+  subscription: Subscription | undefined;
 
-  subscription: Subscription | undefined
+  inputDataStream: string[] = [
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine',
+  ];
 
-  inputDataStream: string[] = ['one','two','three','four','five','six','seven','eight','nine']
-
-  outputDataStream: any = []
+  outputDataStream: any = [];
 
   constructor() {}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.')
+    throw new Error('Method not implemented.');
   }
 
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.')
+    throw new Error('Method not implemented.');
   }
 
   startStream(): void {
-    const streamSource = interval(1000)
-    this.subscription = streamSource.subscribe(
-      (input) => {
-        this.outputDataStream.push(input)
-        console.log(
-          'outputDataStream=>', 
-          input 
-        )
-      }
-    )
+    const streamSource = interval(1000);
+    this.subscription = streamSource.subscribe((input) => {
+      this.outputDataStream.push(input);
+      console.log('outputDataStream=>', input);
+    });
   }
 
   stopStream(): void {
-    this.subscription?.unsubscribe()
-    this.subscription = undefined
+    this.subscription?.unsubscribe();
+    this.subscription = undefined;
   }
-
 }
