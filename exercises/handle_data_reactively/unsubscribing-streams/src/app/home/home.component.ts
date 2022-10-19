@@ -39,6 +39,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.subscription = streamSource.subscribe(
       (input) => {
         this.outputDataStream.push(input)
+        console.log(
+          'outputDataStream=>', 
+          input 
+        )
       }
     )
   }
