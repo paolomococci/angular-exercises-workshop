@@ -1,6 +1,13 @@
-import { Component, OnInit, OnDestroy } from '@angular/core'
+import {
+  Component,
+  OnInit,
+  OnDestroy
+} from '@angular/core'
 
-import { Subscription, interval } from 'rxjs'
+import {
+  Subscription,
+  interval 
+} from 'rxjs'
 
 @Component({
   selector: 'app-home',
@@ -23,7 +30,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     'nine',
   ]
 
-  outputDataStream: any = [];
+  outputDataStream: any = []
 
   constructor() {}
 
@@ -34,11 +41,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   startStream(): void {
-    const streamSource = interval(700);
+    const streamSource = interval(700)
     this.subscription = streamSource.subscribe((input) => {
       this.outputDataStream.push(input)
       console.log('outputDataStream=>', input)
-    });
+    })
   }
 
   stopStream(): void {
