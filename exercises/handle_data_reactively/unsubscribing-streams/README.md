@@ -12,6 +12,12 @@ ng n unsubscribing-streams --routing --skip-tests --skip-install --style=sass
 ng g c home
 ```
 
+## create about component
+
+```
+ng g c about
+```
+
 ## install npm
 
 ```shell
