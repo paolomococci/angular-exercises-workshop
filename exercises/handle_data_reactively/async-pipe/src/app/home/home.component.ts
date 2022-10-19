@@ -5,7 +5,10 @@ import {
 } from '@angular/core'
 
 import {
-  Subscription,
+  Observable,
+  merge,
+  map,
+  takeWhile,
   interval 
 } from 'rxjs'
 
@@ -16,7 +19,9 @@ import {
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
-  subscription: Subscription | undefined
+  isComponentAlive!: boolean
+
+  streamsOutput$: Observable<number[]> | undefined
 
   inputDataStream: string[] = [
     'one',
@@ -34,22 +39,41 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isComponentAlive = true
+    this.startStream()
+  }
 
   ngOnDestroy(): void {
     this.stopStream()
   }
 
   startStream(): void {
-    const streamSource = interval(700)
-    this.subscription = streamSource.subscribe((input) => {
-      this.outputDataStream.push(input)
-      console.log('outputDataStream=>', input)
-    })
+    const streamSourceOne = interval(700)
+    const streamSourceTwo = interval(1400)
+    const streamSourceThree = interval(2100)
+    this.streamsOutput$ = merge(
+      streamSourceOne,
+      streamSourceTwo,
+      streamSourceThree
+    ).pipe(
+      takeWhile(
+        () => !! this.isComponentAlive
+      ),
+      map(
+        (output) => {
+          console.log(output)
+          this.outputDataStream = [
+            ...this.outputDataStream,
+            output
+          ]
+          return this.outputDataStream
+        }
+      )
+    )
   }
 
   stopStream(): void {
-    this.subscription?.unsubscribe()
-    this.subscription = undefined
+    this.isComponentAlive = false
   }
 }
