@@ -23,3 +23,9 @@ ng g c home
 ```shell
 ng g i data/color --type=model
 ```
+
+## adding example class
+
+```shell
+ng g cl data/example
+```
