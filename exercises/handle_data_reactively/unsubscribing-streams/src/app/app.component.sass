@@ -88,7 +88,6 @@ svg.material-icons
 svg.material-icons:not(:last-child)
     margin-right: 8px
 
-
 .card svg.material-icons path
     fill: #888
 
@@ -114,28 +113,22 @@ svg.material-icons:not(:last-child)
     transition: all 0.2s ease-in-out
     line-height: 24px
 
-
     &-container .card:not(:last-child)
         margin-right: 0
-
 
     &.card-small
         height: 16px
         width: 168px
 
-
     &-container .card:not(.highlight-card)
         cursor: pointer
-
 
     &-container .card:not(.highlight-card):hover
         transform: translateY(-3px)
         box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35)
 
-
     &-container .card:not(.highlight-card):hover .material-icons path
         fill: rgb(105, 103, 103)
-
 
     &.highlight-card
         background-color: #17d
@@ -145,7 +138,6 @@ svg.material-icons:not(:last-child)
         width: auto
         min-width: 30%
         position: relative
-
 
     &.card.highlight-card span
         margin-left: 60px
@@ -189,6 +181,13 @@ a:hover
     &:hover
         transform: translateY(-0.25rem)
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2)
+
+.header-links
+    padding: 0 16px
+    display: flex
+&__link
+    &:nth-child(1)
+        margin-right: 16px
 
 footer
     margin-top: 8px
