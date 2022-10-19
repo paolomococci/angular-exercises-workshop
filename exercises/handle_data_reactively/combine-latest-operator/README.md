@@ -11,3 +11,9 @@ ng n combine-latest-operator --routing --skip-tests --skip-install --style=sass
 ```shell
 npm install
 ```
+
+## adding home component
+
+```shell
+ng g c home
+```
