@@ -1,8 +1,12 @@
 <div>
   <!-- button container -->
   <div class="buttons-container">
-    <button>START</button>
-    <button>STOP</button>
+    <button [disabled]="!!subscription">
+        START
+    </button>
+    <button [disabled]="!subscription">
+        STOP
+    </button>
   </div>
 
   <!-- card container -->
