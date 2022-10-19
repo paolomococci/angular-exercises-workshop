@@ -1,0 +1,27 @@
+<div>
+  <!-- button container -->
+  <div class="buttons-container">
+    <button [disabled]="!!subscription" (click)="startStream()">
+        START
+    </button>
+    <button [disabled]="!subscription" (click)="stopStream()">
+        STOP
+    </button>
+  </div>
+
+  <!-- card container -->
+  <div class="cards-container">
+    <!-- input streams -->
+    <div class="input-stream">
+      <div class="input-stream__item" *ngFor="let item of inputDataStream">
+        {{item}}
+      </div>
+    </div>
+    <!-- output stream -->
+    <div class="output-stream">
+      <div class="input-stream__item" *ngFor="let item of outputDataStream">
+        {{item}}
+      </div>
+    </div>
+  </div>
+</div>
