@@ -29,3 +29,9 @@ ng g i data/color --type=model
 ```shell
 ng g cl data/example
 ```
+
+## serve in development mode
+
+```shell
+ng serve -o
+```
