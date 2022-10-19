@@ -11,6 +11,8 @@ import {
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
+  isComponentAlive: boolean = false
+
   constructor() {}
 
   ngOnInit(): void {
