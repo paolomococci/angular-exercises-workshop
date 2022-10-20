@@ -49,4 +49,12 @@ export class Example {
         {hexCode: '#1ff'},
         {hexCode: '#0ff'},
     ]
+
+    static colorOptions(): string[] {
+        let opt: string[] = []
+        for (let i = 0; i < this.colors.length; i++) {
+            opt[i] = this.colors[i].hexCode
+        }
+        return opt
+    }
 }
