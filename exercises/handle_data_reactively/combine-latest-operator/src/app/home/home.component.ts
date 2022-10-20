@@ -8,12 +8,7 @@ import {
   FormGroup
 } from '@angular/forms'
 import {
-  Observable,
-  of,
-  combineLatest, 
-  startWith,
-  map,
-  from
+  Observable
 } from 'rxjs'
 
 import { Example } from '../data/example'
@@ -36,13 +31,13 @@ export class HomeComponent implements OnInit, OnDestroy {
     size: new FormControl(''),
   })
 
-  boxStyles$: Observable<{
+  boxStyles$!: Observable<{
     backgroundColor: string
     textColor: string
     borderRadius: string
     width: string
     height: string
-  }> | undefined
+  }>
 
   constructor() {}
 
@@ -57,7 +52,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {}
 
   listenToInputChange(): void {
-    
+    // TODO
   }
 
 }
