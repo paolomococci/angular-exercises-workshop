@@ -52,26 +52,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {}
 
   private listenToInputChange(): void {
-    this.boxStyles$ = this.of(
-      '#000',
-      '#fff',
-      '5',
-      '90'
-    )
-  }
-
-  private of(
-    backgroundColor: string,
-    textColor: string,
-    borderRadius: string,
-    size: string
-  ): Observable<{
-    backgroundColor: string
-    textColor: string
-    borderRadius: string
-    width: string
-    height: string
-  }> {
     throw new Error('Function not implemented.')
   }
 
