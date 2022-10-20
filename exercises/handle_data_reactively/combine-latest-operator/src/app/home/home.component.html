@@ -2,7 +2,6 @@
     <div class="item">
     <label for="bgColorSelector">back ground color:</label>
     <select id="bgColorSelector" formControlName="backgroundColor">
-      <option value="">choices</option>
       <option *ngFor="let option of colorOptions" [value]="option">
         {{ option }}
       </option>
@@ -11,7 +10,6 @@
     <div class="item">
       <label for="textColorSelector">text color:</label>
       <select id="textColorSelector" formControlName="textColor">
-        <option value="">choices</option>
         <option *ngFor="let option of colorOptions" [value]="option">
           {{ option }}
         </option>
@@ -20,7 +18,6 @@
     <div class="item">
       <label for="borderRadiusSelector">border radius:</label>
       <select id="borderRadiusSelector" formControlName="borderRadius">
-        <option value="">choices</option>
         <option *ngFor="let option of borderRadiusOptions" [value]="option">
           {{ option }}
         </option>
@@ -29,7 +26,6 @@
     <div class="item">
       <label for="sizeSelector">size:</label>
       <select id="sizeSelector" formControlName="size">
-        <option value="">choices</option>
         <option *ngFor="let option of sizeOptions" [value]="option">
           {{ option }}
         </option>
