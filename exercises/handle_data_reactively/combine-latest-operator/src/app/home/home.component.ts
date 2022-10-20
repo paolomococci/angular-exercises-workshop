@@ -9,8 +9,13 @@ import {
 } from '@angular/forms'
 import {
   Observable,
-  combineLatest 
+  of,
+  combineLatest, 
+  startWith,
+  map,
+  from
 } from 'rxjs'
+
 import { Example } from '../data/example'
 
 @Component({
@@ -31,13 +36,13 @@ export class HomeComponent implements OnInit, OnDestroy {
     size: new FormControl(''),
   })
 
-  boxStyles$!: Observable<{
+  boxStyles$: Observable<{
     backgroundColor: string
-    color: string
+    textColor: string
     borderRadius: string
     width: string
     height: string
-  }>
+  }> | undefined
 
   constructor() {}
 
@@ -52,7 +57,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {}
 
   listenToInputChange(): void {
-    this.boxStyles$ = combineLatest([]).pipe()
+    
   }
 
 }
