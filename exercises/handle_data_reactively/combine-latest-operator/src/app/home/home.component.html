@@ -1,31 +1,45 @@
 <div class="home" [formGroup]="boxForm">
     <div class="row">
         <div class="col">
-            <label for="textColorSelector">text color</label>
-            <select id="textcolorSelector">
+            <label for="bgColorSelector">back ground color</label>
+            <select id="bgColorSelector" formControlName="backgroundColor">
                 <option value="">choices</option>
-                <option [value]="option"></option>
+                <option *ngFor="let option of colorOptions" [value]="option">
+                    {{option}}
+                </option>
             </select>
+            <div class="col">
+                <label for="textColorSelector">text color</label>
+                <select id="textColorSelector" formControlName="textColor">
+                    <option value="">choices</option>
+                    <option *ngFor="let option of colorOptions" [value]="option">
+                        {{option}}
+                    </option>
+                </select>
         </div>
         <div class="col">
             <label for="borderRadiusSelector">border radius</label>
-            <select id="borderRadiusSelector">
+            <select id="borderRadiusSelector" formControlName="borderRadius">
                 <option value="">choices</option>
-                <option [value]="option"></option>
+                <option *ngFor="let option of borderRadiusOptions" [value]="option">
+                    {{option}}
+                </option>
             </select>
         </div>
         <div class="col">
             <label for="sizeSelector">size</label>
-            <select id="sizeSelector">
+            <select id="sizeSelector" formControlName="size">
                 <option value="">choices</option>
-                <option [value]="value"></option>
+                <option *ngFor="let option of sizeOptions" [value]="option">
+                    {{option}}
+                </option>
             </select>
         </div>
     </div>
-    <div class="row">
-        <div class="box">
+    <div class="row" *ngIf="boxStyles$ | async as bStyles">
+        <div class="box" [ngStyle]="bStyles">
             <div class="box__text">
-                <p><em>todo</em></p>
+                <p>styled text example</p>
             </div>
         </div>
     </div>
