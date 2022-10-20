@@ -8,7 +8,7 @@ import {
   FormGroup
 } from '@angular/forms'
 import {
-  Observable
+  Observable, startWith
 } from 'rxjs'
 
 import { Example } from '../data/example'
@@ -52,10 +52,20 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {}
 
   private listenToInputChange(): void {
-    this.boxStyles$ = this.of()
+    this.boxStyles$ = this.of(
+      '#000',
+      '#fff',
+      '5',
+      '90'
+    )
   }
 
-  private of(): Observable<{
+  private of(
+    backgroundColor: string,
+    textColor: string,
+    borderRadius: string,
+    size: string
+  ): Observable<{
     backgroundColor: string
     textColor: string
     borderRadius: string
