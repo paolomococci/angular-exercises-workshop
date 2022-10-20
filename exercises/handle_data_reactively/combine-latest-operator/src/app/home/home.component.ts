@@ -29,7 +29,13 @@ export class HomeComponent implements OnInit, OnDestroy {
     size: new FormControl(''),
   })
 
-  boxStyles$!: Observable<{}>
+  boxStyles$!: Observable<{
+    backgroundColor: string
+    color: string
+    borderRadius: string
+    width: string
+    height: string
+  }>
 
   constructor() { }
 
