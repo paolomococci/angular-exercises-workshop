@@ -30,6 +30,12 @@ ng g i data/color --type=model
 ng g cl data/example
 ```
 
+## adding box-styles interface
+
+```shell
+ng g i model/box-styles --type=model
+```
+
 ## serve in development mode
 
 ```shell
