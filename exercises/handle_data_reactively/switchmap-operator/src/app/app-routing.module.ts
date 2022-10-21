@@ -16,6 +16,11 @@ const routes: Routes = [
   {
     path: 'user/uuid',
     component: UserDetailComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ]
 
