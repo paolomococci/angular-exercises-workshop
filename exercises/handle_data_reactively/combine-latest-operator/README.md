@@ -1,4 +1,4 @@
-# CombineLatestOperator
+# CombineLatestOperator (exercise completely to be reviewed)
 
 ## scaffolding
 
