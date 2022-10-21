@@ -24,6 +24,12 @@ ng g i interfaces/user --type=model
 ng g s services/user
 ```
 
+## add home component
+
+```shell
+ng g c components/home
+```
+
 ## install
 
 ```shell
