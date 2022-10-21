@@ -18,6 +18,12 @@ ng g cl constants/changeless
 ng g i interfaces/user --type=model
 ```
 
+## add user service
+
+```shell
+ng g s services/user
+```
+
 ## install
 
 ```shell
