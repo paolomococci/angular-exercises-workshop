@@ -48,6 +48,12 @@ ng g c components/loader
 ng g c components/user-card
 ```
 
+## add footer component
+
+```shell
+ng g c components/footer
+```
+
 ## install
 
 ```shell
