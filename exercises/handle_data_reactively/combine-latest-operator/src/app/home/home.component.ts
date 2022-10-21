@@ -12,6 +12,7 @@ import {
 } from 'rxjs'
 
 import { Example } from '../data/example'
+import { BoxStylesImpl } from '../model/box-styles-impl'
 
 @Component({
   selector: 'app-home',
@@ -31,13 +32,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     size: new FormControl(''),
   })
 
-  boxStyles$!: Observable<{
-    backgroundColor: string
-    textColor: string
-    borderRadius: string
-    width: string
-    height: string
-  }>
+  boxStyles$ = new BoxStylesImpl()
 
   constructor() {}
 
@@ -46,7 +41,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.boxForm.get('textColor')?.setValue(this.colorOptions[this.colorOptions.length-1])
     this.boxForm.get('borderRadius')?.setValue(this.borderRadiusOptions[0])
     this.boxForm.get('size')?.setValue(this.sizeOptions[0])
-    this.listenToInputChange()
+    //this.listenToInputChange()
   }
 
   ngOnDestroy(): void {}
