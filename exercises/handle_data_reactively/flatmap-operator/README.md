@@ -30,6 +30,12 @@ ng g s services/user
 ng g c components/home
 ```
 
+## add user-detail component
+
+```shell
+ng g c components/user-detail
+```
+
 ## install
 
 ```shell
