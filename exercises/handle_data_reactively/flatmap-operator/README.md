@@ -59,3 +59,9 @@ ng g c components/footer
 ```shell
 npm install
 ```
+
+## serve in development mode
+
+```shell
+ng serve -o
+```
