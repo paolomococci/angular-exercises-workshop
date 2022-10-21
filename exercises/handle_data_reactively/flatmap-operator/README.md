@@ -36,6 +36,12 @@ ng g c components/home
 ng g c components/user-detail
 ```
 
+## add user-card component
+
+```shell
+ng g c components/user-card
+```
+
 ## install
 
 ```shell
