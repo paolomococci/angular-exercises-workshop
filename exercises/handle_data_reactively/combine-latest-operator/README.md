@@ -36,6 +36,12 @@ ng g cl data/example
 ng g i model/box-styles --type=model
 ```
 
+## adding box-styles-impl class
+
+```shell
+ng g cl model/box-styles-impl
+```
+
 ## serve in development mode
 
 ```shell
