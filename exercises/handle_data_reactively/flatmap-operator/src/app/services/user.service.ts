@@ -21,5 +21,5 @@ export class UserService {
 
   getSimilarUsers(userId: string) {}
 
-  getDataComments(userId: string) {}
+  getDataComments() {}
 }
