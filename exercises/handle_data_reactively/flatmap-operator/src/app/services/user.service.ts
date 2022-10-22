@@ -16,4 +16,10 @@ export class UserService {
   constructor(
     private http: HttpClient
   ) { }
+
+  getUser(userId: string) {}
+
+  getSimilarUsers(userId: string) {}
+
+  getDataComments(userId: string) {}
 }
