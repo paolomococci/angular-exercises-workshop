@@ -13,5 +13,7 @@ export class UserService {
   usersApiUrl: string = ''
   commentsJsonUrl: string = ''
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 }
