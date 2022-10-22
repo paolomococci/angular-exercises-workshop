@@ -17,7 +17,7 @@ export class UserService {
     private http: HttpClient
   ) {}
 
-  getUser(userId: string): any {
+  getUser(userId: string): Observable<User | undefined> {
     return this.http.get<{
       results: User[]
     }>(
