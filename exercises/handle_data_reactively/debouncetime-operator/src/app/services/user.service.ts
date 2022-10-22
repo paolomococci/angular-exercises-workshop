@@ -6,14 +6,15 @@ import {
 }  from 'rxjs'
 
 import { User } from '../interfaces/user.model'
+import { environment } from 'src/environments/environment'
 
 @Injectable({
   providedIn: 'root',
 })
 export class UserService {
 
-  usersApiUrl: string = ''
-  commentsJsonUrl: string = ''
+  usersApiUrl: string = environment.usersApiUrl
+  commentsJsonUrl: string = environment.commentsJsonUrl
 
   constructor(
     private http: HttpClient
