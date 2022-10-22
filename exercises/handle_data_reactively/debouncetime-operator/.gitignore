@@ -43,6 +43,7 @@ Thumbs.db
 
 # more
 *.ico
+*.http
 HELP.md
 package-lock.json
 environments/
