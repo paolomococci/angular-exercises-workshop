@@ -1,5 +1,7 @@
 # FlatMapOperator
 
+This exercise uses as an API an endpoint application that I am currently developing and which is in my repository api-workshop, in particular it is application dummy-users.
+
 ## scaffolding
 
 ```shell
