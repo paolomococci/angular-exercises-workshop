@@ -1,6 +1,6 @@
 # fourteen, app used as a template
 
-Angular version 14.2.67
+Angular version 14.2.7
 
 ## scaffolding
 
