@@ -1,6 +1,6 @@
 # variety, app used as a template
 
-Angular 14.2.7
+Angular 14.2.8
 
 ## scaffolding
 
@@ -11,7 +11,7 @@ ng new variety -S -g --routing --style=sass --skip-install
 This is an alternative method, if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
-npx -p @angular/cli@14.2.7 ng new variety -S -g --routing --style=sass
+npx -p @angular/cli@14.2.8 ng new variety -S -g --routing --style=sass
 ```
 
 ## install
