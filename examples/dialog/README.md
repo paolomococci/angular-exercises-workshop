@@ -1,6 +1,6 @@
 # dialog
 
-Angular version 14.2.7
+Angular version 14.2.8
 
 ## scaffolding
 
