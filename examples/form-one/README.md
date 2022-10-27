@@ -1,6 +1,6 @@
 # form-one
 
-Angular 14.2.7
+Angular 14.2.8
 
 ## scaffolding
 
