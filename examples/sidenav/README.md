@@ -1,13 +1,13 @@
 # sidenav
 
-Angular version 14.2.7
+Angular version 14.2.8
 
 ## scaffolding
 
 This is an alternative method, if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
-npx -p @angular/cli@14.2.7 ng new sidenav -S -g --routing --style=sass
+npx -p @angular/cli@14.2.8 ng new sidenav -S -g --routing --style=sass
 ```
 
 ### Or, if you already have this project sidenav, remember to type the following command inside the root directory of the same:
