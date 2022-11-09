@@ -1,6 +1,6 @@
 # navigation
 
-Angular 14.2.8
+Angular 14.2.9
 
 How to use Angular Schematics.
 
