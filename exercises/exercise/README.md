@@ -1,6 +1,6 @@
 # exercise, app used as a template
 
-Angular 14.2.10
+Angular 15.0.0
 
 ## scaffolding
 
