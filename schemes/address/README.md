@@ -1,6 +1,6 @@
 # address
 
-Angular 14.2.10
+Angular 15.0.0
 
 How to use Angular Schematics.
 
