@@ -1,6 +1,6 @@
 # slider
 
-Angular 15.0.0
+Angular 15.0.1
 
 ```shell
 ng new slider -v -S -g --routing --style=sass
