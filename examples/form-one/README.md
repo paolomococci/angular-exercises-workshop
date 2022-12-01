@@ -1,6 +1,6 @@
 # form-one
 
-Angular 15.0.1
+Angular 15.0.2
 
 ## scaffolding
 
