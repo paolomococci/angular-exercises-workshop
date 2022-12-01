@@ -1,6 +1,6 @@
 # dnd, (Drag and Drop)
 
-Angular 15.0.1
+Angular 15.0.2
 
 How to use Angular Schematics.
 
