@@ -1,6 +1,6 @@
 # navigation
 
-Angular 15.0.2
+Angular 15.0.3
 
 How to use Angular Schematics.
 
