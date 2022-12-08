@@ -1,6 +1,6 @@
 # input-form
 
-Angular 15.0.2
+Angular 15.0.3
 
 ## scaffolding
 
