@@ -1,6 +1,6 @@
 # WebEditor
 
-Angular 15.0.3
+Angular 15.0.4
 
 ## scaffolding
 
