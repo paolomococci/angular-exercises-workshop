@@ -1,6 +1,6 @@
 # checkbox
 
-Angular 15.0.4
+Angular 15.1.0
 
 ## scaffolding
 
