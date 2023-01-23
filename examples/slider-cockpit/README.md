@@ -1,6 +1,6 @@
 # slider-cockpit
 
-Angular 15.1.0
+Angular 15.1.1
 
 ## scaffolding
 
