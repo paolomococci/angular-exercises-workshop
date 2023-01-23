@@ -1,6 +1,6 @@
 # fifteen, app used as a template
 
-Angular 15.1.0
+Angular 15.1.1
 
 ## scaffolding
 
@@ -11,7 +11,7 @@ ng new fifteen -S -g --routing --style=sass --skip-install
 Alternative method if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
-npx -p @angular/cli@15.1.0 ng new fifteen -S -g --routing --style=sass --skip-install
+npx -p @angular/cli@15.1.1 ng new fifteen -S -g --routing --style=sass --skip-install
 ```
 
 ### Or, if you already have this project fifteen, remember to type the following command inside the root directory of the same:
