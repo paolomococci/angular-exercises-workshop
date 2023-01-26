@@ -1,6 +1,6 @@
 # dashboard
 
-Angular 15.1.1
+Angular 15.1.2
 
 How to use Angular Schematics.
 
