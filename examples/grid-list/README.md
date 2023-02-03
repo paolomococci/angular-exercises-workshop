@@ -1,6 +1,6 @@
 # grid-list
 
-Angular 15.1.2
+Angular 15.1.3
 
 ## scaffolding
 
