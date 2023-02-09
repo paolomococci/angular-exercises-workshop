@@ -1,6 +1,6 @@
 # select
 
-Angular 15.1.3
+Angular 15.1.4
 
 ## scaffolding
 
