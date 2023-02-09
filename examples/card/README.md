@@ -1,6 +1,6 @@
 # card
 
-Angular 15.1.3
+Angular 15.1.4
 
 how to make an element disappear when a certain condition is true in angular
 
