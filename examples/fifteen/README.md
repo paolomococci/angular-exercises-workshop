@@ -1,6 +1,6 @@
 # fifteen, app used as a template
 
-Angular 15.1.5
+Angular 15.2.0
 
 ## scaffolding
 
