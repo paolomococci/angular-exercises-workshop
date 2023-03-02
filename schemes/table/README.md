@@ -1,6 +1,6 @@
 # table
 
-Angular 15.2.0
+Angular 15.2.1
 
 How to use Angular Schematics.
 
