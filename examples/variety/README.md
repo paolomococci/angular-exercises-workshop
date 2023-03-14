@@ -11,7 +11,7 @@ ng new variety -S -g --routing --style=sass --skip-install
 This is an alternative method, if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
-npx -p @angular/cli@15.2.1 ng new variety -S -g --routing --style=sass
+npx -p @angular/cli@15.2.2 ng new variety -S -g --routing --style=sass
 ```
 
 ## install
