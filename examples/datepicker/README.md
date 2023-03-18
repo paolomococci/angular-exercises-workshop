@@ -11,7 +11,7 @@ ng new datepicker -S -g --routing --style=sass --skip-install
 Alternative method, if you do not intend to install the latest version globally, at least not for the moment.
 
 ```shell
-npx -p @angular/cli@15.2.2 ng new datepicker -S -g --routing --style=sass --skip-install
+npx -p @angular/cli@15.2.3 ng new datepicker -S -g --routing --style=sass --skip-install
 ```
 
 ### remember to type the following command inside the root directory of the same:
