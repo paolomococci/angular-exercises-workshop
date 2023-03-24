@@ -1,6 +1,6 @@
 # slide-toggle
 
-Angular 15.2.3
+Angular 15.2.4
 
 ## scaffolding
 
