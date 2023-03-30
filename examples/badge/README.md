@@ -1,6 +1,6 @@
 # badge
 
-Angular 15.2.4
+Angular 15.2.5
 
 ```shell
 ng new badge -v -S -g --routing --style=sass
