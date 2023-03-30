@@ -1,6 +1,6 @@
 # bottom-sheet
 
-Angular 15.2.4
+Angular 15.2.5
 
 ```shell
 ng new bottom-sheet -v -S -g --routing --style=sass
